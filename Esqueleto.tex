@@ -1,0 +1,43 @@
+
+%%-------------------------------------------------------------------------------------- Início
+%\section{Estrutura de uma Aplicação Rails}
+\begin{frame}[allowframebreaks,fragile,t]{Estrutura de uma Aplicação Rails}
+  \begin{table}\centering\scriptsize
+    \begin{tabular}{@{}lp{8cm}@{}}\toprule
+	  \textbf{Arquivo/Pasta} & \textbf{Descrição}	\\ \midrule
+	  app & Arquivos contendo os principais códigos da aplicação, incluindo modelos, visões,  
+	    controladores e auxiliares(\textit{helpers})\\
+	  app/assets & Arquivos contendo folhas de estilos (CSS), códigos Javascript e imagens da 
+	    aplicação\\
+	  bin & Arquivos ou scripts executáveis\\
+	  config & Configurações da aplicação	\\
+	  db & Migrações, esquema e outros arquivos relacionados ao banco de dados	\\ 
+	  doc & Documentação do sistema	\\
+	  lib & Bibliotecas auxiliares	\\
+	  lib/assets & Arquivos contendo folhas de estilos (CSS), códigos Javascript e imagens das
+	    bibliotecas\\ \bottomrule
+    \end{tabular}
+  \end{table}	    
+  
+  \begin{table}\centering\scriptsize
+    \begin{tabular}{@{}lp{8cm}@{}}\toprule
+      \textbf{Arquivo/Pasta} & \textbf{Descrição}	\\ \midrule
+      log & Informações de log	\\
+      public & Páginas que podem ser acessadas publicamente via navegador, tais como 
+	    páginas de erros	\\    
+      test & Testes da nossa aplicação	\\
+      tmp & Arquivos temporários como cache e informações de sessões	\\
+      vendor & Dependências e bibliotecas de terceiros\\
+      vendor/assets & Arquivos contendo folhas de estilos (CSS), códigos Javascript e imagens de
+	    terceiros\\
+      README.rdoc & Uma breve descrição da aplicação\\
+      Rakefile & Tarefas que podem ser executadas pelo comando rake	\\
+      Gemfile & Pacotes(gems) necessários para a aplicação	\\
+      Gemfile.lock & Uma lista de gems utilizadas para garantir que todas as cópias da aplicação
+		      utilizam as mesmas versões de gems\\ 
+      config.ru & Um arquivo de configuração para o Rack Middleware\\
+      .gitignore & Define de arquivos ou padrões de arquivos que deverão ser ignorados pelo Git\\ \bottomrule
+    \end{tabular}
+  \end{table} 
+
+\end{frame}

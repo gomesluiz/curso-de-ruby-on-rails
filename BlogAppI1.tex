@@ -1,0 +1,53 @@
+%%-------------------------------------------------------------------------------------- Início
+\section{Blog App}
+\begin{frame}[allowframebreaks, fragile,t]{Especificação do Blog App}
+	\begin{enumerate}
+		\item Blog é uma contração de "weblog", um site de discussão ou troca de informações
+		publicado na Web.
+		\item Existem dois tipos de participantes: o administrador e o usuário
+		\item O administrador do blog deve ser capaz de entrar novas postagens, tipicamente
+		em ordem cronológica inversa.
+		\item Os usuários devem ser capazes de visitar o blog e escrever comentários sobre
+		as postagens.
+		\item O administrador do blog deve ser capaz de modificar e ou remover qualquer postagem
+		ou comentário.
+		\item Os usuários não devem ser capazes de modificar postagens ou comentários de outros usuários.
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}[allowframebreaks, fragile,t]{Passos Iniciais do Blog App}
+	\begin{enumerate}
+	    \item Inicie uma janela de terminal e digite no prompt:
+	     \begin{lstlisting}[style=BashInputBasicStyle]
+		     $ cd 
+		     $ rails new blog
+	     \end{lstlisting}
+	    \item Utilize o gerador \verb|scaffold| para criar os 
+	    componentes MVC para as postagens e os comentários
+	     \begin{lstlisting}[style=BashInputBasicStyle]
+		     $ rails generate scaffold post \ 
+			     title:string body:text
+		     $ rails generate scaffold comment \
+			     post_id:integer body:text
+	     \end{lstlisting}
+	    \item Gere as tabelas \verb|post| e \verb|comment| no banco de dados
+	    \begin{lstlisting}[style=BashInputBasicStyle]
+		    $ rake db:migrate
+	    \end{lstlisting}
+	    
+	    \item Visualize todas as URLs reconhecidas pela sua aplicação digitando:
+	    \begin{lstlisting}[style=BashInputBasicStyle]
+	    $ rake routes
+	    \end{lstlisting}
+	     \item Inicie o servidor web embutido:
+	     \begin{lstlisting}[style=BashInputBasicStyle]
+	     $ rails s
+	     \end{lstlisting}
+	     
+	     \item Abra uma janela do navegador e digite:
+	     \begin{lstlisting}[style=BashInputBasicStyle]
+	     $ http://localhost:3000/posts
+	     \end{lstlisting}
+	\end{enumerate}
+  
+\end{frame}

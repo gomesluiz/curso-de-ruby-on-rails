@@ -1,0 +1,81 @@
+\section{Banco de Dados Relacionais}
+\begin{frame}[t, allowframebreaks, fragile]{Banco de Dados Relacionais}
+	\begin{itemize}
+		\item Um aspecto importante da programação web é a habilidade de coletar, armazenar e recuperar
+		diferentes formas de dados
+		\begin{itemize}
+			\item uma das formas mais populares são os \alert{bancos de dados relacionais}
+		\end{itemize} 
+% 		\item maioria banco de dados relacionais acessados através da Structured Query Language (SQL)
+		\item Um banco de dados relacional é baseado entidades, denominadas \alert{tabelas}, no
+		relacionamento, \alert{associações}, entre elas
+		\item O contêiner fundamental em um banco de dados relacional é denominado de \alert{database} ou \alert{schema}
+		\begin{itemize}
+			\item podem incluir estruturas de dados, os dados propriamente ditos e permissões de acesso
+		\end{itemize}  
+		\framebreak
+		\item Os dados são armazenados em \alert{tabelas} e as tabelas são divididas em \alert{linhas} e \alert{colunas}.
+		Por exemplo:
+		\begin{table}[tp] 
+			\scriptsize 
+			\caption{comment}
+			\setlength{\tabcolsep}{8pt}
+			\setlength{\extrarowheight}{2pt}   			
+			\begin{tabular}{|l|l|l|} 
+				\hline
+				\textbf{id} & \textbf{post\_id} & \textbf{body}\\
+				\hline
+				10 & 1 & Ruby realmente... \\
+				\hline
+				11 & 2 & Rails facilita... \\
+				\hline
+				13 & 2 & Concordo, ... \\
+				\hline
+			\end{tabular}
+		\end{table}
+		\pagebreak
+		\item Relacionamentos são estabelecidos entre tabelas para que a consistência dos dados
+		seja mantida em qualquer situação e podem ser:
+		\begin{itemize}
+			\item 1:1
+			\item 1:N
+			\item N:M
+			\begin{columns}[t]
+				\column{0.4\textwidth}
+				\begin{table}[tp] 
+					\scriptsize 
+					\caption{comment}
+					\setlength{\tabcolsep}{8pt}
+					\setlength{\extrarowheight}{2pt}   			
+					\begin{tabular}{|l|l|l|} 
+						\hline
+						\textbf{id} & \textbf{post\_id} & \textbf{body}\\
+						\hline
+						10 & 1 & Ruby realmente... \\
+						\hline
+						11 & 2 & Rails facilita... \\
+						\hline
+						13 & 2 & Concordo, ... \\
+						\hline
+					\end{tabular}
+				\end{table}
+				\column{0.6\textwidth}
+				\begin{table}[tp] 
+					\caption{post}
+					\scriptsize 
+					\setlength{\tabcolsep}{8pt}
+					\setlength{\extrarowheight}{1pt}   			
+					\begin{tabular}{|l|l|l|} 
+						\hline
+						\textbf{id} & \textbf{title} & \textbf{body} \\
+						\hline
+						\textbf{1} & A Linguagem Ruby & Ruby é legal. \\
+						\hline
+						\textbf{2} & O Framework Rais & O Rais facilita...\\
+						\hline
+					\end{tabular}
+				\end{table}   		
+			\end{columns}
+		\end{itemize}  
+	\end{itemize}
+\end{frame}

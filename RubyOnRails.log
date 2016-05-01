@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.2.28)  30 APR 2016 08:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.2.28)  1 MAY 2016 02:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1215,7 +1215,9 @@ LaTeX Info: Redefining \cite on input line 702.
 ) (/home/luiz/texmf/tex/latex/biblioteca/SetupLanguages.tex)
 (/home/luiz/texmf/tex/latex/beamer/themes/color/beamercolorthemenouvelle.sty)
 (./RubyOnRails.aux (./Titulo.aux) (./Capa.aux) (./Agenda.aux) (./Introducao.aux
-) (./PrimeiraAplicacao.aux) (./Citacoes.aux) (./Bibliografia.aux))
+) (./Pilares.aux) (./Historico.aux) (./PrimeiraAplicacao.aux) (./Esqueleto.aux)
+(./BlogAppI1.aux) (./BancoDeDados.aux) (./SQLite.aux) (./Migrations.aux)
+(./ActiveRecord.aux))
 \openout1 = `RubyOnRails.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
@@ -1408,7 +1410,7 @@ Package hyperref Warning: Option `pdfauthor' has already been used,
 )
 \openout2 = `Capa.aux'.
 
- (./Capa.tex <imagens/logo-puc.pdf, id=33, 120.45pt x 120.45pt>
+ (./Capa.tex <imagens/logo-puc.pdf, id=37, 120.45pt x 120.45pt>
 File: imagens/logo-puc.pdf Graphic file (type pdf)
 
 <use imagens/logo-puc.pdf>
@@ -1509,7 +1511,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 \openout4 = `RubyOnRails.vrb'.
 
  (./RubyOnRails.vrb
-<imagens/historico.png, id=71, 588.69937pt x 319.94531pt>
+<imagens/historico.png, id=77, 588.69937pt x 319.94531pt>
 File: imagens/historico.png Graphic file (type png)
 
 <use imagens/historico.png>
@@ -1706,7 +1708,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 \openout4 = `RubyOnRails.vrb'.
 
  (./RubyOnRails.vrb
-<imagens/cliente-servidor-1.png, id=135, 611.28375pt x 280.04625pt>
+<imagens/cliente-servidor-1.png, id=143, 611.28375pt x 280.04625pt>
 File: imagens/cliente-servidor-1.png Graphic file (type png)
 
 <use imagens/cliente-servidor-1.png>
@@ -1866,7 +1868,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 \openout4 = `RubyOnRails.vrb'.
 
  (./RubyOnRails.vrb
-<imagens/cliente-servidor-2.png, id=179, 663.22781pt x 290.58563pt>
+<imagens/cliente-servidor-2.png, id=187, 663.22781pt x 290.58563pt>
 File: imagens/cliente-servidor-2.png Graphic file (type png)
 
 <use imagens/cliente-servidor-2.png>
@@ -1973,7 +1975,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  (./RubyOnRails.vrb)
 File: imagens/logo-puc.pdf Graphic file (type pdf)
  <use imagens/logo-puc.pdf>
-Package pdftex.def Info: imagens/logo-puc.pdf used on input line 24.
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 19.
 (pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1990,7 +1992,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 ]
 File: imagens/logo-puc.pdf Graphic file (type pdf)
  <use imagens/logo-puc.pdf>
-Package pdftex.def Info: imagens/logo-puc.pdf used on input line 24.
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 19.
 (pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -2005,22 +2007,16 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [29
 
 
-]
+])
+\openout2 = `Pilares.aux'.
+
+ (./Pilares.tex
 \openout4 = `RubyOnRails.vrb'.
 
- (./RubyOnRails.vrb <imagens/mvc-1.pdf, id=224, 845.1575pt x 597.23125pt>
-File: imagens/mvc-1.pdf Graphic file (type pdf)
-
-<use imagens/mvc-1.pdf>
-Package pdftex.def Info: imagens/mvc-1.pdf used on input line 7.
-(pdftex.def)             Requested size: 224.3446pt x 158.5298pt.
-)
-Overfull \vbox (7.19193pt too high) detected at line 34
- []
-
+ (./RubyOnRails.vrb)
 File: imagens/logo-puc.pdf Graphic file (type pdf)
-<use imagens/logo-puc.pdf>
-Package pdftex.def Info: imagens/logo-puc.pdf used on input line 34.
+ <use imagens/logo-puc.pdf>
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 28.
 (pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -2034,7 +2030,70 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [30
 
- <./imagens/mvc-1.pdf>])
+
+
+]
+File: imagens/logo-puc.pdf Graphic file (type pdf)
+ <use imagens/logo-puc.pdf>
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 28.
+(pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[31
+
+
+])
+\openout2 = `Historico.aux'.
+
+ (./Historico.tex
+\openout4 = `RubyOnRails.vrb'.
+
+ (./RubyOnRails.vrb)
+File: imagens/logo-puc.pdf Graphic file (type pdf)
+ <use imagens/logo-puc.pdf>
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 41.
+(pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[32
+
+
+
+]
+File: imagens/logo-puc.pdf Graphic file (type pdf)
+ <use imagens/logo-puc.pdf>
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 41.
+(pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[33
+
+
+])
 \openout2 = `PrimeiraAplicacao.aux'.
 
  (./PrimeiraAplicacao.tex
@@ -2065,51 +2124,139 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[31
+[34
 
 
 
 ])
-\openout2 = `Citacoes.aux'.
+\openout2 = `Esqueleto.aux'.
 
- (./Citacoes.tex
+ (./Esqueleto.tex
+\openout4 = `RubyOnRails.vrb'.
 
-LaTeX Warning: Citation `Cortes2001' undefined on input line 1.
-
-
-LaTeX Warning: Citation `Broy2006' undefined on input line 2.
-
-
-LaTeX Warning: Citation `Coleman1994' undefined on input line 3.
-
-
-LaTeX Warning: Citation `Bennett2000' undefined on input line 4.
-
-
-LaTeX Warning: Citation `Vale2015' undefined on input line 5.
-
-
-LaTeX Warning: Citation `Sommerville2011' undefined on input line 6.
-
-
-LaTeX Warning: Citation `Hanafi2015' undefined on input line 7.
-
-
-LaTeX Warning: Citation `Bagheri2011' undefined on input line 8.
-
-
-LaTeX Warning: Citation `Cafeo2013' undefined on input line 9.
-
-
-LaTeX Warning: Citation `Gomaa2005' undefined on input line 10.
-
-)
-\openout2 = `Bibliografia.aux'.
-
- (/home/luiz/texmf/tex/latex/biblioteca/Bibliografia.tex (./RubyOnRails.toc)
+ (./RubyOnRails.vrb)
 File: imagens/logo-puc.pdf Graphic file (type pdf)
+ <use imagens/logo-puc.pdf>
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 43.
+(pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
 
-<use imagens/logo-puc.pdf>
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[35
+
+
+
+]
+File: imagens/logo-puc.pdf Graphic file (type pdf)
+ <use imagens/logo-puc.pdf>
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 43.
+(pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[36
+
+
+])
+\openout2 = `BlogAppI1.aux'.
+
+ (./BlogAppI1.tex (./RubyOnRails.toc)
+File: imagens/logo-puc.pdf Graphic file (type pdf)
+ <use imagens/logo-puc.pdf>
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 2.
+(pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[37
+
+
+
+]
+\openout4 = `RubyOnRails.vrb'.
+
+ (./RubyOnRails.vrb)
+File: imagens/logo-puc.pdf Graphic file (type pdf)
+ <use imagens/logo-puc.pdf>
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 16.
+(pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[38
+
+]
+\openout4 = `RubyOnRails.vrb'.
+
+ (./RubyOnRails.vrb)
+File: imagens/logo-puc.pdf Graphic file (type pdf)
+ <use imagens/logo-puc.pdf>
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 53.
+(pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[39
+
+]
+File: imagens/logo-puc.pdf Graphic file (type pdf)
+ <use imagens/logo-puc.pdf>
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 53.
+(pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[40
+
+
+])
+\openout2 = `BancoDeDados.aux'.
+
+ (./BancoDeDados.tex (./RubyOnRails.toc)
+File: imagens/logo-puc.pdf Graphic file (type pdf)
+ <use imagens/logo-puc.pdf>
 Package pdftex.def Info: imagens/logo-puc.pdf used on input line 1.
 (pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
 
@@ -2122,23 +2269,22 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[32
-
-
+[41
 
 
 
 ]
 \openout4 = `RubyOnRails.vrb'.
 
- (./RubyOnRails.vrb (./RubyOnRails.bbl
+ (./RubyOnRails.vrb
+Overfull \hbox (17.77744pt too wide) in paragraph at lines 49--60
+ [] 
+ []
 
-LaTeX Warning: Empty `thebibliography' environment on input line 8.
-
-))
+)
 File: imagens/logo-puc.pdf Graphic file (type pdf)
  <use imagens/logo-puc.pdf>
-Package pdftex.def Info: imagens/logo-puc.pdf used on input line 4.
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 81.
 (pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -2150,7 +2296,357 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[33
+[42
+
+]
+File: imagens/logo-puc.pdf Graphic file (type pdf)
+ <use imagens/logo-puc.pdf>
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 81.
+(pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[43
+
+
+]
+File: imagens/logo-puc.pdf Graphic file (type pdf)
+ <use imagens/logo-puc.pdf>
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 81.
+(pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[44
+
+
+])
+\openout2 = `SQLite.aux'.
+
+ (./SQLite.tex
+\openout4 = `RubyOnRails.vrb'.
+
+ (./RubyOnRails.vrb
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2014/09/06 1.5e listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2014/09/06 1.5e listings language file
+)
+(./codigos/blog_1/config/database.yml))
+File: imagens/logo-puc.pdf Graphic file (type pdf)
+ <use imagens/logo-puc.pdf>
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 24.
+(pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[45
+
+
+
+]
+File: imagens/logo-puc.pdf Graphic file (type pdf)
+ <use imagens/logo-puc.pdf>
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 24.
+(pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[46
+
+
+]
+\openout4 = `RubyOnRails.vrb'.
+
+ (./RubyOnRails.vrb
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <6> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 10.
+)
+File: imagens/logo-puc.pdf Graphic file (type pdf)
+ <use imagens/logo-puc.pdf>
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 49.
+(pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[47
+
+]
+\openout4 = `RubyOnRails.vrb'.
+
+ (./RubyOnRails.vrb)
+File: imagens/logo-puc.pdf Graphic file (type pdf)
+ <use imagens/logo-puc.pdf>
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 107.
+(pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[48
+
+]
+File: imagens/logo-puc.pdf Graphic file (type pdf)
+ <use imagens/logo-puc.pdf>
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 107.
+(pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[49
+
+
+]
+File: imagens/logo-puc.pdf Graphic file (type pdf)
+ <use imagens/logo-puc.pdf>
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 107.
+(pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[50
+
+
+])
+\openout2 = `Migrations.aux'.
+
+ (./Migrations.tex
+\openout4 = `RubyOnRails.vrb'.
+
+ (./RubyOnRails.vrb
+(./codigos/blog_1/db/migrate/20160430140114_create_posts.rb))
+File: imagens/logo-puc.pdf Graphic file (type pdf)
+
+<use imagens/logo-puc.pdf>
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 38.
+(pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[51
+
+
+
+]
+File: imagens/logo-puc.pdf Graphic file (type pdf)
+ <use imagens/logo-puc.pdf>
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 38.
+(pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[52
+
+
+]
+File: imagens/logo-puc.pdf Graphic file (type pdf)
+ <use imagens/logo-puc.pdf>
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 38.
+(pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[53
+
+
+])
+\openout2 = `ActiveRecord.aux'.
+
+ (./ActiveRecord.tex
+\openout4 = `RubyOnRails.vrb'.
+
+ (./RubyOnRails.vrb)
+File: imagens/logo-puc.pdf Graphic file (type pdf)
+ <use imagens/logo-puc.pdf>
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 10.
+(pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[54
+
+
+
+]
+\openout4 = `RubyOnRails.vrb'.
+
+ (./RubyOnRails.vrb (./codigos/blog_1/app/models/post.rb))
+File: imagens/logo-puc.pdf Graphic file (type pdf)
+
+<use imagens/logo-puc.pdf>
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 32.
+(pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[55
+
+]
+\openout4 = `RubyOnRails.vrb'.
+
+ (./RubyOnRails.vrb)
+File: imagens/logo-puc.pdf Graphic file (type pdf)
+ <use imagens/logo-puc.pdf>
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 43.
+(pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[56
+
+]
+\openout4 = `RubyOnRails.vrb'.
+
+ (./RubyOnRails.vrb)
+File: imagens/logo-puc.pdf Graphic file (type pdf)
+ <use imagens/logo-puc.pdf>
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 98.
+(pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[57
+
+]
+File: imagens/logo-puc.pdf Graphic file (type pdf)
+ <use imagens/logo-puc.pdf>
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 98.
+(pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[58
+
+
+]
+File: imagens/logo-puc.pdf Graphic file (type pdf)
+ <use imagens/logo-puc.pdf>
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 98.
+(pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[59
+
 
 ])
 \tf@nav=\write7
@@ -2162,48 +2658,49 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 \tf@snm=\write9
 \openout9 = `RubyOnRails.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
  (./RubyOnRails.aux (./Titulo.aux) (./Capa.aux) (./Agenda.aux)
-(./Introducao.aux) (./PrimeiraAplicacao.aux) (./Citacoes.aux)
-(./Bibliografia.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
+(./Introducao.aux) (./Pilares.aux) (./Historico.aux) (./PrimeiraAplicacao.aux)
+(./Esqueleto.aux) (./BlogAppI1.aux) (./BancoDeDados.aux) (./SQLite.aux)
+(./Migrations.aux) (./ActiveRecord.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 73.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 73.
 Package rerunfilecheck Info: File `RubyOnRails.out' has not changed.
-(rerunfilecheck)             Checksum: 79703D8EDC5F96C4765BF8A1E2D15BB3;284.
+(rerunfilecheck)             Checksum: 0064410AFBC4E4BEA06B62A1E822E868;325.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
  ) 
 Here is how much of TeX's memory you used:
- 24887 strings out of 494955
- 475713 string characters out of 6179474
- 573832 words of memory out of 5000000
- 27332 multiletter control sequences out of 15000+600000
- 15513 words of font info for 56 fonts, out of 8000000 for 9000
+ 25270 strings out of 494955
+ 480242 string characters out of 6179474
+ 593737 words of memory out of 5000000
+ 27576 multiletter control sequences out of 15000+600000
+ 16968 words of font info for 62 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 56i,17n,78p,932b,1465s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,17n,78p,932b,1640s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/symbols/msam7.pfb>
-Output written on RubyOnRails.pdf (33 pages, 288080 bytes).
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+tt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
+
+Output written on RubyOnRails.pdf (59 pages, 329164 bytes).
 PDF statistics:
- 321 PDF objects out of 1000 (max. 8388607)
- 255 compressed objects within 3 object streams
- 72 named destinations out of 1000 (max. 500000)
- 108 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 480 PDF objects out of 1000 (max. 8388607)
+ 391 compressed objects within 4 object streams
+ 125 named destinations out of 1000 (max. 500000)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
 
