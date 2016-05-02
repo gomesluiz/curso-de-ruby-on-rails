@@ -5,70 +5,36 @@
 			   table]{beamer}
 
 
-%\usepackage{amsmath}
-%\usepackage[brazil]{babel}
-%\usepackage[utf8]{inputenc}
-%\usepackage{booktabs}
-%\usepackage[alf]{abntex2cite}
-%\usepackage{caption}
-%\usepackage{todo}
 \input{SetupPackages}
 \input{SetupBeamer}
 \input{SetupLanguages}
 
-% configuração do tema
-%\usetheme[pageofpages=de,
-%          bullet=square,			
-%          titleline=true,				
-%          alternativetitlepage=true,			
-%          titlepagelogo=imagens/logo-puc,	
-%          watermarkheight=70px,		
-%          watermarkheightmult=4	
-%          ]{Torino}
-%
-%\setbeamertemplate{sections/subsections in toc}[square]
-%\setbeamertemplate{bibliography item}[default]
 
 \usecolortheme{nouvelle}
 
 \logo{\includegraphics[height=0.110\paperheight]{imagens/logo-puc}}
 \renewcommand{\lstlistingname}{Código}
+
 \begin{document}
 	\include{Titulo}
 	\include{Capa}
 	\include{Agenda}  
-	\input{Conceituacao}
+%	\include{Apresentacao}
 	\input{Webapp}
+	\input{Conceituacao}
 	\input{Arquiteturas}
-	\input{Sabermais}
 	\include{Introducao}
 	\include{Pilares}
 	\include{Historico}
+	\include{Mvc}
 	\include{PrimeiraAplicacao}
 	\include{Esqueleto}
 	\include{BlogAppI1}
+	\include{Modelo}
 	\include{BancoDeDados}
 	\include{SQLite}
 	\include{Migrations}
 	\include{ActiveRecord}
-	%\include{Mvc}
-%    \include{Artigos}
-%    \include{Artigo1}
-%    \include{Artigo1-Objetivos}
-%    \include{Artigo1-Metodologia}
-%    \include{Artigo1-Resultados}
-%    \include{Artigo2}
-%    \include{Artigo2-Objetivos}
-%    \include{Artigo2-Metodologia}
-%    \include{Artigo2-Resultados}
-%    \include{Artigo3}
-%    \include{Artigo3-Objetivos}
-%    \include{Artigo3-Metodologia}
-%    \include{Artigo3-Resultados}
-%    \include{Consolidacao}
-%    \include{Discussao}
-%    \include{Conclusoes}
-    %\include{Citacoes}
-    %\include{Bibliografia}
+ 	\input{Sabermais}
 \end{document}
 

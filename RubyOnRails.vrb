@@ -1,28 +1,26 @@
-%%-------------------------------------------------------------------------------------- Início
-\begin{frame}[fragile,t]{Para Saber Mais}
-  \begin{itemize}
+\frametitle{Para Saber Mais}
+\begin{itemize}
     \item \url{https://www.ruby-lang.org/en/}
     \begin{itemize}
      \item referência oficial da linguagem Ruby onde a toda a sua documentação está disponível
-	para ser consultada.
+para ser consultada.
     \end{itemize}
 
     \item \url{http://rubyonrails.org/}
     \begin{itemize}
      \item referência oficial do framework Rails onde a toda a sua documentação está disponível
-	para ser consultada.
+para ser consultada.
     \end{itemize}
-    
+
     \item \url{http://www.codecademy.com/pt/tracks/ruby}
     \begin{itemize}
      \item curso iterativo em portugês sobre a linguagem Ruby.
     \end{itemize}
 
-	\item \url{https://gorails.com/setup/ubuntu/16.04}
-	\begin{itemize}
-		\item guia para instalação do Ruby on Rails no Ubuntu e no Mac OSX.
-	\end{itemize}
+\item \url{https://gorails.com/setup/ubuntu/16.04}
+\begin{itemize}
+\item guia para instalação do Ruby on Rails no Ubuntu e no Mac OSX.
+\end{itemize}
   \end{itemize}
-  
-  
-\end{frame}
+
+

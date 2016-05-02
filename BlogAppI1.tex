@@ -1,5 +1,5 @@
 %%-------------------------------------------------------------------------------------- Início
-\section{Blog App}
+\section{Aplicação Exemplo}
 \begin{frame}[allowframebreaks, fragile,t]{Especificação do Blog App}
 	\begin{enumerate}
 		\item Blog é uma contração de "weblog", um site de discussão ou troca de informações
@@ -27,8 +27,6 @@
 	     \begin{lstlisting}[style=BashInputBasicStyle]
 		     $ rails generate scaffold post \ 
 			     title:string body:text
-		     $ rails generate scaffold comment \
-			     post_id:integer body:text
 	     \end{lstlisting}
 	    \item Gere as tabelas \verb|post| e \verb|comment| no banco de dados
 	    \begin{lstlisting}[style=BashInputBasicStyle]
