@@ -25,8 +25,10 @@
 	    \item Utilize o gerador \verb|scaffold| para criar os 
 	    componentes MVC para as postagens e os comentários
 	     \begin{lstlisting}[style=BashInputBasicStyle]
-		     $ rails generate scaffold post \ 
+					$ rails generate scaffold post \ 
 			     title:string body:text
+					$ rails generate scaffold comment post_id:integer \
+					 body:text
 	     \end{lstlisting}
 	    \item Gere as tabelas \verb|post| e \verb|comment| no banco de dados
 	    \begin{lstlisting}[style=BashInputBasicStyle]

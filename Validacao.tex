@@ -1,0 +1,78 @@
+%%-------------------------------------------------------------------------------------- Início
+\begin{frame}[t, fragile]{Validação em Aplicações Web}
+	\begin{itemize}
+		\item \alert{Validação de Dados} é o processo para \alert{garantir} que a aplicação web 
+		operem \alert{corretamente}. Exemplo:
+		\begin{itemize}
+			\item garantir a validação do e-mail, número do telefone e etc
+			\item garantir que as "regras de negócios" sejam validadas
+		\end{itemize}
+
+		\item A \alert{vulnerabilidade} mais comum em aplicação web é a \alert{injeção} SQL
+	\end{itemize}	
+\end{frame}
+%%-------------------------------------------------------------------------------------- Início
+\begin{frame}[t, fragile]{Client Side}
+	\begin{itemize}
+		\item Envolve a verificação de que os formulários HTML sejam preechidos corretamente
+		\begin{itemize}
+			\item \alert{JavaScript} tem sido tradicionalmente utilizado.
+			\item \alert{HTML5} possui "input type" específicos para checagem.
+			\item Funciona melhor quando combinada com validações do lado do servidor.
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+%%-------------------------------------------------------------------------------------- Início
+\begin{frame}[t, fragile]{Server Side}
+	\begin{itemize}
+		\item A validação é feita após a submissão do formulário HTML
+		\begin{itemize}
+			\item \alert{banco de dados}(stored procedure) - dependente do banco de dados
+			\item \alert{no controlador} - veremos mais tarde que não se pode colocar muita lógica no controlador (controladores magros)
+			\item \alert{no modelo} - boa maneira de garantir que dados válidos sejam armazenados
+				no banco de dados (database agnostic)
+			\item Funciona melhor quando combinada com validações do lado do servidor.
+		\end{itemize}
+	\end{itemize}	
+\end{frame}
+%%-------------------------------------------------------------------------------------- Início
+\begin{frame}[allowframebreaks, t, fragile]{Validação em Rails}
+	\begin{itemize}
+		\item \alert{Objetos} em um sistema OO como tendo um \alert{ciclo de vida}
+		\begin{itemize}
+			\item eles são criaddos, atualizados mais tarde e também destruidos.
+		\end{itemize}
+				
+		\item Objetos ActiveRecord têm \alert{métodos} que podem ser chamados, a fim de
+		assegurar a sua \alert{integridade} nas várias fases do seu ciclo de vida.
+		\begin{itemize}
+			\item garantir que todos os atributos são \alert{válidos} antes de salvá-lo no
+				banco de dados
+		\end{itemize}
+		
+		\item \alert{Callbacks} são métodos que são invocados em um ponto do ciclo 
+			de vida dos objetos ActiveRecord
+		\begin{itemize}
+			\item eles são "ganchos" para gatilhos para acionar uma lógica quando houver
+			alterações de seus objetos
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+%%-------------------------------------------------------------------------------------- Início
+\begin{frame}[t, fragile]{Validação em Rails}
+	\begin{itemize}
+		\item \alert{Validations} são tipo de \alert{callbacks} que podem ser utilizados 
+			para garantir a validade do dado em um banco de dados 
+		
+		\item Validação são definidos nos \alert{modelos}. Exemplo:
+		\begin{lstlisting}[style=RubyInputStyle]
+			class Person < ActiveRecord::Base 
+			    validates_presence_of :name
+			    validates_numeracality_of :age, :only_integer => true 
+			    validates_confirmation_of :email
+			    validates_length_of :password, :in => 8..20	
+			end 
+		\end{lstlisting}			
+		
+	\end{itemize}
+\end{frame}

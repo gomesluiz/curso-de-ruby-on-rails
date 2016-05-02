@@ -1,0 +1,53 @@
+\begin{frame}[allowframebreaks, t, fragile]{Hora de Colocar a Mão na Massa}
+	\begin{itemize}
+		\item Modifique o arquivo \verb|app/models/post.rb| para associar 
+		o post aos seus comentário:
+		\begin{lstlisting}[style=RubyInputStyle]
+			class Post < ActiveRecord::Base
+			  validates_presence_of :title, :body
+			  has_many :comments
+			end
+		\end{lstlisting}
+		
+		\item Modifique o arquivo \verb|app/models/comment.rb| para associar 
+		o comentário ao seu post:
+		\begin{lstlisting}[style=RubyInputStyle]
+			class Comment < ActiveRecord::Base
+			  validates_presence_of :body
+			  belongs_to :post
+			end
+		\end{lstlisting}
+		
+		\item Crie um novo \verb|post| e salve no banco de dados:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			irb(main):005:0> p1 = Post.new
+			irb(main):006:0> p1.title="Associacao"
+			irb(main):007:0> p1.body="Vinculando com o comentario"
+			irb(main):008:0> p1.save
+		\end{lstlisting}
+		
+		\item Crie um novo \verb|comment| e o vincule a um \verb|post|:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			irb(main):005:0> c1 = Comment.new
+			irb(main):006:0> c1.body="Comentario vinculado"
+			irb(main):007:0> c1.save
+			irb(main):008:0> p1.comments << c1
+		\end{lstlisting}
+		
+		\item Consulte os comentários do \verb|post| p1:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			irb(main):005:0> p1.comments.all
+		\end{lstlisting}
+		
+		\item Consulte os comentários 2 do \verb|post| p1:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			irb(main):005:0> p1.comments.where(id: 2)
+		\end{lstlisting}
+		
+		\item Consulte o \verb|post| do comentário c1:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			irb(main):005:0> c1.post
+		\end{lstlisting}
+					
+	\end{itemize}
+\end{frame}

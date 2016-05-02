@@ -1,0 +1,23 @@
+\begin{frame}[t, fragile]{Hora de Colocar a Mão na Massa}
+	\begin{itemize}
+			
+		\item Modifique o arquivo \verb|app/models/post.rb| para exigir 
+			que o usuário digite o título e o texto do blog:
+		\begin{lstlisting}[style=RubyInputStyle]
+			class Post < ActiveRecord::Base
+			  validates_presence_of :title, :body
+			end
+		\end{lstlisting}
+		
+		\item Modifique o arquivo \verb|app/models/comment.rb| para exigir 
+		que o usuário digite texto do comentário blog:
+		\begin{lstlisting}[style=RubyInputStyle]
+			class Post < ActiveRecord::Base
+		    validates_presence_of :body
+			end
+		\end{lstlisting}
+		
+		\item Inicie o servidor web embutido e teste se a validação está funcionando
+					
+	\end{itemize}
+\end{frame}
