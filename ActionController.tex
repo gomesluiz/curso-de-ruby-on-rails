@@ -1,0 +1,16 @@
+%%-------------------------------------------------------------------------------------- Início
+\begin{frame}[allowframebreaks, t, fragile]{Action Controller}
+	\begin{itemize}
+		\item Classe Ruby contendo uma ou mais ações
+		\item Cada ação é responsável pela resposta a uma requisição
+		\item Quando uma ação é concluída a visão de mesmo nome é renderizada
+		\item Uma ação deve estar mapeada no arquivo \verb|routes.rb|
+		\item O gerador scaffold gera o seguinte arquivo:
+		\begin{lstlisting}[style=RubyInputStyle]
+			Rails.application.routes.draw do 
+				resource :posts
+				resource :comments
+			end 
+		\end{lstlisting}			
+	\end{itemize}	
+\end{frame}

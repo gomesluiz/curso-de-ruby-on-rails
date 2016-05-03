@@ -1,0 +1,19 @@
+%%-------------------------------------------------------------------------------------- Início
+\begin{frame}[allowframebreaks, t, fragile]{Ação: Index}
+	\begin{itemize}
+		\item Recupera todas as postagens 
+		\item (Implicitamente) procura pelo \alert{index.html.erb} para renderizar a resposta
+		\begin{lstlisting}[style=RubyInputStyle, caption=posts_controller.rb]
+			Class PostsController < ApplicationController
+				#GET /posts
+				#GET /posts.json 
+				def index 
+					@posts = Post.all
+				end 
+		\end{lstlisting}		
+		
+		\item \alert{index.html.erb}:
+		
+				
+	\end{itemize}	
+\end{frame}

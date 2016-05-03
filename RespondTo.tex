@@ -1,0 +1,13 @@
+%%-------------------------------------------------------------------------------------- Início
+\begin{frame}[allowframebreaks, t, fragile]{respond_to}
+	\begin{itemize}
+		\item Rails helper que \alert{especifica como responder a uma requisição} baseado no 
+			formato da requisição
+		\item Toma um bloco opcional onde o argumento é o formato (e.g html, json e xml)
+		\item O bloco especifica \alert{como tratar} cada formato.
+		\begin{itemize}	
+			\item \alert{format.format_name}
+			\item \alert{format.format_name \{\}}
+		\end{itemize}	
+	\end{itemize}	
+\end{frame}

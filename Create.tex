@@ -1,0 +1,50 @@
+%%-------------------------------------------------------------------------------------- Início
+\begin{frame}[allowframebreaks, t, fragile]{Ação: Create}
+	\begin{itemize}
+		\item Cria um novo objeto \alert{post} como os parâmetros que foram passados pelo 
+			formulário \alert{new}
+		\item Tentar \alert{salvar} o objeto no \alert{banco de dados}
+		\item Se sucesso, redireciona para o template \alert{show}
+		\item Se insucesso, renderiza o template \alert{new} novamente
+		\begin{lstlisting}[style=RubyInputStyle, caption=posts_controller.rb]
+			Class PostsController < ApplicationController
+			  #POST /posts
+			  #POST /posts.json 
+			  def create
+			    ....
+			  end 
+				
+			  private 
+			    # Never trust parameters from the scary internet, only allow the white list through.
+			    def post_params 
+			    	params.require(:post).permite(:title, :content)
+			    end 
+				
+		\end{lstlisting}		
+		\begin{itemize}
+			\item a linha .. implementa \alert{strong parameters}
+		\end{itemize}
+				
+	\end{itemize}	
+\end{frame}
+
+%%-------------------------------------------------------------------------------------- Início
+\begin{frame}[t, fragile]{Hora de Colocar a Mão na Massa}
+	\begin{itemize}
+		\item Modifique o post_params para o código abaixo:
+		\begin{lstlisting}[style=RubyInputStyle, caption=posts_controller.rb]
+			Class PostsController < ApplicationController
+			  private 
+			    # Never trust parameters from the scary internet, only allow the white list through.
+			    def post_params 
+			    	#params.require(:post).permite(:title, :content)
+			    	parmas
+			    end 
+		\end{lstlisting}		
+		\begin{itemize}
+			\item tente, agora, criar um post (volte agora para o código original).
+		\end{itemize}
+				
+	\end{itemize}	
+\end{frame}
+

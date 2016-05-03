@@ -1,0 +1,20 @@
+%%-------------------------------------------------------------------------------------- Início
+\begin{frame}[allowframebreaks, t, fragile]{Ação: New}
+	\begin{itemize}
+		\item Cria um novo objeto \alert{post}(vazio) 
+		\item (Implicitamente) procura pelo \alert{new.html.erb} para renderizar a resposta
+		\begin{lstlisting}[style=RubyInputStyle, caption=posts_controller.rb]
+			Class PostsController < ApplicationController
+				
+				#GET /posts/new  
+				def new
+					@post = Post.new 
+				end 
+				
+		\end{lstlisting}		
+		
+		\item \alert{new.html.erb}:
+		
+				
+	\end{itemize}	
+\end{frame}
