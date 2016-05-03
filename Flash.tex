@@ -7,12 +7,25 @@
 		\item \textbf{\alert{Solução:}} flash - uma \alert{hash} onde a dado persiste por exatamente 
 			\alert{UMA requisição APÓS} a requisição corrente
 		\item Um conteúdo pode ser colocado em um flash assim:
-		\begin{lstlisting}[style=RubyInputStyle, caption=posts_controller.rb] 
+		\begin{lstlisting}[style=RubyInputStyle, caption=controllers/posts\_controller.rb] 
 			flash[:attribute] = value
 		\end{lstlisting}		
 		\item Dois atributos \alert{comuns} são \alert{:notice}(\textcolor{Green}{good}) e \alert{:alert}
 			(\alert{bad})
-		\item Estes dois atributos (:notice ou :alert} no redirect_to
-		\item \alert{show.html.erb}
+		\item Estes dois atributos (:notice ou :alert) podem ser colocados no redirect\_to
+		\item \alert{show.html.erb}:
+		\begin{lstlisting}[style=RubyInputStyle, caption=views/posts/show.html.erb]
+			<p id="notice"><%= notice %></p>
+			<p>
+			<strong>Title:</strong>
+			<%= @post.title %>
+			</p>
+			<p>
+			<strong>Body:</strong>
+			<%= @post.body %>
+			</p>
+			<%= link_to 'Edit', edit_post_path(@post) %> |
+			<%= link_to 'Back', posts_path %>		end 
+		\end{lstlisting}		
 	\end{itemize}	
 \end{frame}

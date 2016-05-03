@@ -3,7 +3,7 @@
 	\begin{itemize}
 		\item Recupera uma postagem específica no parâmetro \alert{id} passado como parte da URL
 		\item (Implicitamente) procura pelo \alert{edit.html.erb} para renderizar a resposta
-		\begin{lstlisting}[style=RubyInputStyle, caption=controllers/posts\_controller.rb]
+		\begin{lstlisting}[style=RubyInputStyle, caption=posts_controller.rb]
 Class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
@@ -18,12 +18,6 @@ Class PostsController < ApplicationController
 		\end{lstlisting}		
 		
 		\item \alert{edit.html.erb}:
-		\begin{lstlisting}[style=RubyInputStyle, caption=controllers/posts\_controller.rb]
-			<h1>Editing Post</h1>
-			<%= render 'form' %>
-			<%= link_to 'Show', @post %> |
-			<%= link_to 'Back', posts_path %> 
-		\end{lstlisting}		
 		
 				
 	\end{itemize}	

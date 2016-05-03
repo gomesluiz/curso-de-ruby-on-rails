@@ -1,12 +1,11 @@
 %%-------------------------------------------------------------------------------------- Início
-\section{The Controller Component}
-\begin{frame}[t, fragile]{Action Controller}
+\begin{frame}[allowframebreaks, t, fragile]{Action Controller}
 	\begin{itemize}
 		\item Um \alert{Action Controller} é classe Ruby contendo uma ou mais ações
 		\item Cada \alert{ação} é responsável pela resposta a uma requisição
-		\item Quando uma ação é concluída a \alert{visão} de mesmo nome é \alert{renderizada}
-		\item Uma ação deve estar \alert{mapeada} no arquivo \alert{routes.rb} que é gerado 
-			pelo scaffold:
+		\item Quando uma ação é concluída a \alert{visão} de mesmo nome é renderizada
+		\item Uma ação deve estar mapeada no arquivo \verb|routes.rb|
+		\item O gerador scaffold gera o seguinte arquivo:
 		\begin{lstlisting}[style=RubyInputStyle]
 			Rails.application.routes.draw do 
 				resource :posts

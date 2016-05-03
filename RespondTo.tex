@@ -1,13 +1,26 @@
 %%-------------------------------------------------------------------------------------- Início
-\begin{frame}[allowframebreaks, t, fragile]{respond_to}
+\begin{frame}[allowframebreaks, t, fragile]{respond\_to}
 	\begin{itemize}
-		\item Rails helper que \alert{especifica como responder a uma requisição} baseado no 
+		\item Rails \alert{helper} que \alert{especifica como responder a uma requisição} baseado no 
 			formato da requisição
-		\item Toma um bloco opcional onde o argumento é o formato (e.g html, json e xml)
-		\item O bloco especifica \alert{como tratar} cada formato.
-		\begin{itemize}	
-			\item \alert{format.format_name}
-			\item \alert{format.format_name \{\}}
-		\end{itemize}	
 	\end{itemize}	
+	\begin{lstlisting}[style=RubyInputStyle, caption=controllers/posts\_controller.rb]
+Class PostsController < ApplicationController
+
+  # POST /posts
+  # POST /posts.json
+  def create
+    @post = Post.new(post_params)
+
+    respond_to do |format|
+      if @post.save
+        format.html { redirect_to @post, notice: 'Post was successfully created.' }
+        format.json { render :show, status: :created, location: @post }
+      else
+        format.html { render :new }
+        format.json { render json: @post.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+	\end{lstlisting}	
 \end{frame}

@@ -1,7 +1,7 @@
 %%-------------------------------------------------------------------------------------- Início
 \begin{frame}[allowframebreaks, t, fragile]{Form Helpers}
 	\begin{itemize}
-		\item \alert{form_for} gere a tag form para o objeto passado como parâmetro
+		\item \alert{form\_for} gere a tag form para o objeto passado como parâmetro
 		\item Rails utiliza a método \alert{POST} por padrão
 		\item Isto faz sentido:
 		\begin{itemize}
@@ -9,59 +9,76 @@
 			\item qualquer modificação deverá ser feita via POST e não GET
 		\end{itemize}
 	\end{itemize}	
+	\begin{lstlisting}[style=RubyInputStyle, caption=views/posts/\_form.html.erb]
+		<%= form_for(@post) do |f| %>
+		...
+		<% end %>		
+	\end{lstlisting}
 \end{frame}
+
 %%-------------------------------------------------------------------------------------- Início
-\begin{frame}[allowframebreaks, t, fragile]{f.label}
+\begin{frame}[t, fragile]{f.label}
 	\begin{itemize}
-		\item Gera a tag HTML label 
-		\item A descrição pode ser personalizada passando um segundo parâmetro
-		\begin{lstlisting}[style=RubyInputStyle, caption=posts_controller.rb]
-			.. f.label
-			
+		\item Gera a tag HTML \alert{label} 
+		\item A descrição pode ser \alert{personalizada} passando um segundo parâmetro
+		\begin{lstlisting}[style=RubyInputStyle]
+<div class="field">
+  <%= f.label :title, "Titulo" %><br>
+  <%= f.text_field :title %>
+</div>
 		\end{lstlisting}	
 	\end{itemize}	
 \end{frame}
 %%-------------------------------------------------------------------------------------- Início
-\begin{frame}[allowframebreaks, t, fragile]{f.text_field}
+\begin{frame}[t, fragile]{f.text\_field}
 	\begin{itemize}
-		\item Gera o campo input type="text" 
+		\item Gera o campo \alert{input type="text"} 
 		\item Utilize \alert{:placeholder} para mostrar um valor dentro do campo
-		\begin{lstlisting}[style=RubyInputStyle, caption=posts_controller.rb]
-			.. f.text_field
-			
+		\begin{lstlisting}[style=RubyInputStyle]
+<div class="field">
+  <%= f.label :title, "Titulo" %><br>
+  <%= f.text_field :title, placeholder: "Escreva o titulo aqui." %>
+</div>		
 		\end{lstlisting}	
 	\end{itemize}	
 \end{frame}
 %%-------------------------------------------------------------------------------------- Início
-\begin{frame}[allowframebreaks, t, fragile]{f.text_area}
+\begin{frame}[t, fragile]{f.text\_area}
 	\begin{itemize}
-		\item Similar ao \alert{f.text_field}, mas gera um text area de tamanho (40 cols x 20 rows) 
+		\item Similar ao \alert{f.text\_field}, mas gera um text area de tamanho (40 cols x 20 rows) 
 		\item O tamanho pode ser modificado através do atriburo size:
-		\begin{lstlisting}[style=RubyInputStyle, caption=posts_controller.rb]
-			.. f.text_area
-			
+		\begin{lstlisting}[style=RubyInputStyle]
+<div class="field">
+  <%= f.label :body, "Conteudo" %><br>
+  <%= f.text_area :body, size: "10x3" %>
+</div>			
 		\end{lstlisting}	
 	\end{itemize}	
 \end{frame}
 %%-------------------------------------------------------------------------------------- Início
-\begin{frame}[allowframebreaks, t, fragile]{Outros Form Helpers}
+\begin{frame}[t, fragile]{Outros Form Helpers}
 	\begin{itemize}
-		\item date_select 
-		\item search_field
-		\item telephone_field
-		\item utl_field
-		\item email_field
-		\item numer_field
-		\item range_field	
+		\item date\_select 
+		\item search\_field
+		\item telephone\_field
+		\item url\_field
+		\item email\_field
+		\item number\_field
+		\item range\_field	
 	\end{itemize}	
 \end{frame}
 %%-------------------------------------------------------------------------------------- Início
-\begin{frame}[allowframebreaks, t, fragile]{f.submit}
+\begin{frame}[t, fragile]{f.submit}
 	\begin{itemize}
 		\item Renderiza o botão \alert{submit} 
-		\item Aceita o nome do botão submit como primeiro argumento
+		\item Aceita o \alert{nome} do botão submit como primeiro argumento
 		\item Se o nome não for fornecido - gera um baseado no modelo e na ação. Por exemplo:
 			"Create Post" ou "Update Post" 
+			\begin{lstlisting}[style=RubyInputStyle]
+<div class="actions">
+  <%= f.submit "Postar"%>
+</div>			
+			\end{lstlisting}	
 		\item Mais form helpers: \url{http://guides.rubyonrails.org/form_helpers.html}	
 	\end{itemize}	
 \end{frame}

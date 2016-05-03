@@ -1,0 +1,8 @@
+\beamer@endinputifotherversion {3.33pt}
+\select@language {brazil}
+\beamer@sectionintoc {1}{Aplica\IeC {\c c}\IeC {\~a}o Web}{2}{0}{1}
+\beamer@sectionintoc {2}{Ruby on Rails}{19}{0}{2}
+\beamer@sectionintoc {3}{Aplica\IeC {\c c}\IeC {\~a}o Exemplo}{30}{0}{3}
+\beamer@sectionintoc {4}{Model Component}{34}{0}{4}
+\beamer@sectionintoc {5}{The Controller Component}{66}{0}{5}
+\beamer@sectionintoc {6}{The View Component}{99}{0}{6}
