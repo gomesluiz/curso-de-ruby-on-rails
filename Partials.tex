@@ -1,0 +1,27 @@
+%%-------------------------------------------------------------------------------------- Início
+\begin{frame}[allowframebreaks, t, fragile]{Partials}
+	\begin{itemize}
+		\item Rails encoraja o princípio DRY	
+		\item O laioute da aplicação é mantida em um único local no arquivo \alert{application.html.erb}
+		\item O código comum dos templates ser reutilizado em \alert{múltiplos templates}
+		\item Por exemplo, os formulários do \alert{edit} e do \alert{new} - são realmente muito diferentes ?
+		\item Partials são similares aos templates regulares, mas ele possuem capacidades mais \alert{refinadas}
+		\item Nomes de partials começam com \alert{underscore} (\_) 
+		\item Partials são renderizados com \alert{render 'partialname'} (sem underscore)
+		\item \alert{render} também aceita um segundo argumento, um hash com as variáveis locais utilizadas no partial
+		\item Similar a passagem de variáveis locais, o \alert{render} pode receber um objeto
+		\item \alert{<%= render @post %>} renderizara \alert{app/views/posts/_posts.html.erb} com o conteúdo da variavel @post
+		\item \alert{<%= render @posts %>} renderiza uma coleção e é equivalente a:
+		\begin{lstlisting}[style=RubyInputStyle, caption=posts_controller.rb]
+			<% @posts.each do |posts	| %> 
+				<%= render post %>
+			<% end %>
+		\end{lstlisting}		
+		\begin{itemize}
+			\item \alert{_form.html.erb}
+		\end{itemize}
+				
+	\end{itemize}	
+\end{frame}
+
+
