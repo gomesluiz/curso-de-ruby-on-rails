@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.2.28)  3 MAY 2016 18:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.2.28)  3 MAY 2016 21:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3488,24 +3488,19 @@ Overfull \hbox (35.31143pt too wide) in paragraph at lines 43--44
  []
 
 
-Overfull \hbox (35.31143pt too wide) in paragraph at lines 59--60
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (77.81204pt too wide) in paragraph at lines 75--76
+Overfull \hbox (77.81204pt too wide) in paragraph at lines 73--74
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (26.81131pt too wide) in paragraph at lines 76--77
+Overfull \hbox (26.81131pt too wide) in paragraph at lines 74--75
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][] 
  []
 
 
-Overfull \hbox (65.06186pt too wide) in paragraph at lines 79--80
+Overfull \hbox (65.06186pt too wide) in paragraph at lines 77--78
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][] 
  []
@@ -3513,7 +3508,7 @@ Overfull \hbox (65.06186pt too wide) in paragraph at lines 79--80
 )
 File: imagens/logo-puc.pdf Graphic file (type pdf)
  <use imagens/logo-puc.pdf>
-Package pdftex.def Info: imagens/logo-puc.pdf used on input line 97.
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 95.
 (pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -3532,7 +3527,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 ]
 File: imagens/logo-puc.pdf Graphic file (type pdf)
  <use imagens/logo-puc.pdf>
-Package pdftex.def Info: imagens/logo-puc.pdf used on input line 97.
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 95.
 (pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -3550,7 +3545,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 ]
 File: imagens/logo-puc.pdf Graphic file (type pdf)
  <use imagens/logo-puc.pdf>
-Package pdftex.def Info: imagens/logo-puc.pdf used on input line 97.
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 95.
 (pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -3568,7 +3563,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 ]
 File: imagens/logo-puc.pdf Graphic file (type pdf)
  <use imagens/logo-puc.pdf>
-Package pdftex.def Info: imagens/logo-puc.pdf used on input line 97.
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 95.
 (pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -3586,7 +3581,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 ]
 File: imagens/logo-puc.pdf Graphic file (type pdf)
  <use imagens/logo-puc.pdf>
-Package pdftex.def Info: imagens/logo-puc.pdf used on input line 97.
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 95.
 (pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -3604,7 +3599,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 ]
 File: imagens/logo-puc.pdf Graphic file (type pdf)
  <use imagens/logo-puc.pdf>
-Package pdftex.def Info: imagens/logo-puc.pdf used on input line 97.
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 95.
 (pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -3622,7 +3617,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 ]
 File: imagens/logo-puc.pdf Graphic file (type pdf)
  <use imagens/logo-puc.pdf>
-Package pdftex.def Info: imagens/logo-puc.pdf used on input line 97.
+Package pdftex.def Info: imagens/logo-puc.pdf used on input line 95.
 (pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -3889,27 +3884,6 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [110
 
-]) (./Sabermais.tex
-\openout4 = `RubyOnRails.vrb'.
-
- (./RubyOnRails.vrb)
-File: imagens/logo-puc.pdf Graphic file (type pdf)
- <use imagens/logo-puc.pdf>
-Package pdftex.def Info: imagens/logo-puc.pdf used on input line 28.
-(pdftex.def)             Requested size: 30.04625pt x 30.04628pt.
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[111
-
-
 ])
 \tf@nav=\write7
 \openout7 = `RubyOnRails.nav'.
@@ -3933,15 +3907,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 59.
 (./ActionView.aux) (./Partials.aux) (./FormHelpers.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 59.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 59.
+Package rerunfilecheck Info: File `RubyOnRails.out' has not changed.
+(rerunfilecheck)             Checksum: 2A161DC0E85BFFF59FB0AF50DB09A572;296.
 
-
-Package rerunfilecheck Warning: File `RubyOnRails.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `RubyOnRails.out':
-(rerunfilecheck)             Before: E97558C805F875365A5536A151EF11E0;328
-(rerunfilecheck)             After:  903776A6ED57C0AF4E8B972DA39EBF5F;322.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -3949,10 +3917,10 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 59.
  ) 
 Here is how much of TeX's memory you used:
- 25841 strings out of 494955
- 487000 string characters out of 6179474
- 618705 words of memory out of 5000000
- 27831 multiletter control sequences out of 15000+600000
+ 25832 strings out of 494955
+ 486892 string characters out of 6179474
+ 617549 words of memory out of 5000000
+ 27829 multiletter control sequences out of 15000+600000
  16968 words of font info for 62 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  56i,17n,78p,932b,1640s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3970,10 +3938,10 @@ sfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 sy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on RubyOnRails.pdf (111 pages, 529586 bytes).
+Output written on RubyOnRails.pdf (110 pages, 528121 bytes).
 PDF statistics:
- 805 PDF objects out of 1000 (max. 8388607)
- 651 compressed objects within 7 object streams
- 229 named destinations out of 1000 (max. 500000)
+ 795 PDF objects out of 1000 (max. 8388607)
+ 642 compressed objects within 7 object streams
+ 227 named destinations out of 1000 (max. 500000)
  121 words of extra memory for PDF output out of 10000 (max. 10000000)
 

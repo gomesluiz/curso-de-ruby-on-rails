@@ -51,17 +51,15 @@ end
 	\item Agora no navegador visualize uma postagem que tenha comentários.
 	\item Acrescente o código a seguir logo abaixo do código anterior no arquivo \alert{views/posts/show.html.erb}:
 	\begin{lstlisting}[style=RubyInputStyle]
-<h2>Comments</h2>
-  <div id="comments">
-  <% @post.comments.each do |comment| %>
-    <%= div_for comment do %>
-    <p>
-      <strong>Posted <%= time_ago_in_words(comment.created_at) %></strong>
-      <%= h(comment.body) %>
-    </p>
-    <% end %>
-  <% end %>
-</div>
+<%= form_for([@post, Comment.new]) do |f| %>
+<p>
+<%= f.label :body, "New Comment" %><br>
+<%= f.text_area :body %>
+</p>
+<p>
+<%= f.submit "Add Comments" %>
+</p>
+<% end %>
 \end{lstlisting}
 
 \item Modifique a acão create do controlador \alert{controllers/comments\_controller.rb}:

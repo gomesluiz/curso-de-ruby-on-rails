@@ -74,7 +74,7 @@
 \headcommand {\beamer@framepages {32}{32}}
 \headcommand {\slideentry {3}{0}{21}{32/33}{}{0}}
 \headcommand {\beamer@framepages {32}{33}}
-\headcommand {\sectionentry {4}{Model Component}{34}{Model Component}{0}}
+\headcommand {\sectionentry {4}{The Model}{34}{The Model}{0}}
 \headcommand {\beamer@sectionpages {30}{33}}
 \headcommand {\beamer@subsectionpages {30}{33}}
 \headcommand {\slideentry {4}{0}{22}{34/34}{}{0}}
@@ -141,7 +141,7 @@
 \headcommand {\beamer@framepages {63}{64}}
 \headcommand {\slideentry {4}{0}{40}{63/65}{}{0}}
 \headcommand {\beamer@framepages {63}{65}}
-\headcommand {\sectionentry {5}{The Controller Component}{66}{The Controller Component}{0}}
+\headcommand {\sectionentry {5}{The Controller}{66}{The Controller}{0}}
 \headcommand {\beamer@sectionpages {34}{65}}
 \headcommand {\beamer@subsectionpages {34}{65}}
 \headcommand {\slideentry {5}{0}{41}{66/66}{}{0}}
@@ -210,7 +210,7 @@
 \headcommand {\beamer@framepages {92}{97}}
 \headcommand {\slideentry {5}{0}{55}{92/98}{}{0}}
 \headcommand {\beamer@framepages {92}{98}}
-\headcommand {\sectionentry {6}{The View Component}{99}{The View Component}{0}}
+\headcommand {\sectionentry {6}{The View}{99}{The View}{0}}
 \headcommand {\beamer@sectionpages {66}{98}}
 \headcommand {\beamer@subsectionpages {66}{98}}
 \headcommand {\slideentry {6}{0}{56}{99/99}{}{0}}
@@ -237,10 +237,8 @@
 \headcommand {\beamer@framepages {109}{109}}
 \headcommand {\slideentry {6}{0}{64}{110/110}{}{0}}
 \headcommand {\beamer@framepages {110}{110}}
-\headcommand {\slideentry {6}{0}{65}{111/111}{}{0}}
-\headcommand {\beamer@framepages {111}{111}}
-\headcommand {\beamer@partpages {1}{111}}
-\headcommand {\beamer@subsectionpages {99}{111}}
-\headcommand {\beamer@sectionpages {99}{111}}
-\headcommand {\beamer@documentpages {111}}
-\headcommand {\def \inserttotalframenumber {111}}
+\headcommand {\beamer@partpages {1}{110}}
+\headcommand {\beamer@subsectionpages {99}{110}}
+\headcommand {\beamer@sectionpages {99}{110}}
+\headcommand {\beamer@documentpages {110}}
+\headcommand {\def \inserttotalframenumber {110}}
