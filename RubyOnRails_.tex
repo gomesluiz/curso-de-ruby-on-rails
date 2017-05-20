@@ -1,22 +1,39 @@
-\documentclass[t, 
-			   13pt,				            
-			   final, 				         
+\documentclass[t, 				             
+			   final,
+			   12pt, 				         
 			   xcolor={usenames,dvipsnames}, 
 			   table]{beamer}
 
+% pacotes utilizados.
+\usepackage{amsmath}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs}
+\usepackage[alf]{abntex2cite}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{caption}
 
-\input{SetupPackages}
-\input{SetupBeamer}
-\input{SetupLanguages}
 
+\usepackage{todo}
 
-\usecolortheme{nouvelle}
+% configuração do tema
+\usetheme[pageofpages=de,
+          bullet=square,			
+          titleline=true,				
+          alternativetitlepage=true,			
+          titlepagelogo=imagens/logo-unicamp,	
+          watermarkheight=70px,		
+          watermarkheightmult=4	
+          ]{Torino}
 
-\logo{\includegraphics[height=0.110\paperheight]{imagens/logo-puc}}
-\renewcommand{\lstlistingname}{Código}
+\setbeamertemplate{sections/subsections in toc}[square]
+\setbeamertemplate{bibliography item}[default]
 
+\usecolortheme{freewilly}
+          
 \begin{document}
-	\include{Titulo}
+\include{Titulo}
 	\include{Capa}
 	\include{Agenda}  
 %	\include{Apresentacao}
@@ -57,4 +74,3 @@
 	\include{FormHelpers}
 	%\input{Sabermais}
 \end{document}
-

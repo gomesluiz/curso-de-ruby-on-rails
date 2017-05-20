@@ -1,21 +1,17 @@
-%%\subsection{Filosofia do Rails}
-%%-------------------------------------------------------------------------------------- Início
 \begin{frame}[allowframebreaks,fragile,t]{Filosofia do Rails}
   \begin{itemize}
     \item Ruby on Rails é 100\% open-source, disponível por meio da MIT License:
       \url{http://opensource.org/licenses/mit-license.php}.  
- 
     \item \alert{Convenção} acima da Configuração (em inglês: \textit{Convention over Configuration} (CoC))
     \begin{itemize}
 	\item se nomeação segue certas convenções, não há necessidade de arquivos de configuração.
 	\begin{exampleblock}{Exemplo:}
 	  \begin{verbatim}
-	    FilmesController#show -> filmes_controler.rb 
-	    FilmesController#show -> views/filmes/show.html.erb
-	  \end{verbatim}
+      FilmesController#show -> filmes_controler.rb 
+      FilmesController#show -> views/filmes/show.html.er
+    \end{verbatim}
 	\end{exampleblock}
     \end{itemize}
-  
     \item \alert{"Don't Repeat Yourself"} (DRY) sugere que escrever que o mesmo código várias 
       vezes é uma coisa ruim
     
@@ -23,6 +19,5 @@
     \begin{itemize}
      \item organiza a sua aplicação em torno de \alert{recursos} e \alert{padrões} HTTP (verbs)
     \end{itemize}
-
   \end{itemize}   
 \end{frame}

@@ -1,0 +1,72 @@
+
+\definecolor{javared}{rgb}{0.6,0,0} % for strings
+\definecolor{javagreen}{rgb}{0.25,0.5,0.35} % comments
+\definecolor{javapurple}{rgb}{0.5,0,0.35} % keywords
+\definecolor{javadocblue}{rgb}{0.25,0.35,0.75} % javadoc
+ 
+\lstset{}
+
+\lstdefinestyle{BashInputBasicStyle}{
+	language=bash,
+	basicstyle=\normalsize\ttfamily,
+	columns=fullflexible,
+	tabsize=2,
+	showstringspaces=false,
+	frame=single,
+	inputencoding=utf8,
+	rulecolor=\color{gray}
+}
+
+\lstdefinestyle{BashInputStyle}{
+  language=bash,
+  basicstyle=\normalsize\ttfamily,
+  numbers=left,
+  numberstyle=\tiny,
+  numbersep=2pt,
+  frame=tb,
+  columns=fullflexible,
+  tabsize=2,
+  showstringspaces=false,
+  commentstyle=\color{gray},
+  inputencoding=utf8,
+  rulecolor=\color{gray}
+}
+
+\lstdefinestyle{RubyInputStyle}{
+  language=ruby,
+  basicstyle=\normalsize\ttfamily,
+  keywordstyle=\color{OrangeRed},
+  identifierstyle=\color{Turquoise},
+  commentstyle=\color{gray},
+  stringstyle=\color{YellowOrange},
+  numbers=left,
+  numberstyle=\tiny,
+  numbersep=2pt,
+  frame=tb,
+  columns=fullflexible,
+  backgroundcolor=\color{white!80},
+  linewidth=0.9\linewidth,
+  tabsize=2,
+  showstringspaces=false
+  inputencoding=utf8
+}
+
+\lstdefinestyle{JavaInputStyle}{
+	language=Java,
+	basicstyle=\ttfamily,
+	keywordstyle=\color{javapurple}\bfseries,
+	stringstyle=\color{javared},
+	commentstyle=\color{javagreen},
+	morecomment=[s][\color{javadocblue}]{/**}{*/},
+	numbers=left,
+	numberstyle=\tiny\color{black},
+	numbersep=10pt,
+	tabsize=2,
+	showspaces=false,
+	showstringspaces=false,
+	frame=tb,
+	columns=fullflexible,
+	backgroundcolor=\color{white!80},
+	linewidth=0.9\linewidth,
+	inputencoding=utf8
+}

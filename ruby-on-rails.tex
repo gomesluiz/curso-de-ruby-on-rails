@@ -1,0 +1,80 @@
+\documentclass[t, 				             
+			   final,
+			   12pt, 				         
+			   xcolor={usenames,dvipsnames}, 
+			   table]{beamer}
+
+% pacotes utilizados.
+\usepackage[alf]{abntex2cite}
+\usepackage{amsmath}
+\usepackage[brazil]{babel}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage[utf8]{inputenc}
+\usepackage{listingsutf8}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{todo}
+
+
+% configuração do tema
+\usetheme[pageofpages=de,
+          bullet=square,			
+          titleline=true,				
+          alternativetitlepage=true,			
+          titlepagelogo=imagens/logo-puc,	
+          watermarkheight=70px,		
+          watermarkheightmult=4	
+          ]{Torino}
+
+\setbeamertemplate{sections/subsections in toc}[square]
+\setbeamertemplate{bibliography item}[default]
+
+\usecolortheme{freewilly}
+
+\input{setup-languages}
+
+\begin{document}
+\include{Titulo}
+	\include{Capa}
+	\include{Agenda}  
+%	\include{Apresentacao}
+%	\input{Webapp}
+%	\input{Conceituacao}
+%	\input{Arquiteturas}
+	\include{Introducao}
+	\section{Linguagem Ruby}
+	\include{ruby-introducao}
+	\include{Pilares}
+	\include{Historico}
+	\include{Mvc}
+	\include{PrimeiraAplicacao}
+	\include{Esqueleto}
+	\include{BlogAppI1}
+	\include{Modelo}
+	\include{BancoDeDados}
+	\include{SQLite}
+	\include{Migrations}
+	\include{ActiveRecord}
+	\include{Validacao}
+	\include{BlogAppI2}
+	\include{Associacao}
+	\include{BlogAppI3}
+	\include{ActionController}
+	\include{Rest}
+	\include{Index}
+   \include{Show}
+	\include{RespondTo}
+	\include{RedirectTo}
+	\include{Destroy}
+	\include{New}
+	\include{Create}
+	\include{Flash}
+	\include{Edit}
+	\include{Update}
+	\include{NestedResources}
+	\include{ActionView}
+	\include{Partials}
+	\include{FormHelpers}
+	%\input{Sabermais}
+\end{document}

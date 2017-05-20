@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {brazil}
+\beamer@sectionintoc {1}{Ruby on Rails}{22}{0}{1}
+\beamer@sectionintoc {2}{Aplicação Exemplo}{34}{0}{2}
+\beamer@sectionintoc {3}{The Model}{38}{0}{3}
+\beamer@sectionintoc {4}{The Controller}{71}{0}{4}
+\beamer@sectionintoc {5}{The View}{95}{0}{5}

@@ -1,0 +1,13 @@
+\frametitle{f.submit}
+\begin{itemize}
+^^I^^I\item Renderiza o botão \alert{submit}
+^^I^^I\item Aceita o \alert{nome} do botão submit como primeiro argumento
+^^I^^I\item Se o nome não for fornecido - gera um baseado no modelo e na ação. Por exemplo:
+^^I^^I^^I"Create Post" ou "Update Post"
+^^I^^I^^I\begin{lstlisting}[style=RubyInputStyle]
+<div class="actions">
+  <%= f.submit "Postar"%>
+</div>
+^^I^^I^^I\end{lstlisting}
+^^I^^I\item Mais form helpers: \url{http://guides.rubyonrails.org/form_helpers.html}
+^^I\end{itemize}
