@@ -1,0 +1,85 @@
+
+\begin{frame}[fragile,t]{Funções e Métodos}
+  \begin{itemize}
+    \item Tecnicamente, uma \alert{função} é definida \alert{fora} de uma classe
+    \item Um \alert{método} é definido dentro de uma classe
+    \item Em Ruby, \alert{toda} função/método é pertence a pelo menos uma classe
+    \begin{itemize}
+      \item nem sempre explicitamente escrito em uma classe
+    \end{itemize}
+  \end{itemize}   
+  \begin{block}{Conclusão}
+    Toda função é na verdade um método em Ruby  
+  \end{block}
+\end{frame}
+
+\begin{frame}[fragile,t]{Métodos}
+  \begin{itemize}
+    \item Parênteses são \alert{opcionais}
+    \begin{itemize}
+      \item tanto para definição quanto para a chamada do método
+    \end{itemize}
+    \item Usado para tornar o código mais claro
+  \end{itemize}
+  
+  \lstinputlisting[style=RubyInputStyle, caption=parens.rb]{codigos/ruby/03-funcoes-e-metodos/parens.rb}
+    
+\end{frame}
+
+\begin{frame}[fragile,t]{Parâmetros e Retorno}
+  \begin{itemize}
+    \item Não é necessário declarar o tipo dos parâmetros
+    \item O método pode retornar qualquer valor
+    \item O comando \verb!return! é opcional
+    \begin{itemize}
+      \item o valor da \alert{última linha} executada é retornada 
+    \end{itemize}
+  \end{itemize}
+  
+  \lstinputlisting[style=RubyInputStyle, caption=return\_optional.rb]{codigos/ruby/03-funcoes-e-metodos/return_optional.rb}
+    
+\end{frame}
+
+\begin{frame}[fragile,t]{Nomes de Métodos Expressivos}
+  \begin{itemize}
+    \item Nomes de métodos podem terminar com:
+    \begin{itemize}
+    	\item \alert{'?'} - predicate methods
+    	\item \alert{'!'} - métodos com efeitos colaterais
+    \end{itemize}
+    
+	\lstinputlisting[style=RubyInputStyle, caption=expressive.rb]{codigos/ruby/03-funcoes-e-metodos/expressive.rb}
+  \end{itemize}   
+\end{frame}
+
+\begin{frame}[fragile,t]{Argumentos Padrões(Defaults)}
+  \begin{itemize}
+    \item Métodos podem ter argumentos padrões
+    \begin{itemize}
+    	\item se o valor é passado, ele é utilizado
+    	\item senão, o valor padrão é utilizado
+    \end{itemize}
+  \end{itemize}  
+  \lstinputlisting[style=RubyInputStyle, caption=default\_args.rb]{codigos/ruby/03-funcoes-e-metodos/default_args.rb}
+\end{frame}
+
+\begin{frame}[fragile,t]{Quantidade Variável de Argumentos}
+  \begin{itemize}
+    \item \alert{*} prefixa o parâmetro com quantidade variável de argumentos
+  \end{itemize}
+  \begin{itemize}
+    \item Pode ser utilizado com parâmetros no início, meio e final
+  \end{itemize}
+  \lstinputlisting[style=RubyInputStyle, caption=splat.rb]{codigos/ruby/03-funcoes-e-metodos/splat.rb}
+\end{frame}
+
+\begin{frame}[fragile,t]{Recapitulando}
+  \begin{itemize}
+    \item \alert{Não há necessidade} de declarar o tipo de parâmetro passado ou retornado (linguagem dinâmica)
+    \item \verb!return! é \alert{opcional} - a última linha executável é "retornada"
+    \item Permite métodos com \alert{quantidade variável} de argumentos ou argumentos padrão
+  \end{itemize}
+\end{frame}
+
+
+
