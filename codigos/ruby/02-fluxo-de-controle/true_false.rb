@@ -1,9 +1,9 @@
-puts "0 is true" if 0
-puts "false is true?" if "false"
-puts "no way - false is false" if false
-puts "empty string is true" if ""
-puts "nil is true?" if "nil"
-puts "no way - nil is false" if nil
+puts "0 e true" if 0
+puts "false e true?" if "false"
+puts "nao - false e false" if false
+puts "string vazia is true" if ""
+puts "nil e true?" if "nil"
+puts "nao - nil is false" if nil
 
 
  

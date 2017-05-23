@@ -1,0 +1,53 @@
+
+\begin{frame}[allowframebreaks, fragile,t]{Hashes}
+  \begin{itemize}
+    \item \alert{Coleção indexada} de objetos
+    \item Criados com \{\} ou \alert{Hash.new}
+    \item Também conhecidos como \alert{arrays associativos}
+    \item Pode ser indexado com \alert{qualquer} tipo de dados
+    \begin{itemize}
+      \item não apenas com \alert{inteiros}
+    \end{itemize}
+    \item Acessados utilizando o operador \alert{[ ]}
+    \item Atribuição de valores poder feita usando:
+    \begin{itemize}
+      \item \alert{$=>$} (criação)
+      \item \alert{$[  ]$} (pós-criação)
+    \end{itemize}
+  \end{itemize}
+  
+  \lstinputlisting[style=RubyInputStyle, caption=hashes.rb]{codigos/ruby/09-hashes/hashes.rb}
+\pagebreak
+  \begin{itemize}
+    \item E se tentarmos \alert{acessar} um valor em Hash que \alert{não existe}?
+    \begin{itemize}
+      \item \alert{nil} é retornado
+    \end{itemize}
+    \item Se o Hash é criado com \alert{Hash.new(0)} 0 é retornado.
+  \end{itemize}  
+  
+  \lstinputlisting[style=RubyInputStyle, caption=word\_frequency.rb]{codigos/ruby/09-hashes/word_frequency.rb}
+  
+\pagebreak
+  \begin{itemize}
+    \item A partir da versão 1.9
+    \begin{itemize}
+      \item A ordem de criação do Hash é \alert{mantida}
+      \item A sintaxe \alert{simbolo:} pode ser utilizada, se símbolos são utilizados como chave
+      \item Se o Hash é o \alert{último argumento}, \{\} são opcionais
+    \end{itemize}
+  \end{itemize}  
+  
+  \lstinputlisting[style=RubyInputStyle, caption=more\_hashes.rb]{codigos/ruby/09-hashes/more_hashes.rb}
+
+\end{frame}
+
+\begin{frame}[fragile,t]{Recapitulando}
+  \begin{itemize}
+    \item Hashes são \alert{coleções indexadas}
+    \item Usado de forma \alert{similar aos arrays}
+  \end{itemize}
+\end{frame}
+
+
+

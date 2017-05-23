@@ -14,7 +14,7 @@
   \end{itemize}   
   \begin{columns}
     \begin{column}{0.5\textwidth}
-      \begin{lstlisting}[style=RubyInputStyle]
+      \begin{lstlisting}[style=RubyInputStyle, caption=if.rb]
     a = 5 
     if  a == 3                    
       puts "a igual a 3"                  
@@ -26,7 +26,7 @@
       \end{lstlisting}  
     \end{column}
     \begin{column}{0.5\textwidth}  %%<--- here
-      \begin{lstlisting}[style=RubyInputStyle]
+      \begin{lstlisting}[style=RubyInputStyle, caption=unless.rb]
     a = 5 
     unless a == 6
       puts "a nao e 6"
@@ -40,7 +40,7 @@
   \end{itemize}   
   \begin{columns}
     \begin{column}{0.5\textwidth}
-      \begin{lstlisting}[style=RubyInputStyle]
+      \begin{lstlisting}[style=RubyInputStyle, caption=while.rb]
     a = 10
     while a > 9
       puts a 
@@ -49,7 +49,7 @@
       \end{lstlisting}  
     \end{column}
     \begin{column}{0.5\textwidth}  %%<--- here
-      \begin{lstlisting}[style=RubyInputStyle]
+      \begin{lstlisting}[style=RubyInputStyle, caption=until.rb]
     a = 9
     until
       puts "a nao e 6"
@@ -61,12 +61,12 @@
   \begin{itemize}
     \item \verb!if, unless, while, until! - na mesma linha da instrução
   \end{itemize}   
-      \begin{lstlisting}[style=RubyInputStyle]
+      \begin{lstlisting}[style=RubyInputStyle, caption=if\_uma\_linha.rb]
     a = 5
     b = 0
     puts "Em uma linha" if a == 5 and b == 0
       \end{lstlisting}  
-      \begin{lstlisting}[style=RubyInputStyle]
+      \begin{lstlisting}[style=RubyInputStyle, caption=while\_uma\_linha.rb]
     conta = 2 
     conta *= 2 while conta < 100
     puts conta
