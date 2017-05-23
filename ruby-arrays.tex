@@ -1,0 +1,49 @@
+
+\begin{frame}[allowframebreaks, fragile,t]{Arrays}
+  \begin{itemize}
+    \item Coleção de objetos (auto-expandível)
+    \item Indexado pelo operador (método) \alert{[ ]}
+    \item Pode ser indexado por números negativos ou intervalos
+    \item Tipos heterogêneos são permitidos em um mesmo array
+    \item \%\{str1 str2\} pode ser utilizado para criar um array de strings
+  \end{itemize}
+  
+  \lstinputlisting[style=RubyInputStyle, caption=arrays.rb]{codigos/ruby/07-arrays/arrays.rb}
+\pagebreak
+  \begin{itemize}
+    \item Modificando arrays:
+    \begin{itemize}
+      \item criação: \alert{= [ ]}
+      \item inclusão: \alert{push} ou {<<}
+      \item remoção: \alert{pop} ou {shift}
+    \end{itemize}
+    \item Extração randômica de elementos com \alert{sample}
+    \item Classificação ou inversão com \alert{sort!} ou {reverse!}
+  \end{itemize}  
+  
+  \lstinputlisting[style=RubyInputStyle, caption=arrays2]{codigos/ruby/07-arrays/arrays2.rb}
+  
+\pagebreak
+  \begin{itemize}
+    \item Métodos úteis
+    \begin{itemize}
+      \item \alert{each} - percorre um array
+      \item \alert{select} - filtra por seleção
+      \item \alert{reject} - filtra por rejeição
+      \item \alert{map} - modifica cada elemento do array
+    \end{itemize}
+  \end{itemize}  
+  
+  \lstinputlisting[style=RubyInputStyle, caption=arrays2]{codigos/ruby/07-arrays/array_processing.rb}
+
+\end{frame}
+
+\begin{frame}[fragile,t]{Recapitulando}
+  \begin{itemize}
+    \item A API de arrays é flexível e poderosa
+    \item Existem diversas formas de processar um elemento do array
+  \end{itemize}
+\end{frame}
+
+
+

@@ -1,0 +1,56 @@
+
+\begin{frame}[allowframebreaks, fragile,t]{Strings}
+  \begin{itemize}
+    \item Strings com aspas simples
+    \begin{itemize}
+      \item permitem a utilização de \alert{'} com $\backslash$
+      \item mostra a string como foi escrita 
+    \end{itemize}
+    \item Strings com aspas duplas 
+    \begin{itemize}
+      \item interpreta caracteres especiais como $\backslash$n e $\backslash$t
+      \item permite a interpolação de strings, evitando concatenação
+    \end{itemize}
+  \end{itemize}
+  
+  \lstinputlisting[style=RubyInputStyle, caption=strings.rb]{codigos/ruby/06-strings/strings.rb}
+\pagebreak
+  \begin{itemize}
+    \item Métodos terminados com \alert{!} modificam a string
+    \begin{itemize}
+      \item a maioria retorna apenas um novo string
+    \end{itemize}
+    \item Permite o uso do \%Q\{textos longos com multiplas linhas\}
+    \begin{itemize}
+      \item o mesmo comportamento de strings com aspas duplas
+    \end{itemize} 
+    \item \alert{É essencial dominar a API de Strings do Ruby}
+  \end{itemize}  
+  
+  \lstinputlisting[style=RubyInputStyle, caption=more\_strings.rb]{codigos/ruby/06-strings/more_strings.rb} 
+\end{frame}
+
+\begin{frame}[fragile,t]{Símbolos}
+  \begin{itemize}
+    \item \alert{:simbolo} $-$ string altamente otimizadas
+    \begin{itemize}
+      \item ex. :domingo, :dolar, :calcio, :id
+    \end{itemize}
+    \item Constantes que não precisam ser pré-declaradas
+    \item Garantia de \alert{unicidade} e \alert{imutabilidade}
+    \item Podem ser convertidos para uma \alert{String} com \alert{to\_s} 
+    \begin{itemize}
+      \item ou de \alert{String} para \alert{Símbolo} com \alert{to\_sym}
+    \end{itemize}
+  \end{itemize}   
+\end{frame}
+
+\begin{frame}[fragile,t]{Recapitulando}
+  \begin{itemize}
+    \item A interpolação evita a concatenação de strings
+    \item Strings oferecem uma API muito útil
+  \end{itemize}
+\end{frame}
+
+
+

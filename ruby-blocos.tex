@@ -1,75 +1,62 @@
 
-\begin{frame}[fragile,t]{Blocos}
+\begin{frame}[allowframebreaks, fragile,t]{Blocos}
   \begin{itemize}
     \item "Pedaço" de código
     \begin{itemize}
-      \item escrito entre chaves(${}$) ou entre \alert{do} e \alert{end}
+      \item escrito entre chaves(\{\}) ou entre \alert{do} e \alert{end}
       \item passado para métodos como o \alert{último} parâmetro
     \end{itemize}
     \item \textbf{Convenção} 
     \begin{itemize}
-      \item use chaves(${}$) quanto o bloco contém uma linha
-      \item 
+      \item use chaves(\{\}) quanto o bloco contém uma linha
+      \item use \alert{do} e \alert{end} quando o bloco contém múltiplas linhas
     \end{itemize}
-    \item Usado para tornar o código mais claro
+    \item Frequentemente utilizado em \alert{iteração}
   \end{itemize}
   
-  \lstinputlisting[style=RubyInputStyle, caption=parens.rb]{codigos/ruby/03-funcoes-e-metodos/parens.rb}
+  \lstinputlisting[style=RubyInputStyle, caption=times.rb]{codigos/ruby/04-blocos/times.rb}
     
 \end{frame}
 
-\begin{frame}[fragile,t]{Parâmetros e Retorno}
+\begin{frame}[fragile,t]{Utilizando Blocos}
   \begin{itemize}
-    \item Não é necessário declarar o tipo dos parâmetros
-    \item O método pode retornar qualquer valor
-    \item O comando \verb!return! é opcional
+    \item Duas técnicas para utilizar blocos nos métodos
+    \item \textbf{Implicitamente:}
     \begin{itemize}
-      \item o valor da \alert{última linha} executada é retornada 
+      \item use \verb!block_given?! para checar se o bloco foi passado
+      \item use \verb!yield! para \alert{chamar} o bloco
     \end{itemize}
-  \end{itemize}
-  
-  \lstinputlisting[style=RubyInputStyle, caption=return\_optional.rb]{codigos/ruby/03-funcoes-e-metodos/return_optional.rb}
-    
-\end{frame}
-
-\begin{frame}[fragile,t]{Nomes de Métodos Expressivos}
-  \begin{itemize}
-    \item Nomes de métodos podem terminar com:
+    \item \textbf{Explicitamente:}
     \begin{itemize}
-    	\item \alert{'?'} - predicate methods
-    	\item \alert{'!'} - métodos com efeitos colaterais
-    \end{itemize}
-    
-	\lstinputlisting[style=RubyInputStyle, caption=expressive.rb]{codigos/ruby/03-funcoes-e-metodos/expressive.rb}
+      \item use \verb!&?! como prefixo do último parâmetro
+      \item use \verb!call! para \alert{chamar} o bloco
+    \end{itemize} 
   \end{itemize}   
 \end{frame}
 
-\begin{frame}[fragile,t]{Argumentos Padrões(Defaults)}
+\begin{frame}[fragile,t]{Técnica Implícita}
   \begin{itemize}
-    \item Métodos podem ter argumentos padrões
+    \item Necessário checar com \verb!block_given?! 
     \begin{itemize}
-    	\item se o valor é passado, ele é utilizado
-    	\item senão, o valor padrão é utilizado
+    	\item se não uma excessão será lançada
     \end{itemize}
-  \end{itemize}  
-  \lstinputlisting[style=RubyInputStyle, caption=default\_args.rb]{codigos/ruby/03-funcoes-e-metodos/default_args.rb}
+    
+	\lstinputlisting[style=RubyInputStyle, caption=implicit\_blocks.rb]{codigos/ruby/04-blocos/implicit_blocks.rb}
+  \end{itemize}   
 \end{frame}
 
-\begin{frame}[fragile,t]{Quantidade Variável de Argumentos}
+\begin{frame}[fragile,t]{Técnica Explícita}
   \begin{itemize}
-    \item \alert{*} prefixa o parâmetro com quantidade variável de argumentos
-  \end{itemize}
-  \begin{itemize}
-    \item Pode ser utilizado com parâmetros no início, meio e final
-  \end{itemize}
-  \lstinputlisting[style=RubyInputStyle, caption=splat.rb]{codigos/ruby/03-funcoes-e-metodos/splat.rb}
+    \item Necessário checar com \verb!nil?! 
+    
+	\lstinputlisting[style=RubyInputStyle, caption=implicit\_blocks.rb]{codigos/ruby/04-blocos/explicit_blocks.rb}
+  \end{itemize}   
 \end{frame}
 
 \begin{frame}[fragile,t]{Recapitulando}
   \begin{itemize}
-    \item \alert{Não há necessidade} de declarar o tipo de parâmetro passado ou retornado (linguagem dinâmica)
-    \item \verb!return! é \alert{opcional} - a última linha executável é "retornada"
-    \item Permite métodos com \alert{quantidade variável} de argumentos ou argumentos padrão
+    \item Blocos são apenas \alert{trechos} de códigos que podem ser passados para métodos
+    \item Tanto explicitamente quanto implicitamente
   \end{itemize}
 \end{frame}
 
