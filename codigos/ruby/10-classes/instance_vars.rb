@@ -1,18 +1,17 @@
-class Person 
-  def initialize (name, age) # "CONSTRUCTOR" 
-    @name = name 
-    @age = age 
+class Pessoa 
+  def initialize (nome, idade)
+    @nome = nome 
+    @idade = idade 
   end 
-  def name 
-    @name 
+  def nome 
+    @nome 
   end 
-  def name= (new_name) 
-    @name = new_name 
+  def nome= (novo_nome) 
+    @nome = novo_nome 
   end 
 end 
-
-person1 = Person.new("Joe", 14) 
-puts person1.name # Joe 
-person1.name = "Mike" 
-puts person1.name # Mike 
-# puts person1.age # undefined method `age' for #<Person:
+pessoa1 = Pessoa.new("Jose", 14) 
+puts pessoa1.nome  # Jose 
+pessoa1.nome = "Maria" 
+puts pessoa1.nome  # Maria 
+# puts pessoa1.idade # undefined method `idade' for #<Pessoa:

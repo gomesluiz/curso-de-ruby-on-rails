@@ -1,4 +1,4 @@
-def add(um, dois)
+def soma(um, dois)
   um + dois
 end
 def divide(um, dois)

@@ -1,12 +1,12 @@
-class Person 
-  attr_accessor :name, :age # getters and setters for name and age
+class Pessoa 
+  attr_accessor :nome, :idade # getters and setters for nome and idade
 end 
 
-person1 = Person.new 
-p person1.name # => nil 
-person1.name = "Mike" 
-person1.age = 15 
-puts person1.name # => Mike 
-puts person1.age # => 15 
-person1.age = "fifteen" 
-puts person1.age # => fifteen 
+pessoa1 = Pessoa.new 
+p pessoa1.nome # => nil 
+pessoa1.nome = "Maria" 
+pessoa1.idade = 15 
+puts pessoa1.nome # => Mike 
+puts pessoa1.idade # => 15 
+pessoa1.idade = "quinze" 
+puts pessoa1.idade # => fifteen 

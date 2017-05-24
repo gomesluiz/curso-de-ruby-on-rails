@@ -51,9 +51,10 @@
     \begin{column}{0.5\textwidth}  %%<--- here
       \begin{lstlisting}[style=RubyInputStyle, caption=until.rb]
     a = 9
-    until
-      puts "a nao e 6"
-    end 
+until a >= 10 
+  puts a                       
+  a += 1                       
+end 
       \end{lstlisting}
     \end{column}
   \end{columns}

@@ -1,4 +1,4 @@
-heterogeneo = [1, "dois", :three]   
+heterogeneo = [1, "dois", :tres]   
 puts heterogeneo[1] # => dois (indice comeca em 0) 
 palavras = %w{ olhe que grande dia hoje! } 
 puts palavras[-2] # => dia

@@ -1,0 +1,94 @@
+
+\begin{frame}[fragile,t]{OO}
+  \begin{itemize}
+    \item OO possibilita identificar "coisas" que serão tratadas pelo programa
+    \item \alert{Classes} são descrições dessas \alert{"coisas"} e container de métodos
+    \item Objetos são \alert{instâncias} dessas classes
+    \item Objetos contêm \alert{variáveis de instância} (estado)
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile,t]{Variáveis de Instância}  
+ \begin{itemize}
+    \item Iniciam com: \alert{@}
+    \begin{itemize}
+      \item exemplo: @nome
+    \end{itemize}
+    \item Não há necessidade de declará-las 
+    \item Disponível para todas as instâncias dos métodos da classe
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[allowframebreaks, fragile,t]{Criação de Objetos}    
+  \begin{itemize}
+    \item Classes são fábricas
+    \begin{itemize}
+      \item \alert{new} cria uma instância da classe e invoca o método \alert{initialize}
+      \item O estado do objeto deve ser inicializado no método \alert{initialize} (construtor)
+    \end{itemize}
+  \end{itemize}  
+  
+  \lstinputlisting[style=RubyInputStyle, caption=classes.rb]{codigos/ruby/10-classes/classes.rb}
+\end{frame}
+
+\begin{frame}[allowframebreaks, fragile,t]{Acesso a Variáveis de Instância}    
+  \begin{itemize}
+    \item Variáveis de instância são \alert{privadas}
+    \item Métodos são públicos por padrão
+    \item Getters/setters para acessar variáveis de instância são necessários
+  \end{itemize}  
+  \lstinputlisting[style=RubyInputStyle, caption=instance\_vars.rb]{codigos/ruby/10-classes/instance_vars.rb}
+  
+  \begin{itemize}
+    \item Muitas vezes as lógicas dos getters/setters são muito simples
+    \item Existe uma maneira mais fácil de definir esses métodos em Ruby
+    \begin{itemize}
+      \item \alert{attr\_accessor} - getter e setter
+      \item \alert{attr\_reader} - somente getter
+      \item \alert{attr\_writer} - somente setter
+    \end{itemize}
+  \end{itemize}  
+  \lstinputlisting[style=RubyInputStyle, caption=attr\_accessor.rb]{codigos/ruby/10-classes/attr_accessor.rb}
+
+  \begin{itemize}
+    \item \alert{Dois problemas} com o exemplo acima:
+    \begin{itemize}
+      \item Pessoa se encontra em um estado não inicializado na criação
+      \item Algumas vezes é necessário controlar, por exemplo, a idade atribuída
+    \end{itemize}
+    \item \alert{Solução}: use o construtor de forma mais inteligente utilizando o comando \alert{self}
+  \end{itemize}  
+  \lstinputlisting[style=RubyInputStyle, caption=self.rb]{codigos/ruby/10-classes/self.rb}
+ 
+\end{frame}
+
+\begin{frame}[allowframebreaks, fragile,t]{Métodos e Variáveis de Classe}    
+  \begin{itemize}
+    \item \alert{Existem} três maneiras para definir métodos de classe
+    \item Variáveis de classe começam com \alert{@@}
+  \end{itemize}  
+  \lstinputlisting[style=RubyInputStyle, caption=class\_methods\_and\_variables.rb]{codigos/ruby/11-more-classes/class_methods_and_variables.rb}
+ 
+\end{frame}
+
+\begin{frame}[allowframebreaks, fragile,t]{Herança de Classes}    
+%  \begin{itemize}
+%    \item \alert{Existem} três maneiras para definir métodos de classe
+%    \item Variáveis de classe começam com \alert{@@}
+%  \end{itemize}  
+  \lstinputlisting[style=RubyInputStyle, caption=inheritance.rb]{codigos/ruby/11-more-classes/inheritance.rb}
+ 
+ %TODO: controle de acesso privado, publico e protegido.
+\end{frame}
+
+\begin{frame}[fragile,t]{Recapitulando}
+  \begin{itemize}
+    \item Objetos são criados com \alert{new}
+    \item Utilize o \alert{attr\_} para criar getters/setters
+    \item Não se esqueça do \alert{self} quando necessário
+    \item Variáveis de classe são definidas com \alert{@@}
+  \end{itemize}
+\end{frame}
+
+
+

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.24)  23 MAY 2017 12:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.24)  24 MAY 2017 16:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1058,9 +1058,9 @@ Package: todo 2010/03/31 v2.4142 To-do list (Federico Garcia)
 \beamer@decolines@linebottom=\skip76
 \beamer@decolines@watermarkheightbottom=\skip77
 \beamer@decolines@watermarkheightupperorig=\skip78
-) (/Users/luiz/Workspace/texmf/tex/latex/beamer/themes/color/beamercolorthemechameleon.sty)) (/Users/luiz/Workspace/texmf/tex/latex/beamer/themes/color/beamercolorthemefreewilly.sty) (./setup-languages.tex) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-on-rails.aux (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Titulo.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Capa.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Agenda.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Introducao.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-introducao.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-controle-de-fluxo.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-funcoes-e-metodos.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-blocos.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-strings.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-arrays.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-hashes.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Historico.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Pilares.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Mvc.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/PrimeiraAplicacao.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Esqueleto.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/BlogAppI1.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Modelo.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/BancoDeDados.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/SQLite.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Migrations.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ActiveRecord.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Validacao.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/BlogAppI2.aux) (/User
-s/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Associacao.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/BlogAppI3.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ActionController.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Rest.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Index.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Show.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/RespondTo.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/RedirectTo.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Destroy.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/New.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Create.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Flash.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Edit.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Update.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/NestedResources.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ActionView.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Partials.aux)
-(/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/FormHelpers.aux))
+) (/Users/luiz/Workspace/texmf/tex/latex/beamer/themes/color/beamercolorthemechameleon.sty)) (/Users/luiz/Workspace/texmf/tex/latex/beamer/themes/color/beamercolorthemefreewilly.sty) (./setup-languages.tex) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-on-rails.aux (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Titulo.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Capa.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Agenda.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Introducao.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-introducao.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-controle-de-fluxo.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-funcoes-e-metodos.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-blocos.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-strings.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-arrays.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-hashes.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-oo.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Historico.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Pilares.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Mvc.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/PrimeiraAplicacao.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Esqueleto.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/BlogAppI1.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Modelo.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/BancoDeDados.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/SQLite.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Migrations.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ActiveRecord.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Validacao.aux) (/Users/
+luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/BlogAppI2.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Associacao.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/BlogAppI3.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ActionController.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Rest.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Index.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Show.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/RespondTo.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/RedirectTo.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Destroy.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/New.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Create.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Flash.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Edit.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Update.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/NestedResources.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ActionView.aux)
+(/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Partials.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/FormHelpers.aux))
 \openout1 = `ruby-on-rails.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
@@ -2197,9 +2197,9 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [54
 
 ])
-\openout2 = `Historico.aux'.
+\openout2 = `ruby-oo.aux'.
 
- (./Historico.tex
+ (./ruby-oo.tex
 \openout4 = `ruby-on-rails.vrb'.
 
  (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-on-rails.vrb)
@@ -2217,6 +2217,9 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 
 ]
+\openout4 = `ruby-on-rails.vrb'.
+
+ (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-on-rails.vrb)
 Underfull \hbox (badness 10000) has occurred while \output is active
 [][]
  []
@@ -2227,6 +2230,74 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [56
+
+]
+\openout4 = `ruby-on-rails.vrb'.
+
+ (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-on-rails.vrb (/usr/local/texlive/2016/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2016/02/28 v1.1s UTF-8 support for inputenc
+) (./codigos/ruby/10-classes/classes.rb))
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[57
+
+]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[58
+
+
+]
+\openout4 = `ruby-on-rails.vrb'.
+
+ (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-on-rails.vrb (/usr/local/texlive/2016/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2016/02/28 v1.1s UTF-8 support for inputenc
+) (./codigos/ruby/10-classes/instance_vars.rb) (/usr/local/texlive/2016/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2016/02/28 v1.1s UTF-8 support for inputenc
+) (./codigos/ruby/10-classes/attr_accessor.rb
+Overfull \hbox (36.5142pt too wide) in paragraph at lines 2--3
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (/usr/local/texlive/2016/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2016/02/28 v1.1s UTF-8 support for inputenc
+) (./codigos/ruby/10-classes/self.rb))
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[59
+
+]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[60
 
 
 ]
@@ -2239,7 +2310,167 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[57
+[61
+
+
+]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[62
+
+
+]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[63
+
+
+]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[64
+
+
+]
+\openout4 = `ruby-on-rails.vrb'.
+
+ (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-on-rails.vrb (/usr/local/texlive/2016/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2016/02/28 v1.1s UTF-8 support for inputenc
+) (./codigos/ruby/11-more-classes/class_methods_and_variables.rb))
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[65
+
+]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[66
+
+
+]
+\openout4 = `ruby-on-rails.vrb'.
+
+ (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-on-rails.vrb (/usr/local/texlive/2016/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2016/02/28 v1.1s UTF-8 support for inputenc
+) (./codigos/ruby/11-more-classes/inheritance.rb))
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[67
+
+]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[68
+
+
+]
+\openout4 = `ruby-on-rails.vrb'.
+
+ (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-on-rails.vrb)
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[69
+
+])
+\openout2 = `Historico.aux'.
+
+ (./Historico.tex
+\openout4 = `ruby-on-rails.vrb'.
+
+ (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-on-rails.vrb)
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[70
+
+
+
+]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[71
+
+
+]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[72
 
 
 ])
@@ -2263,7 +2494,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[58
+[73
 
 
 
@@ -2277,7 +2508,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[59
+[74
 
 
 ])
@@ -2286,7 +2517,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  (./Mvc.tex
 \openout4 = `ruby-on-rails.vrb'.
 
- (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-on-rails.vrb <imagens/mvc-1.pdf, id=385, 845.1575pt x 597.23125pt>
+ (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-on-rails.vrb <imagens/mvc-1.pdf, id=464, 845.1575pt x 597.23125pt>
 File: imagens/mvc-1.pdf Graphic file (type pdf)
  <use imagens/mvc-1.pdf>
 Package pdftex.def Info: imagens/mvc-1.pdf used on input line 7.
@@ -2305,7 +2536,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[60
+[75
 
 
 
@@ -2341,7 +2572,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[61
+[76
 
 
 
@@ -2361,7 +2592,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[62
+[77
 
 
 
@@ -2375,7 +2606,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[63
+[78
 
 
 ])
@@ -2391,7 +2622,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[64
+[79
 
 
 
@@ -2408,7 +2639,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[65
+[80
 
 ]
 \openout4 = `ruby-on-rails.vrb'.
@@ -2440,7 +2671,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[66
+[81
 
 ]
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -2452,7 +2683,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[67
+[82
 
 
 ]
@@ -2465,7 +2696,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[68
+[83
 
 
 ])
@@ -2481,14 +2712,14 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[69
+[84
 
 
 
 ]
 \openout4 = `ruby-on-rails.vrb'.
 
- (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-on-rails.vrb <imagens/mvc-2.png, id=467, 796.47563pt x 563.10374pt>
+ (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-on-rails.vrb <imagens/mvc-2.png, id=544, 796.47563pt x 563.10374pt>
 File: imagens/mvc-2.png Graphic file (type png)
  <use imagens/mvc-2.png>
 Package pdftex.def Info: imagens/mvc-2.png used on input line 7.
@@ -2507,7 +2738,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[70
+[85
 
  <./imagens/mvc-2.png>])
 \openout2 = `BancoDeDados.aux'.
@@ -2530,7 +2761,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[71
+[86
 
 
 
@@ -2544,7 +2775,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[72
+[87
 
 
 ]
@@ -2557,7 +2788,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[73
+[88
 
 
 ]
@@ -2570,7 +2801,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[74
+[89
 
 
 ])
@@ -2591,7 +2822,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[75
+[90
 
 
 
@@ -2605,7 +2836,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[76
+[91
 
 
 ]
@@ -2636,7 +2867,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[77
+[92
 
 ]
 \openout4 = `ruby-on-rails.vrb'.
@@ -2679,7 +2910,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[78
+[93
 
 ]
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -2691,20 +2922,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[79
-
-
-]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[80
+[94
 
 
 ]
@@ -2717,7 +2935,20 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[81
+[95
+
+
+]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[96
 
 
 ])
@@ -2740,7 +2971,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[82
+[97
 
 
 
@@ -2754,7 +2985,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[83
+[98
 
 
 ]
@@ -2767,7 +2998,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[84
+[99
 
 
 ]
@@ -2780,7 +3011,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[85
+[100
 
 
 ])
@@ -2799,7 +3030,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[86
+[101
 
 
 
@@ -2818,7 +3049,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[87
+[102
 
 ]
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -2830,7 +3061,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[88
+[103
 
 
 ]
@@ -2846,7 +3077,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[89
+[104
 
 ]
 \openout4 = `ruby-on-rails.vrb'.
@@ -2894,7 +3125,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[90
+[105
 
 ]
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -2906,20 +3137,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[91
-
-
-]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[92
+[106
 
 
 ]
@@ -2932,7 +3150,20 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[93
+[107
+
+
+]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[108
 
 
 ])
@@ -2951,7 +3182,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[94
+[109
 
 
 
@@ -2968,7 +3199,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[95
+[110
 
 ]
 \openout4 = `ruby-on-rails.vrb'.
@@ -2983,7 +3214,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[96
+[111
 
 ]
 \openout4 = `ruby-on-rails.vrb'.
@@ -2998,7 +3229,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[97
+[112
 
 ]
 \openout4 = `ruby-on-rails.vrb'.
@@ -3020,7 +3251,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[98
+[113
 
 ])
 \openout2 = `BlogAppI2.aux'.
@@ -3042,7 +3273,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[99
+[114
 
 
 
@@ -3052,7 +3283,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  (./Associacao.tex
 \openout4 = `ruby-on-rails.vrb'.
 
- (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-on-rails.vrb <imagens/modelo-de-dados-blog.png, id=625, 330.23375pt x 153.57375pt>
+ (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-on-rails.vrb <imagens/modelo-de-dados-blog.png, id=703, 330.23375pt x 153.57375pt>
 File: imagens/modelo-de-dados-blog.png Graphic file (type png)
  <use imagens/modelo-de-dados-blog.png>
 Package pdftex.def Info: imagens/modelo-de-dados-blog.png used on input line 28.
@@ -3067,7 +3298,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[100
+[115
 
 
 
@@ -3081,7 +3312,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[101
+[116
 
 
  <./imagens/modelo-de-dados-blog.png>]
@@ -3094,7 +3325,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[102
+[117
 
 
 ])
@@ -3137,7 +3368,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[103
+[118
 
 
 
@@ -3151,7 +3382,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[104
+[119
 
 
 ]
@@ -3164,7 +3395,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[105
+[120
 
 
 ])
@@ -3180,7 +3411,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[106
+[121
 
 
 
@@ -3199,7 +3430,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[107
+[122
 
 ])
 \openout2 = `Rest.aux'.
@@ -3217,7 +3448,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[108
+[123
 
 
 
@@ -3251,7 +3482,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[109
+[124
 
 
 
@@ -3265,7 +3496,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[110
+[125
 
 
 ])
@@ -3293,7 +3524,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[111
+[126
 
 
 
@@ -3307,7 +3538,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[112
+[127
 
 
 ]
@@ -3320,7 +3551,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[113
+[128
 
 
 ])
@@ -3356,7 +3587,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[114
+[129
 
 
 
@@ -3370,7 +3601,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[115
+[130
 
 
 ])
@@ -3389,7 +3620,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[116
+[131
 
 
 
@@ -3426,7 +3657,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[117
+[132
 
 
 
@@ -3440,7 +3671,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[118
+[133
 
 
 ])
@@ -3463,7 +3694,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[119
+[134
 
 
 
@@ -3477,7 +3708,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[120
+[135
 
 
 ])
@@ -3513,7 +3744,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[121
+[136
 
 
 
@@ -3527,7 +3758,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[122
+[137
 
 
 ]
@@ -3540,7 +3771,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[123
+[138
 
 
 ]
@@ -3558,7 +3789,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[124
+[139
 
 ])
 \openout2 = `Flash.aux'.
@@ -3580,7 +3811,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[125
+[140
 
 
 
@@ -3594,7 +3825,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[126
+[141
 
 
 ])
@@ -3622,7 +3853,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[127
+[142
 
 
 
@@ -3636,7 +3867,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[128
+[143
 
 
 ]
@@ -3649,7 +3880,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[129
+[144
 
 
 ])
@@ -3685,7 +3916,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[130
+[145
 
 
 
@@ -3699,7 +3930,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[131
+[146
 
 
 ]
@@ -3712,7 +3943,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[132
+[147
 
 
 ])
@@ -3780,7 +4011,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[133
+[148
 
 
 
@@ -3794,7 +4025,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[134
+[149
 
 
 ]
@@ -3807,7 +4038,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[135
+[150
 
 
 ]
@@ -3820,7 +4051,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[136
+[151
 
 
 ]
@@ -3833,7 +4064,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[137
+[152
 
 
 ]
@@ -3846,7 +4077,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[138
+[153
 
 
 ]
@@ -3859,7 +4090,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[139
+[154
 
 
 ])
@@ -3875,7 +4106,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[140
+[155
 
 
 
@@ -3892,7 +4123,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[141
+[156
 
 ])
 \openout2 = `Partials.aux'.
@@ -3914,7 +4145,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[142
+[157
 
 
 
@@ -3928,7 +4159,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[143
+[158
 
 
 ]
@@ -3941,7 +4172,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[144
+[159
 
 
 ]
@@ -3954,7 +4185,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[145
+[160
 
 
 ]
@@ -3967,7 +4198,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[146
+[161
 
 
 ])
@@ -3988,7 +4219,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[147
+[162
 
 
 
@@ -4007,7 +4238,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[148
+[163
 
 ]
 \openout4 = `ruby-on-rails.vrb'.
@@ -4029,7 +4260,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[149
+[164
 
 ]
 \openout4 = `ruby-on-rails.vrb'.
@@ -4046,7 +4277,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[150
+[165
 
 ]
 \openout4 = `ruby-on-rails.vrb'.
@@ -4061,7 +4292,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[151
+[166
 
 ]
 \openout4 = `ruby-on-rails.vrb'.
@@ -4078,7 +4309,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[152
+[167
 
 ])
 \tf@nav=\write6
@@ -4090,12 +4321,12 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `ruby-on-rails.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 86.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 86.
- (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-on-rails.aux (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Titulo.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Capa.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Agenda.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Introducao.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-introducao.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-controle-de-fluxo.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-funcoes-e-metodos.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-blocos.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-strings.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-arrays.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-hashes.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Historico.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Pilares.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Mvc.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/PrimeiraAplicacao.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Esqueleto.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/BlogAppI1.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Modelo.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/BancoDeDados.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/SQLite.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Migrations.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ActiveRecord.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Validacao.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/BlogAppI2.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Associacao.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/BlogAppI3.aux)
-(/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ActionController.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Rest.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Index.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Show.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/RespondTo.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/RedirectTo.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Destroy.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/New.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Create.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Flash.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Edit.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Update.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/NestedResources.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ActionView.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Partials.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/FormHelpers.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 86.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 86.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 87.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 87.
+ (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-on-rails.aux (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Titulo.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Capa.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Agenda.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Introducao.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-introducao.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-controle-de-fluxo.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-funcoes-e-metodos.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-blocos.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-strings.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-arrays.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-hashes.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-oo.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Historico.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Pilares.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Mvc.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/PrimeiraAplicacao.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Esqueleto.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/BlogAppI1.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Modelo.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/BancoDeDados.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/SQLite.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Migrations.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ActiveRecord.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Validacao.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/BlogAppI2.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Associacao.aux)
+(/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/BlogAppI3.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ActionController.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Rest.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Index.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Show.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/RespondTo.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/RedirectTo.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Destroy.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/New.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Create.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Flash.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Edit.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Update.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/NestedResources.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ActionView.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/Partials.aux) (/Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/FormHelpers.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 87.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 87.
 Package rerunfilecheck Info: File `ruby-on-rails.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
 
@@ -4106,21 +4337,21 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 86.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 87.
  ) 
 Here is how much of TeX's memory you used:
- 23368 strings out of 493014
- 448485 string characters out of 6133351
- 553494 words of memory out of 5000000
- 25300 multiletter control sequences out of 15000+600000
+ 23505 strings out of 493014
+ 452044 string characters out of 6133351
+ 553737 words of memory out of 5000000
+ 25354 multiletter control sequences out of 15000+600000
  16618 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,17n,74p,393b,1780s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on /Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-on-rails.pdf (152 pages, 742999 bytes).
+Output written on /Users/luiz/Workspace/curso-de-ruby-on-rails/.texpadtmp/ruby-on-rails.pdf (167 pages, 762593 bytes).
 PDF statistics:
- 1037 PDF objects out of 1200 (max. 8388607)
- 834 compressed objects within 9 object streams
- 311 named destinations out of 1000 (max. 500000)
+ 1121 PDF objects out of 1200 (max. 8388607)
+ 902 compressed objects within 10 object streams
+ 341 named destinations out of 1000 (max. 500000)
  126 words of extra memory for PDF output out of 10000 (max. 10000000)
 

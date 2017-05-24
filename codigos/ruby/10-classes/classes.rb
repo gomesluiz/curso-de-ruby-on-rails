@@ -1,17 +1,13 @@
-class Person 
-  def initialize (name, age) # "CONSTRUCTOR" 
-    @name = name 
-    @age = age 
+class Pessoa 
+  def initialize (nome, idade)
+    @nome = nome 
+    @idade = idade 
   end 
   def get_info 
-    @additional_info = "Interesting" 
-    "Name: #{@name}, age: #{@age}" 
+    "Nome: #{@nome}, age: #{@idade}" 
   end 
 end 
 
-person1 = Person.new("Joe", 14) 
-p person1.instance_variables # [:@name, :@age] 
-puts person1.get_info # => Name: Joe, age: 14 
-p person1.instance_variables # [:@name, :@age, :@additional_info] 
-
-
+pessoa1 = Pessoa.new("Jose", 14) 
+p pessoa1.instance_variables # [:@nome, :@idade] 
+puts pessoa1.get_info # => Nome: Jose, idade: 14 

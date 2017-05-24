@@ -6,14 +6,14 @@ nome[0] = 'K' # substitui o primeiro caracter
 puts nome # => Kim 
 
 clima = %Q{O dia esta quente la fora 
-			     pegue os guarda-chuvas…} 
+			     pegue os guarda\-chuva} 
 
 clima.lines do |line| 
   line.sub! 'quente', 'chuvoso' # substitui 'quente' with 'chuvoso' 
   puts "#{line.strip}" 
 end 
 # =>  dia esta quente la fora 
-# =>      pegue os guarda-chuvas…
+# =>      pegue os guarda\-chuvas
 
 
 

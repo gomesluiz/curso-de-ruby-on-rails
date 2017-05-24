@@ -1,20 +1,19 @@
-class Dog 
+class Cao # implicitamente herda de Object
   def to_s 
-    "Dog" 
+    "Cao" 
   end 
-  def bark 
-    "barks loudly" 
-  end 
-end 
-class SmallDog < Dog 
-  def bark # Override 
-    "barks quietly" 
+  def late 
+    "late alto" 
   end 
 end 
-
-dog = Dog.new # (btw, new is a class method) 
-small_dog = SmallDog.new 
-puts "#{dog}1 #{dog.bark}" # => Dog1 barks loudly 
-puts "#{small_dog}2 #{small_dog.bark}" # => Dog2 barks quietly 
+class CaoPequeno < Cao 
+  def late # Override 
+    "late baixo" 
+  end 
+end 
+cao = Cao.new 
+cao_pequeno = CaoPequeno.new 
+puts "#{cao}1 #{cao.late}" 
+puts "#{cao_pequeno}2 #{cao_pequeno.late}" 
 
 

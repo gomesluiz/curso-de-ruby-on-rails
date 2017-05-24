@@ -1,18 +1,19 @@
-class Person 
-  attr_reader :age 
-  attr_accessor :name 
+class Pessoa 
+  attr_reader :idade 
+  attr_accessor :nome 
 
-  def initialize (name, ageVar) # CONSTRUCTOR 
-    @name = name 
-    self.age = ageVar # call the age= method 
-    puts age 
+  def initialize (nome, idade) # CONSTRUCTOR 
+    @nome = nome 
+    self.idade = idade # call the idade= method 
+    puts idade 
   end 
-  def age= (new_age) 
-    @age = new_age unless new_age > 120 
+  def idade= (nova_idade) 
+    @idade ||= 5
+    @idade = nova_idade unless nova_idade > 120 
   end 
 end 
 
-person1 = Person.new("Kim", 13) # => 13 
-puts "My age is #{person1.age}" # => My age is 13 
-person1.age = 130 # Try to change the age 
-puts person1.age # => 13 (The setter didn't allow the change)
+pessoa1 = Pessoa.new("Kim", 13) # => 13 
+puts "Minha idade e #{pessoa1.idade}" # => Minha idade e 13 
+pessoa1.idade = 130 # Tenta mudar a idade
+puts pessoa1.idade # => 13 o setter não permite
