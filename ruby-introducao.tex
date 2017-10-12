@@ -1,25 +1,23 @@
-
-\begin{frame}[fragile,t]{Histórico da Linguagem Ruby}
+%-------------------------------------------------------------------------------------- Início
+\begin{frame}[fragile,t]{Ruby}
   \begin{itemize}
-    \item Inventada por Yukihiro "Matz" Matsumoto
-    \item Verão 1.0 liberada em 1996(Japão)
+    \item Linguagem inventada por Yukihiro "Matz" Matsumoto
+    \item Versão 1.0 liberada em 1996(Japão)
     \item Popularizado no início de 2005 pelo Rails
   \end{itemize}   
   \begin{figure}[hbt]
-    \includegraphics[scale=.5]{imagens/matz.png}
+    \includegraphics[scale=.5]{imagens/matz.jpg}
   \end{figure}
 \end{frame}
-
-\begin{frame}[fragile,t]{Visão Geral}
+%-------------------------------------------------------------------------------------- Início
+\begin{frame}[fragile,t]{Ruby}
   \begin{itemize}
-    \item Dinâmica
-    \item Orientada a Objetos
-    \item Elegante, expressiva e declarativa
+    \item Linguagem \alert{dinâmica} e \alert{orientada a objetos}
+    \item Elegante, \alert{expressiva} e declarativa
     \item Influenciada pelo Perl, Smalltalk, Eiffel e Lisp
-    \item Projeta para tornar o programador "Feliz"
   \end{itemize}   
 \end{frame}
-
+%-------------------------------------------------------------------------------------- Início
 \begin{frame}[fragile,t]{..Java..}
   \begin{lstlisting}[style=JavaInputStyle]
     public class Print3Times {
@@ -31,29 +29,26 @@
     }
   \end{lstlisting}
 \end{frame}
-
+%-------------------------------------------------------------------------------------- Início
 \begin{frame}[fragile,t]{..Ruby..}
-  \begin{lstlisting}[style=RubyInputStyle]
-    3.times {puts "Hello World!"}
-  \end{lstlisting}
+		\lstinputlisting[style=RubyInputStyle, caption=hello.rb]{codigos/ruby/01-ruby-introducao/hello.rb}
 \end{frame}
-
+%-------------------------------------------------------------------------------------- Início
 \begin{frame}[fragile,t]{Básico do Ruby}
   \begin{itemize}
-    \item Indentação de 2 espaços para cada nível aninhado (recomendado)
+    \item Indentação de 2 espaços para cada nível aninhado (\alert{recomendado})
     \item \# é utilizado para comentários
     \begin{itemize}
     	\item use com moderação, o código deve ser auto documentado
     \end{itemize}
-    \item Scripts utilizam a extensão \verb!.rb!
-    
-	\lstinputlisting[style=RubyInputStyle, caption=introducao.rb]{codigos/ruby/01-ruby-introducao/introducao.rb}
+    \item Scripts utilizam a extensão \verb!.rb! 
+		\lstinputlisting[style=RubyInputStyle, caption=hello.rb]{codigos/ruby/01-ruby-introducao/hello.rb}
   \end{itemize}   
 \end{frame}
-
-\begin{frame}[fragile,t]{Impressão na Tela}
+%-------------------------------------------------------------------------------------- Início
+\begin{frame}[fragile,t]{Saída na Tela}
   \begin{itemize}
-    \item \verb!puts! é método padrão para impressão em tela 
+    \item \verb!puts! é método \alert{padrão} para impressão em tela 
     \begin{itemize}
     	\item insere uma quebra de linha após a impressão
     	\item similar ao \verb!System.out.println! do Java
@@ -61,13 +56,27 @@
     \item \alert{p} é utilizado para depuração
   \end{itemize}   
 \end{frame}
-
-\begin{frame}[allowframebreaks,fragile,t]{Executando um Script Ruby}
-  \begin{figure}[hbt]
-    \includegraphics[scale=.25]{imagens/ruby-interpretador.png}
-  \end{figure}
+%-------------------------------------------------------------------------------------- Início
+\begin{frame}[fragile,t]{Entrada pelo Teclado}
+  \begin{itemize}
+    \item \verb!gets! é método padrão para receber um valor pelo teclado 
+		\begin{lstlisting}[style=RubyInputStyle]
+# recebe um valor do tipo string.
+nome = gets
+  	\end{lstlisting}
+    \item Utilize \verb!gets.chomp! para remover o caracter de nova linha.
+		\begin{lstlisting}[style=RubyInputStyle]
+# remove o caracter de nova linha.
+nome = gets.chomp
+  	\end{lstlisting}
+  	\item Utilize \verb!gets.chomp.to_i! para converter o valor lido para inteiro. 
+		\begin{lstlisting}[style=RubyInputStyle]
+# converte a string recebida para inteiro.
+nome = gets.chomp.to_i
+  	\end{lstlisting}
+  \end{itemize}   
 \end{frame}
-
+%-------------------------------------------------------------------------------------- Início
 \begin{frame}[fragile,t]{Convenção de Nomes}
   \begin{itemize}
     \item Variáveis e Métodos
@@ -85,7 +94,7 @@
     \end{itemize}
   \end{itemize}
 \end{frame}
-
+%-------------------------------------------------------------------------------------- Início
 \begin{frame}[fragile,t]{Remoção do Ponto-e-Vírgula}
   \begin{itemize}
     \item Não coloque o ponto-e-vírgula no final da linha
@@ -94,21 +103,40 @@
       \item altamente desencorajado
     \end{itemize}
     \begin{lstlisting}[style=RubyInputStyle]
-      a = 3	
-      a = 3; b = 5 
+a = 3	
+a = 3; b = 5 
     \end{lstlisting}
   \end{itemize}
 \end{frame}
-
-\begin{frame}[fragile,t]{Interactive Ruby (IRB)}
+%-------------------------------------------------------------------------------------- Início
+\begin{frame}[allowframebreaks, fragile,t]{Interactive Ruby (IRB)}
   \begin{itemize}
-    \item Console interativa para interpretação de comandos Ruby
+    \item Console \alert{interativa} para interpretação de comandos Ruby
     \item Instalado com o interpretador Ruby
-    \item Permite a execução de comandos rapidamente
+    \item Permite a \alert{execução} de comandos rapidamente
   \end{itemize}
   \begin{figure}[hbt]
-    \includegraphics[scale=.25]{imagens/ruby-irb.png}
+    \includegraphics[scale=.35]{imagens/ruby-irb.png}
+  \end{figure}
+\framebreak
+  \begin{itemize}
+  	\item Permite a \alert{execução} de \alert{scripts} contendo vários comandos
+  \end{itemize}
+  \begin{figure}[hbt]
+    \includegraphics[scale=.35]{imagens/ruby-interpretador.png}
   \end{figure}
 \end{frame}
-
-
+%-------------------------------------------------------------------------------------- Início
+\begin{frame}[allowframebreaks,fragile,t]{Exercícios}
+  \begin{itemize}
+    \item Escreva um script Ruby para imprimir um nome lido teclado 5 vezes.
+  \end{itemize}
+\framebreak
+  \begin{itemize}
+    \item \textbf{Solução}:
+  \end{itemize}	
+  \begin{lstlisting}[style=RubyInputStyle]
+nome = gets.chomp
+5.times { puts nome }
+  \end{lstlisting}
+\end{frame}
