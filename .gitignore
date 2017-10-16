@@ -1,3 +1,7 @@
 *.aux
 *.log
 *.~*
+*.toc
+*.vrb 
+*.snm
+/build/

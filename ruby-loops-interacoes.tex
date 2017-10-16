@@ -1,18 +1,14 @@
 
 \begin{frame}[allowframebreaks, fragile,t]{Loops e Interações}
+  \begin{center}
+    \Large \verb!loop! \\ \verb!while e until! \\ \verb!for! \\ \verb!each e times!
+  \end{center}   
+\framebreak
+
   \begin{itemize}
 	\item \verb!loop!
   \end{itemize}
-	\begin{lstlisting}[style=RubyInputStyle, caption=loop.rb]
-i = 0
-loop do
-	i += 2
-	puts i 
-	if i == 10
-		break
-	end
-end 
-	\end{lstlisting}  
+  \lstinputlisting[style=RubyInputStyle, caption=loop.rb]{codigos/ruby/03-loop-e-interacoes/loop.rb}
 
 \framebreak
   \begin{itemize}
@@ -21,22 +17,10 @@ end
      
   \begin{columns}
     \begin{column}{0.5\textwidth}
-      \begin{lstlisting}[style=RubyInputStyle, caption=while.rb]
-a = 10
-while a > 9
-	puts a 
-	a -= 1 
-end 
-      \end{lstlisting}  
+  \lstinputlisting[style=RubyInputStyle, caption=while.rb]{codigos/ruby/03-loop-e-interacoes/while.rb}
     \end{column}
     \begin{column}{0.5\textwidth}  %%<--- here
-      \begin{lstlisting}[style=RubyInputStyle, caption=until.rb]
-a = 9
-until a >= 10 
-  puts a                       
-  a += 1                       
-end 
-      \end{lstlisting}
+  \lstinputlisting[style=RubyInputStyle, caption=until.rb]{codigos/ruby/03-loop-e-interacoes/until.rb}
     \end{column}
   \end{columns}
 
@@ -46,7 +30,7 @@ end
     \item \verb!each/times! é preferível
   \end{itemize}
   
-  \lstinputlisting[style=RubyInputStyle, caption=for\_loop.rb]{codigos/ruby/02-fluxo-de-controle/for_loop.rb}
+  \lstinputlisting[style=RubyInputStyle, caption=for\_loop.rb]{codigos/ruby/03-loop-e-interacoes/for_loop.rb}
 
 \framebreak
   \begin{itemize}
@@ -55,20 +39,11 @@ end
      
   \begin{columns}
     \begin{column}{0.5\textwidth}
-      \begin{lstlisting}[style=RubyInputStyle, caption=each\_1.rb]
-nomes = ['Joao','Maria','Ana']
-nomes.each { |nome| puts nome }
-      \end{lstlisting}  
+  \lstinputlisting[style=RubyInputStyle, caption=each\_1.rb]{codigos/ruby/03-loop-e-interacoes/each_1.rb}  
     \end{column}
     \begin{column}{0.5\textwidth} 
-      \begin{lstlisting}[style=RubyInputStyle, caption=each\_2.rb]
-nomes = ['Joao','Maria','Ana']
-n = 1 
-nomes.each do |nome|
-	puts "#{x}. #{nome}"
-	n += 1
-end
-      \end{lstlisting}
+  \lstinputlisting[style=RubyInputStyle, caption=each\_2.rb]{codigos/ruby/03-loop-e-interacoes/each_2.rb}
+
     \end{column}
   \end{columns}
 \end{frame}
@@ -80,11 +55,6 @@ end
     o usuário tente 3 vezes até acertá-lo. A cada tentativa errada, o programa informa
     se o número a adivinhar está abaixo ou acima. \textbf{Dica:} utilize rand(n) + 1 
   \end{enumerate}
-\framebreak
-  \begin{itemize}
-    \item \textbf{Solução}:
-  \end{itemize}	
-  \lstinputlisting[style=RubyInputStyle, caption=exercicio-1-solucao.rb]{codigos/ruby/03-loop-e-interacoes/exercicio-1-solucao.rb}
 \end{frame}
 
 \begin{frame}[fragile,t]{Recapitulando}

@@ -1,9 +1,10 @@
-age = 21
+idade = 21
 case
-  when age >= 21
+  when idade >= 21
     puts "Voce pode comprar cerveja" 
   when 1 == 0 
     puts "Escrito por um programador bebado"  
   else 
-    puts "Condicao padrao"
+    puts "Nada a dizer"
 end
+# Vode pode comprar cerveja

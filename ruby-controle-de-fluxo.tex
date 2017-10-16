@@ -1,15 +1,12 @@
-
-\begin{frame}[allowframebreaks, fragile,t]{Controle de Fluxo}
+%-------------------------------------------------------------------------------------- Início
+\begin{frame}[allowframebreaks, fragile,c]{Controle de Fluxo}
+  \begin{center}
+    \Large \verb!if ... elsif ... else! \\ \verb!case! \\ \verb!unless!
+  \end{center}   
+\framebreak
   \begin{itemize}
-    \item \verb!if ... elsif ... else!
-    \item \verb!case!
-    \item \verb!unless!
-  \end{itemize}   
-\pagebreak
-  \begin{itemize}
-    \item \verb!if, unless, elsif, else!
-    \item Não existe a necessidade de uso de parênteses ou chaves
-    \item Utilize a instrução \verb!end! no final do bloco
+    \item \alert{Não} existe a necessidade de uso de \alert{parênteses} ou \alert{chaves}
+    \item \alert{Utilize} a instrução \verb!end! no final do bloco
   \end{itemize}   
   \begin{columns}
     \begin{column}{0.5\textwidth}
@@ -19,17 +16,48 @@
     		\lstinputlisting[style=RubyInputStyle, caption=unless.rb]{codigos/ruby/02-fluxo-de-controle/unless.rb}  
     \end{column}
   \end{columns}
+\framebreak
+    		\lstinputlisting[style=RubyInputStyle, caption=case\_1.rb]{codigos/ruby/02-fluxo-de-controle/case_1.rb}  
+\framebreak
+    		\lstinputlisting[style=RubyInputStyle, caption=case\_2.rb]{codigos/ruby/02-fluxo-de-controle/case_2.rb}  
 \end{frame}
-
-\begin{frame}[fragile,t]{True / False}
+%-------------------------------------------------------------------------------------- Início
+\begin{frame}[fragile,t]{Operadores Lógicos (em ordem de precedência)}
+	\begin{table}[tp] 	
+		\setlength{\tabcolsep}{8pt}
+    \setlength{\extrarowheight}{2pt}    
+		\begin{tabular}{p{2.5cm}l}
+    	\toprule
+      $<=, <, >, >=$ &  Comparação\\
+      $==, !=$ & Igual ou diferente  \\
+      $\&\&$ &  Conectivo \textbf{e} \\
+      $||$ & Conectivo \textbf{ou} \\
+	    \bottomrule
+		\end{tabular}
+	\end{table}   
+\end{frame}
+%-------------------------------------------------------------------------------------- Início
+\begin{frame}[fragile,t]{True e False}
   \begin{itemize}
-    \item false e nil são booleanos FALSOS
-    \item Todo o restante é VERDADEIRO
+    \item \alert{false} e \alert{nil} são booleanos \alert{FALSOS}
+    \item Todo o restante é \alert{VERDADEIRO}
 	\lstinputlisting[style=RubyInputStyle, caption=true\_false.rb]{codigos/ruby/02-fluxo-de-controle/true_false.rb}
   \end{itemize}   
 \end{frame}
-
-
+%-------------------------------------------------------------------------------------- Início
+\begin{frame}[fragile,t]{Exercícios}
+  \begin{enumerate}
+    \item Digite as seguintes expressões no IRB e verifique os resultados.
+  \end{enumerate}
+	\begin{lstlisting}[style=RubyInputStyle]
+		(32 * 4) >= 129
+		false != !true
+		true == 4
+		false == (847 == '847')
+		(!true || (!(100 / 5) == 20) || ((328 / 4) == 82) || false 
+	\end{lstlisting}
+\end{frame}
+%-------------------------------------------------------------------------------------- Início
 \begin{frame}[fragile,t]{Recapitulando}
   \begin{itemize}
     \item Existe muitas opções de fluxo de controle

@@ -7,10 +7,11 @@
     \begin{itemize}
       \item nem sempre explicitamente escrito em uma classe
     \end{itemize}
-  \end{itemize}   
-  \begin{block}{Conclusão}
-    Toda função é na verdade um método em Ruby  
-  \end{block}
+  \end{itemize}
+  \framebreak   
+  \begin{center}
+    Conclusão: Toda \alert{função} é na verdade um \alert{método} em Ruby  
+  \end{center}
 \end{frame}
 
 \begin{frame}[fragile,t]{Métodos}
@@ -21,8 +22,10 @@
     \end{itemize}
     \item Usado para tornar o código mais claro
   \end{itemize}
+  \begin{block}{parens.rb}
+  	\lstinputlisting[style=RubyInputStyle]{codigos/ruby/04-funcoes-e-metodos/parens.rb}
+  \end{block}
   
-  \lstinputlisting[style=RubyInputStyle, caption=parens.rb]{codigos/ruby/03-funcoes-e-metodos/parens.rb}
     
 \end{frame}
 
@@ -36,7 +39,7 @@
     \end{itemize}
   \end{itemize}
   
-  \lstinputlisting[style=RubyInputStyle, caption=return\_optional.rb]{codigos/ruby/03-funcoes-e-metodos/return_optional.rb}
+  \lstinputlisting[style=RubyInputStyle, caption=return\_optional.rb]{codigos/ruby/04-funcoes-e-metodos/return_optional.rb}
     
 \end{frame}
 
@@ -48,7 +51,7 @@
     	\item \alert{'!'} - métodos com efeitos colaterais
     \end{itemize}
     
-	\lstinputlisting[style=RubyInputStyle, caption=expressive.rb]{codigos/ruby/03-funcoes-e-metodos/expressive.rb}
+	\lstinputlisting[style=RubyInputStyle, caption=expressive.rb]{codigos/ruby/04-funcoes-e-metodos/expressive.rb}
   \end{itemize}   
 \end{frame}
 
@@ -60,7 +63,7 @@
     	\item senão, o valor padrão é utilizado
     \end{itemize}
   \end{itemize}  
-  \lstinputlisting[style=RubyInputStyle, caption=default\_args.rb]{codigos/ruby/03-funcoes-e-metodos/default_args.rb}
+  \lstinputlisting[style=RubyInputStyle, caption=default\_args.rb]{codigos/ruby/04-funcoes-e-metodos/default_args.rb}
 \end{frame}
 
 \begin{frame}[fragile,t]{Quantidade Variável de Argumentos}
@@ -70,7 +73,20 @@
   \begin{itemize}
     \item Pode ser utilizado com parâmetros no início, meio e final
   \end{itemize}
-  \lstinputlisting[style=RubyInputStyle, caption=splat.rb]{codigos/ruby/03-funcoes-e-metodos/splat.rb}
+  \lstinputlisting[style=RubyInputStyle, caption=splat.rb]{codigos/ruby/04-funcoes-e-metodos/splat.rb}
+\end{frame}
+%-------------------------------------------------------------------------------------- Início
+\begin{frame}[fragile,t]{Exercícios}
+  \begin{enumerate}
+    \item Escreva uma função que receba como parâmetro um custo retorna a taxa de entrega
+		de acordo com a seguinte regra:
+		\begin{itemize}
+			\item a taxa de entrega será igual a 10.00 se o custo for menor do que 25.00;
+			\item a taxa será igual a 20.00 se o custo for menor do que 100.00;
+			\item a taxa a taxa será igual a 30.00 se o custo for menor do que 200.00;
+			\item a taxa será igual a 35.00 se o custo for maior ou igual do que 200.00;
+		\end{itemize} 
+  \end{enumerate}
 \end{frame}
 
 \begin{frame}[fragile,t]{Recapitulando}
