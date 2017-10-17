@@ -81,6 +81,20 @@
  %TODO: controle de acesso privado, publico e protegido.
 \end{frame}
 
+%-------------------------------------------------------------------------------------- Início
+\begin{frame}[allowframebreaks, fragile, t]{Exercícios}
+Elabore na linguagem Java os códigos para os seguintes requisitos:
+    \begin{enumerate}
+          \item Escreva a classe \textbf{Sobremesa} com \textit{getters} e \textit{setters} para os atributos \texttt{nome} e \texttt{calorias}. O construtor dessa classe deverá receber como parâmetros \texttt{nome} e \texttt{calorias}.      
+          \item Defina as operações de instância \texttt{ehSaudavel}, que retorna \texttt{true} se e somente se a sobremesa tem menos de 200 calorias, e \texttt{ehDeliciosa}, que retorna \texttt{true} para todas as sobremesas.
+          \item Crie a classe \textbf{GeleiaEmCompota} que herdará da classe \textbf{Sobremesa}. O seu construtor deverá aceitar um único argumento denominado \texttt{sabor};  a sua quantidade padrão de \texttt{calorias} é 5 e seu \texttt{nome} deverá ser precedido de "Geléia em Compota de ", por exemplo, "Geléia em Compota de Morango".
+          \item Inclua um \textit{getter} and \textit{setter} para o atributo \texttt{sabor}.   
+          \item Modifique a operação \texttt{ehDeliciosa} para retornar \textbf{false} se o sabor é \texttt{alcaçuz} e true para todos os outros sabores. O comportamento dessa operação para sobremesas que não são geléias em compotas não devem ser alterados.
+       \end{enumerate}  
+    
+\end{frame}
+
+
 \begin{frame}[fragile,t]{Recapitulando}
   \begin{itemize}
     \item Objetos são criados com \alert{new}
