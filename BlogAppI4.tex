@@ -1,0 +1,35 @@
+\begin{frame}[allowframebreaks, t, fragile]{I4 - Hora de Colocar a Mão na Massa}
+	\begin{itemize}
+		
+		\item Inicie o servidor web
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			$ rails s
+		\end{lstlisting}
+		
+		\item Acesse a url \url{http:\\localhost:3000/posts}. Veja o erro que ocorreu.
+		
+		\item Gere o controlador para os posts:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			$ rails generate controller posts
+		\end{lstlisting}
+		
+		\item Reinicie o servidor web e acesse a url \url{http:\\localhost:3000/posts}. Veja o erro que ocorreu.
+		
+		\item Modifique o arquivo \verb|config/routes.rb| para acrescentar a rota para
+		os posts:
+		\begin{lstlisting}[style=RubyInputStyle]
+			Rails.application.routes.draw do 
+				resource :posts
+			end 
+		\end{lstlisting}	
+		
+		\item Execute o comando \verb!rake! para visualizar as rotas para os
+		posts:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			$ rake routes
+		\end{lstlisting}
+		
+		\item Reinicie o servidor web e acesse a url \url{http:\\localhost:3000/posts}. Veja o erro que ocorreu.
+
+	\end{itemize}
+\end{frame}

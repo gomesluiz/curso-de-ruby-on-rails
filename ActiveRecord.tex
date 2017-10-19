@@ -25,7 +25,7 @@
 		\item Para que \alert{"mágica"} ocorra:
 		\begin{itemize}
 			\item o ActiveRecord tem que saber como encontrar o banco de dados (ocorre via \alert{config/database.yml})
-			\item \textbf{(Convenção)} existe uma \alert{tabela} com o \alert{nome no plural} da subclasse \verb|ActiveRecord::Base|
+			\item \textbf{(Convenção)} existe uma \alert{tabela} com o \alert{nome no plural} da subclasse \verb|ApplicationRecord|
 			\item \textbf{(Convenção)} espera-se que a tabela tenha uma chave primário denominada \alert{id}
 		\end{itemize}
 	\end{itemize}
@@ -85,7 +85,7 @@
 		\item Atualize o título do primeiro \verb|post|:
 		\begin{lstlisting}[style=BashInputBasicStyle]
 			irb(main):007:0> p1=Post.first
-			irb(main):008:0> p1.update(title: "um novo titulo")
+			irb(main):008:0> p1.update(title: "Pensando...")
 		\end{lstlisting}
 		
 		\item Remova do primeiro \verb|post|:

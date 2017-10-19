@@ -1,9 +1,9 @@
-\begin{frame}[allowframebreaks, t, fragile]{Hora de Colocar a Mão na Massa}
+\begin{frame}[allowframebreaks, t, fragile]{I3 - Hora de Colocar a Mão na Massa}
 	\begin{itemize}
 		\item Modifique o arquivo \verb|app/models/post.rb| para associar 
 		o post aos seus comentário:
 		\begin{lstlisting}[style=RubyInputStyle]
-			class Post < ActiveRecord::Base
+			class Post < ApplicationRecord
 			  validates_presence_of :title, :body
 			  has_many :comments
 			end
@@ -12,26 +12,26 @@
 		\item Modifique o arquivo \verb|app/models/comment.rb| para associar 
 		o comentário ao seu post:
 		\begin{lstlisting}[style=RubyInputStyle]
-			class Comment < ActiveRecord::Base
+			class Comment < ApplicationRecord
 			  validates_presence_of :body
 			  belongs_to :post
 			end
 		\end{lstlisting}
 		
-		\item Crie um novo \verb|post| e salve no banco de dados:
+		\item Crie um novo \verb|post| e salve no banco de dados (\alert{Reinicie a console do Rails}):
 		\begin{lstlisting}[style=BashInputBasicStyle]
 			irb(main):005:0> p1 = Post.new
 			irb(main):006:0> p1.title="Associacao"
-			irb(main):007:0> p1.body="Vinculando com o comentario"
+			irb(main):007:0> p1.body="Eu tenho comentarios!"
 			irb(main):008:0> p1.save
 		\end{lstlisting}
 		
 		\item Crie um novo \verb|comment| e o vincule a um \verb|post|:
 		\begin{lstlisting}[style=BashInputBasicStyle]
 			irb(main):005:0> c1 = Comment.new
-			irb(main):006:0> c1.body="Comentario vinculado"
-			irb(main):007:0> c1.save
-			irb(main):008:0> p1.comments << c1
+			irb(main):006:0> c1.body="Eu sou de um post!"
+			irb(main):007:0> c1.post = p1
+			irb(main):008:0> c1.save
 		\end{lstlisting}
 		
 		\item Consulte os comentários do \verb|post| p1:

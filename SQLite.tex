@@ -68,8 +68,16 @@
 		\begin{lstlisting}[style=BashInputBasicStyle]
 			sqlite> INSERT INTO posts 
 			(title, body, created_at, updated_at) 
-			VALUES ("Com.pensar 2016", "Tem varios cursos", 
-			"2016-05-03 19:50:00", "2016-05-03 19:50:00");
+			VALUES ("Seminarios da Computacao", "Tem varios cursos legais!", 
+			"2017-10-16 19:50:00", "2017-16-03 19:50:00");
+		\end{lstlisting}
+		
+		\item Crie outro \verb|post| e salve no banco de dados:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			sqlite> INSERT INTO posts 
+			(title, body, created_at, updated_at) 
+			VALUES ("Calor em Pocos", "Como esta quente!!!", 
+			"2017-10-18 19:50:00", "2017-10-18 19:50:00");
 		\end{lstlisting}
 		
 		\item Exiba todos os \verb|posts|:
@@ -94,7 +102,7 @@
 		
 		\item Atualize o título \verb|post| cujo o \verb|id| é 2:
 		\begin{lstlisting}[style=BashInputBasicStyle]
-			sqlite> UPDATE posts SET title="Novo titulo" 
+			sqlite> UPDATE posts SET title="O tempo esta louco" 
 			WHERE id=2;
 		\end{lstlisting}
 		
@@ -102,6 +110,5 @@
 		\begin{lstlisting}[style=BashInputBasicStyle]
 			sqlite> DELETE FROM posts WHERE id=2;
 		\end{lstlisting}
-		
 	\end{itemize}
 \end{frame}

@@ -4,22 +4,13 @@
 		\item Remove uma postagem específica pelo parâmetro \alert{id} passado como parte da URL
 		\begin{lstlisting}[style=RubyInputStyle, caption=posts\_controller.rb]
 Class PostsController < ApplicationController
-  before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_action :set_post, only: [:show, :edit, 
+  	:update, :destroy]
 
-  #DELETE /posts/1
-  #DELETE /posts/1.json 
   def destroy
-    @post.destroy
-    respond_to do |format|
-      format.html {redirect_to posts_url, notice: 'Post was ....'} 
-      format.json {head :no_content}
-    end
-  end 
-
-  private
-  # Use callbacks to share common setup or constraints between actions.
-  def set_post 
-    @post = Post.find(params[:id])
+		@post.destroy
+		redirect_to posts_url, 
+			notice: 'Post foi removido com sucesso!'} 
   end 
 		\end{lstlisting}		
 	\end{itemize}	

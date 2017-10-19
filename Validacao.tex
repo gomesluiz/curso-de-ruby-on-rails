@@ -66,12 +66,12 @@
 		
 		\item Validação são definidos nos \alert{modelos}. Exemplo:
 		\begin{lstlisting}[style=RubyInputStyle]
-			class Person < ActiveRecord::Base 
-			    validates_presence_of :name
-			    validates_numeracality_of :age, :only_integer => true 
-			    validates_confirmation_of :email
-			    validates_length_of :password, :in => 8..20	
-			end 
+class Person < ApplicationRecord 
+    validates_presence_of :name
+    validates_numeracality_of :age, :only_integer => true 
+    validates_confirmation_of :email
+    validates_length_of :password, :in => 8..20	
+end 
 		\end{lstlisting}			
 		
 	\end{itemize}

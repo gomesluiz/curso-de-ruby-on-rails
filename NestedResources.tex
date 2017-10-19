@@ -1,49 +1,45 @@
-\begin{frame}[allowframebreaks, t, fragile]{Hora de Colocar a Mão na Massa}
+\begin{frame}[allowframebreaks, t, fragile]{I13 - Hora de Colocar a Mão na Massa}
 	\begin{itemize}
 		\item Modifique o arquivo de rotas para aninhar os comentários às postagens e reinicie o servidor:
 		\begin{lstlisting}[style=RubyInputStyle, caption=config/routes.rb]
 Rails.application.routes.draw do
-  resources :comments
   resources :posts do 
     resources :comments
   end 
 end 
 		\end{lstlisting}
 
-		\item Crie um novo \verb|post| e salve no banco de dados:
-		\begin{lstlisting}[style=BashInputBasicStyle]
-			irb(main):005:0> p1 = Post.new
-			irb(main):006:0> p1.title="Whatsapp bloqueado"
-			irb(main):007:0> p1.body="A justica bloqueou o Whatsapp..."
-			irb(main):008:0> p1.save
-		\end{lstlisting}
+%		\item Crie um novo \verb|post| e salve no banco de dados:
+%		\begin{lstlisting}[style=BashInputBasicStyle]
+%			irb(main):005:0> p1 = Post.new
+%			irb(main):006:0> p1.title="Whatsapp bloqueado"
+%			irb(main):007:0> p1.body="A justica bloqueou o Whatsapp..."
+%			irb(main):008:0> p1.save
+%		\end{lstlisting}
+%		
+%		\item Crie um novo \verb|comment| e o vincule a um \verb|post|:
+%		\begin{lstlisting}[style=BashInputBasicStyle]
+%			irb(main):005:0> c1 = Comment.new
+%			irb(main):006:0> c1.body="O que fazer agora ???"
+%			irb(main):007:0> c1.save
+%			irb(main):008:0> p1.comments << c1
+%		\end{lstlisting}
 		
-		\item Crie um novo \verb|comment| e o vincule a um \verb|post|:
-		\begin{lstlisting}[style=BashInputBasicStyle]
-			irb(main):005:0> c1 = Comment.new
-			irb(main):006:0> c1.body="O que fazer agora ???"
-			irb(main):007:0> c1.save
-			irb(main):008:0> p1.comments << c1
-		\end{lstlisting}
-		
-		\item Digite no navegador no endereço \url{http://localhost:3000/posts/id/comments}. Onde 
-		o \alert{id} é o id do post criado anteriormente.
+%		\item Digite no navegador no endereço \url{http://localhost:3000/posts/id/comments}. Onde 
+%		o \alert{id} é o id de um post qualquer.
+%				
+%		\item Agora crie um novo blog e digite novamente \url{http://localhost:3000/posts/id/comments}. Onde 
+%		o \alert{id} do blog que acabou de ser criado.(\alert{Temos um problema})
 				
-		\item Agora crie um novo blog e digite novamente \url{http://localhost:3000/posts/id/comments}. Onde 
-		o \alert{id} do blog que acabou de ser criado.(\alert{Temos um problema})
-				
-		\item Modifique o código do template \alert{views/posts/show.html.erb}. Insira o código abaixo, após 
-		a linhas 10 (abaixo do parágrafo do body).
+		\item Modifique o código do template \alert{views/posts/show.html.erb}. Insira o código abaixo do parágrafo do body.
 		\begin{lstlisting}[style=RubyInputStyle]
 <h2>Comments</h2>
 <div id="comments">
   <% @post.comments.each do |comment| %>
-    <%= div_for comment do %>
-    <p>
-      <strong>Posted <%= time_ago_in_words(comment.created_at) %></strong>
-      <%= h(comment.body) %>
-    </p>
-    <% end %>
+	<p>
+  <strong>Posted <%= time_ago_in_words(comment.created_at) %></strong>
+  <%= h(comment.body) %>
+  </p>
   <% end %>
 </div>
 		\end{lstlisting}
@@ -62,34 +58,46 @@ end
 <% end %>
 \end{lstlisting}
 
+\item Gere o controlador para os comments:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			$ rails generate controller comments
+		\end{lstlisting}
+		
 \item Modifique a acão create do controlador \alert{controllers/comments\_controller.rb}:
 \begin{lstlisting}[style=RubyInputStyle]
+before_action :set_comment, only: [:show, :edit, :update, :destroy]
+
 def create
   @post = Post.find(params[:post_id])
   @comment = @post.comments.create(comment_params)
 
-  respond_to do |format|
-    if @comment.save
-      format.html { redirect_to @post, notice: 'Comment was successfully created.' }
-      format.json { render :show, status: :created, location: @comment }
-    else
-      format.html { render :new }
-      format.json { render json: @comment.errors, status: :unprocessable_entity }
-    end
+	if @comment.save
+  	redirect_to @post, notice: 'Comment foi criado com sucesso!' 
+  else
+    redirect_to @post
   end
 end 
+
+private
+	def set_comment
+  	@comment = Comment.find(params[:id])
+  end
+
+  def comment_params
+    params.require(:comment).permit(:body)
+  end
 \end{lstlisting}
 
 \item Escolha uma postagem qualquer e escreva alguns comentários.
 
-\item Remova a rota absoluta para comentários no arquivo de rotas e reinicie o servidor:
-\begin{lstlisting}[style=RubyInputStyle, caption=config/routes.rb]
-Rails.application.routes.draw do
-  #resources :comments
-  resources :posts do 
-    resources :comments
-  end 
-end 
-\end{lstlisting}	
+%\item Remova a rota absoluta para comentários no arquivo de rotas e reinicie o servidor:
+%\begin{lstlisting}[style=RubyInputStyle, caption=config/routes.rb]
+%Rails.application.routes.draw do
+%  #resources :comments
+%  resources :posts do 
+%    resources :comments
+%  end 
+%end 
+%\end{lstlisting}	
 	\end{itemize}
 \end{frame}
