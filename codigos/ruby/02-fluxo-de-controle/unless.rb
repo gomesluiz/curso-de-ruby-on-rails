@@ -1,6 +1,6 @@
-a = 5 
+quantidade = 5 
 unless a == 6
-  puts "a nao e igual a 6"
+  puts "quantidade incorreta"
 end
-# => a nao e igual a 6
+# => quantidade incorreta
 

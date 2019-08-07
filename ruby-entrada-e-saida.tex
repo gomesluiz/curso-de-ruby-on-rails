@@ -1,0 +1,38 @@
+%-------------------------------------------------------------------------------------- Início
+\begin{frame}[fragile,t]{Entrada pelo Teclado}
+    \begin{itemize}
+      \item \verb!gets! é método \alert{padrão para receber} um valor pelo teclado 
+          \begin{lstlisting}[style=RubyInputStyle]
+  # recebe um valor do tipo string.
+  nome = gets
+        \end{lstlisting}
+      \item Utilize \verb!gets.chomp! para remover o caracter de nova linha.
+          \begin{lstlisting}[style=RubyInputStyle]
+  # remove o caracter de nova linha.
+  nome = gets.chomp
+        \end{lstlisting}
+        \item Utilize \verb!gets.chomp.to_i! para converter o valor lido para inteiro. 
+          \begin{lstlisting}[style=RubyInputStyle]
+  # converte a string recebida para inteiro.
+  idade = gets.chomp.to_i
+        \end{lstlisting}
+    \end{itemize}   
+  \end{frame}
+%-------------------------------------------------------------------------------------- Início
+\begin{frame}[fragile,t]{Saída na Tela}
+    \begin{itemize}
+      \item \verb!puts! é método \alert{padrão} para impressão em tela 
+      \begin{itemize}
+          \item insere uma quebra de linha após a impressão
+          \item similar ao \verb!System.out.println! do Java
+      \end{itemize}
+      \begin{lstlisting}[style=RubyInputStyle]
+# exibe da tela do computador.
+puts "Informacoes do jogador"
+puts "Nome  %s" % nome 
+puts "Idade %d" % idade
+puts "Nome %s \nIdade %d" % [nome, idade]
+      \end{lstlisting}
+    \end{itemize}   
+  \end{frame}
+  

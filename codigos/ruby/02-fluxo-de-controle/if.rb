@@ -1,9 +1,9 @@
-a = 5
-if  a == 3                    
-  puts "a igual a 3"                  
-elsif a == 5 
-  puts "a igual a 5"                   
+nivel = 5
+if  nivel == 3                    
+  puts "basico"                  
+elsif numero == 5 
+  puts "avancado"                   
 else                              
-  puts "a nao e igual 3 ou 5"
+  puts "desconhecido"
 end 
-# => a e igual a 5
+# => avancado

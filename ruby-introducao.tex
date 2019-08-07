@@ -1,13 +1,19 @@
 %-------------------------------------------------------------------------------------- Início
 \begin{frame}[fragile,t]{Ruby} 
-  \begin{itemize}
-    \item Linguagem inventada por Yukihiro \alert{"Matz"} Matsumoto
-    \item Versão \alert{1.0} liberada em \alert{1996}(Japão)
-    \item \alert{Popularizada} no início de 2005 pelo \alert{Rails}
-  \end{itemize}   
-  \begin{figure}[hbt]
-    \includegraphics[scale=.5]{imagens/matz.jpg}
-  \end{figure}
+  \begin{columns}
+  \begin{column}{0.6\textwidth}
+    \begin{itemize}
+      \item Linguagem inventada por Yukihiro \alert{"Matz"} Matsumoto
+      \item Versão \alert{1.0} liberada em \alert{1996}(Japão)
+      \item \alert{Popularizada} no início de 2005 pelo \alert{Rails}
+    \end{itemize}   
+  \end{column}
+  \begin{column}{0.4\textwidth}
+    \begin{figure}[hbt]
+      \includegraphics[scale=.5]{imagens/matz.jpg}
+    \end{figure}
+    \end{column}
+\end{columns}
 \end{frame}
 %-------------------------------------------------------------------------------------- Início
 \begin{frame}[fragile,t]{Ruby}
@@ -43,37 +49,6 @@
     \end{itemize}
     \item Scripts utilizam a extensão \verb!.rb! 
 		\lstinputlisting[style=RubyInputStyle, caption=hello.rb]{codigos/ruby/01-ruby-introducao/hello.rb}
-  \end{itemize}   
-\end{frame}
-%-------------------------------------------------------------------------------------- Início
-\begin{frame}[fragile,t]{Saída na Tela}
-  \begin{itemize}
-    \item \verb!puts! é método \alert{padrão} para impressão em tela 
-    \begin{itemize}
-    	\item insere uma quebra de linha após a impressão
-    	\item similar ao \verb!System.out.println! do Java
-    \end{itemize}
-    \item \alert{p} é utilizado para depuração
-  \end{itemize}   
-\end{frame}
-%-------------------------------------------------------------------------------------- Início
-\begin{frame}[fragile,t]{Entrada pelo Teclado}
-  \begin{itemize}
-    \item \verb!gets! é método \alert{padrão para receber} um valor pelo teclado 
-		\begin{lstlisting}[style=RubyInputStyle]
-# recebe um valor do tipo string.
-nome = gets
-  	\end{lstlisting}
-    \item Utilize \verb!gets.chomp! para remover o caracter de nova linha.
-		\begin{lstlisting}[style=RubyInputStyle]
-# remove o caracter de nova linha.
-nome = gets.chomp
-  	\end{lstlisting}
-  	\item Utilize \verb!gets.chomp.to_i! para converter o valor lido para inteiro. 
-		\begin{lstlisting}[style=RubyInputStyle]
-# converte a string recebida para inteiro.
-nome = gets.chomp.to_i
-  	\end{lstlisting}
   \end{itemize}   
 \end{frame}
 %-------------------------------------------------------------------------------------- Início
@@ -127,8 +102,8 @@ a = 3; b = 5
   \end{figure}
 \end{frame}
 %-------------------------------------------------------------------------------------- Início
-\begin{frame}[fragile,t]{Exercícios}
-  \begin{itemize}
-    \item Escreva um script Ruby para imprimir um nome lido teclado 5 vezes.
-  \end{itemize}
-\end{frame}
+%\begin{frame}[fragile,t]{Exercícios}
+%  \begin{itemize}
+%    \item Escreva um script Ruby para imprimir um nome lido teclado 5 vezes.
+%  \end{itemize}
+%\end{frame}
