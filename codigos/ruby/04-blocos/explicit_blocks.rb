@@ -1,9 +1,18 @@
-def imprime_duas_vezes (&um_bloco) 
+def totaliza(valores, &um_bloco) 
   return "Nenhum bloco foi passado" if um_bloco.nil? 
-  um_bloco.call 
-  um_bloco.call 
+  total = 0
+  for valor in valores
+    total += valor
+    um_bloco.call(total)
+  end 
 end 
 
-puts imprime_duas_vezes # => Nenhum bloco foi passado
-imprime_duas_vezes { puts "Hello"} # => Hello 
-                                   # => Hello 
+totaliza([ 20, 30, 40, 10 ]){| resultado | puts resultado } 
+totaliza([ 20, 30, 40, 10 ]) do | resultado | 
+  resultado = resultado * 0.25 
+  puts "#{resultado}"
+end
+                                          
+puts totaliza ([ 20, 30, 40, 10 ]) # => Nenhum bloco foi passado
+                                  
+                                  

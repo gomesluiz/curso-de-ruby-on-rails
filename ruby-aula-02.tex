@@ -1,0 +1,54 @@
+\documentclass[t, 				             
+			   final,
+			   12pt, 				         
+			   xcolor={usenames,dvipsnames}, 
+			   table]{beamer}
+
+% pacotes utilizados.
+\usepackage[alf]{abntex2cite}
+\usepackage{amsmath}
+\usepackage[brazil]{babel}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{ctable}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{todo}
+
+
+% configuração do tema
+\usetheme[pageofpages=de,
+          bullet=square,			
+          titleline=true,				
+          alternativetitlepage=true,			
+          titlepagelogo=imagens/logo-puc,	
+          watermarkheight=70px,		
+          watermarkheightmult=4	
+          ]{Torino}
+
+\setbeamertemplate{sections/subsections in toc}[square]
+\setbeamertemplate{bibliography item}[default]
+
+\usecolortheme{freewilly}
+
+\input{setup-languages}
+
+\begin{document}
+	\include{ruby-titulo}
+	\include{Capa}
+	\include{ruby-agenda}  	
+	\section{Blocos}	
+	\include{ruby-blocos}
+	\section{Strings}	
+	\include{ruby-strings}
+	\section{Arrays}	
+	\include{ruby-arrays}
+	\section{Hashes}	
+	\include{ruby-hashes}
+	%\section{Classes e Objetos}	
+	%\include{ruby-oo}
+	\input{Sabermais}
+	
+\end{document}
