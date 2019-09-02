@@ -1,0 +1,31 @@
+%%-------------------------------------------------------------------------------------- Início
+\begin{frame}[allowframebreaks, fragile,t]{Hora de Colocar a Mão na Massa}
+	\begin{enumerate}
+		\item Crie uma conta com usuário e senha no GitHub
+		\item Crie o repositório {\bf blog} no GitHub
+		\item Na pasta da aplicação, crie o repositório local:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			$ git init
+		\end{lstlisting}
+		
+		\item Registre as mudanças realizadas no repositório local:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			$ git add .
+		\end{lstlisting}
+
+        \item Efetive as mudanças realizadas no repositório local:  		
+        \begin{lstlisting}[style=BashInputBasicStyle]
+			$ git commit -m "primeiro commit"
+		\end{lstlisting}
+
+		\item Associe o repositório local com o repositório remoto utilizando a sua URL:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			$ git remote add origin <GITUHB REPOSITORY URL>
+		\end{lstlisting}
+
+		\item Registre as alterações no repositório remoto:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			$ git push -u origin master
+		\end{lstlisting}
+	\end{enumerate}
+\end{frame}

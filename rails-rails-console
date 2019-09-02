@@ -1,0 +1,54 @@
+\begin{frame}[allowframebreaks, t, fragile]{Rails Console}
+	\begin{itemize}
+		\item Inicialize \alert{na pasta da aplicação} a console do Rails (não a do banco de dados):
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			$ rails c
+		\end{lstlisting}
+		
+		\item Exiba os atributos da classe \verb|Post|:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			irb(main):004:0> Post.column_names
+		\end{lstlisting}
+		
+		\item Crie um novo \verb|post| e salve no banco de dados:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			irb(main):005:0> p1 = Post.new
+			irb(main):006:0> p1.title="Rails is Cool!"
+			irb(main):007:0> p1.body="Rails is really Cool..."
+			irb(main):008:0> p1.save
+		\end{lstlisting}
+		
+		\item Exiba todos os \verb|posts|:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			irb(main):007:0> Post.all
+		\end{lstlisting}
+		
+		\item Exiba todos os \verb|posts| ordenados pelo título (title):
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			irb(main):007:0> Post.all.order(title: :asc)
+		\end{lstlisting}
+		
+		\item Exiba um \verb|post|:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			irb(main):007:0> Post.first
+		\end{lstlisting}
+		
+		\item Exiba o \verb|post| cujo \verb|id| é 2:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			irb(main):007:0> Post.find_by(id: 2)
+		\end{lstlisting}
+		
+		\item Atualize o título do primeiro \verb|post|:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			irb(main):007:0> p1=Post.first
+			irb(main):008:0> p1.update(title: "Rails rules!")
+		\end{lstlisting}
+		
+		\item Remova do primeiro \verb|post|:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			irb(main):007:0> p1=Post.first
+			irb(main):008:0> p1.destroy
+		\end{lstlisting}
+		
+	\end{itemize}
+\end{frame}

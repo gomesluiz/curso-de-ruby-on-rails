@@ -1,27 +1,66 @@
 %%-------------------------------------------------------------------------------------- Início
-\begin{frame}[fragile,t]{Hora de Colocar a Mão na Massa}
-	\begin{itemize}
-		\item Conecte-se na máquina com o seu usuário e sua senha
-		\begin{enumerate}
-	    \item Inicie uma janela de terminal e digite no prompt:
-	     \begin{lstlisting}[style=BashInputBasicStyle]
-	     $ rails new my_app
-	     \end{lstlisting}
+\begin{frame}[allowframebreaks, fragile,t]{Hora de Colocar a Mão na Massa}
+	\begin{enumerate}
+		\item Inicie uma janela de terminal e digite no prompt:
+			\begin{lstlisting}[style=BashInputBasicStyle]
+			$ rails new blog
+			\end{lstlisting}
 
-	    \item Mude para o diretório da aplicao (RAILS.root)
-	     \begin{lstlisting}[style=BashInputBasicStyle]
-	     $ cd new my_app
-	     \end{lstlisting}
-    
-	    \item Execute o servidor web embutido:
-	    \begin{lstlisting}[style=BashInputBasicStyle]
-	    $ rails s
-	    \end{lstlisting}
-	    
-	    \item Abra uma janela do navegador e digite:
-	     \begin{lstlisting}[style=BashInputBasicStyle]
-	     $ http://localhost:3000
-	     \end{lstlisting}
-	  \end{enumerate}
-	\end{itemize}
+		\item Mude para o diretório da aplicao (RAILS.root)
+			\begin{lstlisting}[style=BashInputBasicStyle]
+			$ cd blog
+			\end{lstlisting}
+
+		\item Execute o servidor web embutido:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			$ rails server
+		\end{lstlisting}
+		
+		\item Abra uma janela do navegador e digite:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			http://localhost:3000
+		\end{lstlisting}
+
+		\item Verifique o conteúdo do arquivo de configuração \verb|database.yml|:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			$ cat config/database.yml
+		\end{lstlisting}
+
+		\item Crie o banco de dados de desenvolvimento e testes:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			$ rake db:create
+		\end{lstlisting}
+
+		\item Crie o modelo Post:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			$ rails g model Post title:string body:text
+		\end{lstlisting}
+
+		\item Implemente modelo Post no banco de dados com {\it migrations}:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			$ rake db:migrate
+		\end{lstlisting}
+
+		\item Crie o controlador PostsController:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			$ rails g controller Posts 		
+		\end{lstlisting}
+
+		\item Modifique o arquivo \verb|config/routes.rb| para acrescentar a rota para
+		os posts:
+		\begin{lstlisting}[style=RubyInputStyle]
+			Rails.application.routes.draw do 
+				resources :posts
+			end 
+		\end{lstlisting}	
+		
+		\item Execute o comando \verb!rake! para visualizar as rotas para os
+		posts:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			$ rake routes
+		\end{lstlisting}
+		
+		\item Reinicie o servidor web e acesse a url \url{http:\\localhost:3000/posts/new}. Veja o erro que ocorreu.
+
+	\end{enumerate}
 \end{frame}

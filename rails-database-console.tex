@@ -1,0 +1,63 @@
+
+\begin{frame}[t, fragile]{Database Console}
+	\begin{itemize}
+		\item O comando \alert{rails db} fornece uma console para acesso aos bancos dados
+		MySQL, PostgreSQL e SQLite.
+	\end{itemize}
+	
+	\begin{lstlisting}[style=BashInputBasicStyle, basicstyle=\tiny\ttfamily,  keepspaces=true]
+		$ rails db
+		SQLite version 3.8.7.1 2014-10-29 13:59:56
+		Enter ".help" for usage hints.
+		sqlite> .headers on
+		sqlite> .mode columns
+		sqlite> select * from posts;
+		id          title             body            created_at                  updated_at                
+		----------  ----------------  --------------  --------------------------  --------------------------
+		5           A Linguagem Ruby  Ruby e legal.  2016-04-30 22:45:20.636363  2016-04-30 22:45:20.636363
+		sqlite> 
+	\end{lstlisting}
+	
+	\begin{itemize}
+		\item Dica: utilize \alert{headers on} e \alert{mode coluns}
+	\end{itemize}
+	
+\end{frame}
+
+\begin{frame}[allowframebreaks, t, fragile]{Hora de Colocar a Mão na Massa}
+	\begin{itemize}
+		\item Inicialize \alert{na pasta da aplicação} a console do banco de dados e
+		configure a sua exibição:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			$ rails db
+			sqlite> .headers on
+			sqlite> .mode columns
+		\end{lstlisting}
+		
+		\item Exiba os colunas da tabela \verb|posts|:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			sqlite> .schema posts
+		\end{lstlisting}
+		
+		\framebreak
+		\item Exiba todos os \verb|posts|:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			sqlite> SELECT * FROM posts;
+		\end{lstlisting}
+		
+		\item Exiba todos os \verb|posts| ordenados pelo título (title):
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			sqlite> SELECT * FROM posts ORDER BY title;
+		\end{lstlisting}
+		
+		\item Exiba um \verb|post|:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			sqlite> SELECT * FROM posts LIMIT 1
+		\end{lstlisting}
+		
+		\item Exiba o \verb|post| cujo \verb|id| é 2:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			sqlite> SELECT * FROM posts WHERE id=2;
+		\end{lstlisting}
+	\end{itemize}
+\end{frame}

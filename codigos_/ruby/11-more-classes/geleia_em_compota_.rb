@@ -1,4 +1,4 @@
-require_relative "sobremesa_"
+require_relative "sobremesa"
 
 class GeleiaEmCompota < Sobremesa
   attr_accessor :sabor

@@ -1,0 +1,77 @@
+\documentclass[t, 				             
+			   final,
+			   12pt, 				         
+			   xcolor={usenames,dvipsnames}, 
+			   table]{beamer}
+
+% pacotes utilizados.
+\usepackage[alf]{abntex2cite}
+\usepackage{amsmath}
+\usepackage[brazil]{babel}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{todo}
+
+
+% configuração do tema
+\usetheme[pageofpages=de,
+          bullet=square,			
+          titleline=true,				
+          alternativetitlepage=true,			
+          titlepagelogo=imagens/logo-puc,	
+          watermarkheight=70px,		
+          watermarkheightmult=4	
+          ]{Torino}
+
+\setbeamertemplate{sections/subsections in toc}[square]
+\setbeamertemplate{bibliography item}[default]
+
+\usecolortheme{freewilly}
+
+\input{setup-languages}
+
+\begin{document}
+	\include{Titulo}
+	\include{Capa}
+	\include{Agenda}  	
+    
+    \section{Ruby on Rails}
+	\include{rails}	
+	\include{rails-historico}
+	\include{rails-pilares}
+	\include{rails-mvc}
+    
+    \section{Metodologia de Trabalho}
+    \include{rails-metodologia}
+
+    \section{Esqueleto da Aplicação}
+    \include{rails-esqueleto}
+   
+    \section{Primeira Aplicação}
+    \include{rails-primeira-aplicacao}
+    \include{rails-rest}
+    \include{rails-new}
+    \include{rails-create}
+    \include{rails-show}
+    \include{rails-database-console}
+    \include{rails-rails-console}
+
+    \section{Versionando a Primeira Aplicação}
+    \include{git-introducao}
+    \include{rails-cvs-blog-initial}
+
+%    echo "# blog" >> README.md
+%    git init
+%    git add README.md
+%    git commit -m "first commit"
+%    git remote add origin https://github.com/gomesluiz/blog.git
+%    git push -u origin master
+    
+    
+    \section{Para Saber Mais}
+	\include{rails-saber-mais}
+\end{document}
