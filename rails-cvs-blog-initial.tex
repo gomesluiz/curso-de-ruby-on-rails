@@ -3,7 +3,14 @@
 	\begin{enumerate}
 		\item Crie uma conta com usuário e senha no GitHub
 		\item Crie o repositório {\bf blog} no GitHub
-		\item Na pasta da aplicação, crie o repositório local:
+		
+		\item Inicialize os parâmetros de usuário: 
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			$ git config --global user.name "nome do programador"
+			$ git config --global user.email "email do programador"
+		\end{lstlisting}
+		
+		\item Na pasta da aplicação, inicialize o repositório local:
 		\begin{lstlisting}[style=BashInputBasicStyle]
 			$ git init
 		\end{lstlisting}
