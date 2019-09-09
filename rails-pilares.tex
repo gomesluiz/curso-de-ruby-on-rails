@@ -1,21 +1,25 @@
-\begin{frame}[allowframebreaks,fragile,t]{Filosofia do Rails}
+\begin{frame}[fragile,t]{Filosofia do Rails}
   \begin{itemize}
-    \item Ruby on Rails é 100\% open-source, disponível por meio da MIT License:
-      \url{http://opensource.org/licenses/mit-license.php}.  
-    \item \alert{Convenção} acima da Configuração (em inglês: \textit{Convention over Configuration} (CoC))
-    \begin{itemize}
-	\item se nomeação segue certas convenções, não há necessidade de arquivos de configuração.
-	  \begin{verbatim}
-FilmesController#show -> filmes_controler.rb 
-FilmesController#show -> views/filmes/show.html.er
-    \end{verbatim}
-    \end{itemize}
-    \item \alert{"Don't Repeat Yourself"} (DRY) sugere que escrever que o mesmo código várias 
-      vezes é uma coisa ruim
-    
-    \item O \textit{Representational State Transfer} (REST) é o melhor padrão para desenvolvimento de aplicações web
-    \begin{itemize}
-     \item organiza a sua aplicação em torno de \alert{recursos} e \alert{padrões} HTTP (verbs)
-    \end{itemize}
+    \item Convention Over Configuration (CoC)
+    \item Don't Repeat Yourself (DRY)
+    \item Representational State Transfer (REST)
   \end{itemize}   
+\end{frame}
+
+\begin{frame}[fragile, c]{Convention Over Configuration}
+  \begin{center}
+    \large se a nomeação \alert{segue} certas \alert{convenções}, não há necessidade de arquivos de \alert{configuração}.
+  \end{center}   
+\end{frame}
+
+\begin{frame}[fragile, c]{Don't Repeat Yourself}
+  \begin{center}
+    \large sugere que escrever que o \alert{mesmo código} várias vezes é uma \alert{coisa ruim}
+    \end{center}
+\end{frame}
+
+\begin{frame}[fragile,t]{Representational State Transfer}
+  \begin{center}
+    \item organiza a sua aplicação em torno de \alert{recursos} e \alert{padrões} HTTP (verbs)
+  \end{center}   
 \end{frame}
