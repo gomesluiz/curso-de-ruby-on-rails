@@ -5,17 +5,16 @@
 		\item Atualiza o objeto \alert{post} com os parâmetros que foram passados pelo
 			formulário \alert{edit}
 		\item Tenta \alert{atualizar} o objeto no \alert{banco de dados}
-		\item Se sucesso, redireciona para o template \alert{show}
-		\item Se insucesso, renderiza o template \alert{edit} novamente
+		%\item Se sucesso, redireciona para o template \alert{show}
+		%\item Se insucesso, renderiza o template \alert{edit} novamente
 		\begin{lstlisting}[style=RubyInputStyle, caption=posts\_controller.rb]
 Class PostsController < ApplicationController
   def update
-		if @post.update(post_params)
-    	redirect_to @post,notice:'Post modificado com sucesso!' }
-    else
-    	render :edit
-    end
+    @post = Post.find(params[:id])
+	@post.update(post_params)
+	redirect_to @post
   end
+  ...
   	\end{lstlisting}				
 	\end{itemize}	
 \end{frame}

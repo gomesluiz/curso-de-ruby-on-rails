@@ -1,23 +1,13 @@
 %%-------------------------------------------------------------------------------------- Início
-\begin{frame}[allowframebreaks, t, fragile]{Ação: Edit}
+\begin{frame}[t, fragile]{Ação: Edit}
 	\begin{itemize}
 		\item Recupera uma postagem específica no parâmetro \alert{id} passado como parte da URL
 		\item (Implicitamente) procura pelo \alert{edit.html.erb} para renderizar a resposta
 		\begin{lstlisting}[style=RubyInputStyle, caption=controllers/posts\_controller.rb]
 Class PostsController < ApplicationController
-  before_action :set_post, only: [:show, :edit
-  	, :update, :destroy]
-
   def edit 
+    @post = Post.find(params[:id])
   end 
-		\end{lstlisting}		
-		
-		\item \alert{edit.html.erb}:
-		\begin{lstlisting}[style=RubyInputStyle, caption=view/posts/edit.html.erb]
-			<h1>Edit Post</h1>
-			<%= render 'form' %>
-			<%= link_to 'Show', @post %> |
-			<%= link_to 'Back', posts_path %> 
 		\end{lstlisting}		
 	\end{itemize}	
 \end{frame}
