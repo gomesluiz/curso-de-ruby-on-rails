@@ -1,0 +1,42 @@
+
+%---------------------------------------------------------------------[ Início ]
+\begin{frame}[allowframebreaks, fragile,t]{Página Home}
+    \begin{itemize}
+      \item  A páginas geradas pelo comando \verb!rails generate! devem ser personalizadas para
+	atenderem às especificações do projeto da aplicação. Por exemplo, para a página associada à ação principal
+	pode-se reescrevê-la da seguinte forma:
+	    \begin{lstlisting}[style=RubyInputStyle, basicstyle=\tiny\ttfamily, caption=app/views/home/index.html.erb]
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Index | Blog App</title>
+   </head>
+   <body>
+      <h1>Blog App</h1>
+      <p>
+         Esta e a pagina index da aplicacao Blog desenvolvida durante
+         o Laboratorio de Engenharia de Software.
+      </p>
+   </body>
+</html>
+	    \end{lstlisting}
+    
+      \item Já para a página associada à ação ajuda pode-se reescrevê-la, por exemplo, da seguinte forma:
+	    \begin{lstlisting}[style=RubyInputStyle, basicstyle=\tiny\ttfamily, caption=app/views/home/help.html.erb]
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Help | Blog App</title>
+   </head>
+   <body>
+      <h1>Blog App</h1>
+      <p>
+         Esta e a pagina help da aplicacao Blog desenvolvida durante
+         o Laboratorio de Engenharia de Software.
+      </p>
+   </body>
+</html>
+	    \end{lstlisting}
+    \end{itemize}
+    
+\end{frame}

@@ -1,0 +1,55 @@
+%---------------------------------------------------------------------[ Início ]
+\begin{frame}[allowframebreaks, fragile,t]{Controladores e Ações}
+    \begin{itemize}
+      \item Um controlador Rails pode ser gerado utilizando o comando \alert{rails 
+	generate controller} ou \alert{rails g controller}.Além dele, esse comando permite 
+	a geração de algumas ações.
+    \end{itemize}
+      \begin{lstlisting}[style=BashInputStyle]
+ ~/blog$ rails generate controller Home index help
+ route  get 'home/help'
+ route  get 'home/index'
+ invoke  erb
+ create    app/views/home
+ create    app/views/home/index.html.erb
+ create    app/views/home/help.html.erb
+ ...
+      \end{lstlisting}
+\end{frame}
+
+%---------------------------------------------------------------------[ Início ]
+\begin{frame}[allowframebreaks, fragile,t]{Arquivo de Roteamento: routes.rb}
+    \begin{itemize}
+      \item O conteúdo atualizado do arquivo \alert{routes.rb} deverá conter as notas rotas 
+	para as ações recém-criadas.
+	  \begin{lstlisting}[style=RubyInputStyle, caption=config/routes.rb]
+	    Rails.application.routes.draw do
+	      get 'home/index'
+	      get 'home/help'
+	      root 'home#index'
+	      resources :posts 
+	    end 
+	  \end{lstlisting}
+    
+      \item \alert{GET} é uma das operações do HTTP mais comuns, ela é utilizada para a leitura
+      de dados na web.
+      \begin{itemize}
+	\item o navegador envia uma requisição \alert{GET} toda vez de se deseja visitar um endereço, com por exemplo \url{http://www.inf.pucpcaldas.br}. 
+       
+      \end{itemize}
+
+      \item As páginas vinculadas às ações \alert{index} e \alert{help} podem ser 
+	visitadas, primeiro, iniciando o servidor Rails com os comandos \alert{rails server} ou, 
+	simplesmente, \alert{rails s}.
+	
+	\begin{lstlisting}[style=BashInputStyle]
+	  $ cd ~/workspace/blog
+	  $ rails server
+	\end{lstlisting}
+    
+      \item E depois, digitando as páginas os endereços \alert{\url{http://localhost:3000/home/index}} e, depois, \alert{\url{http://localhost:3000/home/help}}.
+      
+    \end{itemize}
+    
+\end{frame}
+
