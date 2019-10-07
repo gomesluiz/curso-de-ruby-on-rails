@@ -1,0 +1,24 @@
+%---------------------------------------------------------------------[ Início ]
+\begin{frame}[allowframebreaks, fragile,t]{Integrando com Bootstrap}
+    \begin{itemize}
+      \item Abra o arquivo \verb|Gemfile| na pasta da aplicação
+      \item Inclua antes de \verb|gem 'sass-rails', '~> 5'| as seguintes instruções
+      \begin{lstlisting}[style=BashInputStyle]
+gem 'bootstrap', '~> 4.2.1'
+gem 'autoprefixer-rails', '~> 9.6.4'
+gem 'jquery-rails', '~> 4.3.5'
+      \end{lstlisting}
+      \item Execute o comando abaixo para atualizar as dependências
+      \begin{lstlisting}[style=BashInputStyle]
+~/blog> bundle install 
+      \end{lstlisting}
+      \item Execute o comando abaixo para renomear o arquivo \verb|application.css| para \verb|application.css.scss|
+      \begin{lstlisting}[style=BashInputStyle, basicstyle=\tiny\ttfamily]
+~/blog> mv app/assets/stylesheets/application.css  app/assets/stylesheets/application.css.scss
+      \end{lstlisting}
+      \item Abra o arquivo \verb|application.css.scss| na pasta da aplicação e inclua a seguinte instrução
+      \begin{lstlisting}[style=RubyInputStyle, basicstyle=\tiny\ttfamily, caption=app/assets/stylesheets/application.css.scss]
+@import bootstrap;
+      \end{lstlisting}
+  \end{itemize}
+\end{frame} 

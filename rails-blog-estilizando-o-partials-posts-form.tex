@@ -1,0 +1,29 @@
+%---------------------------------------------------------------------[ Início ]
+\begin{frame}[allowframebreaks, fragile,t]{Estilizando o Partials Posts$/$Form}
+    \begin{itemize}
+      \item Modifique as linhas do arquivo \verb|posts/_form.html.erb| conforme o código abaixo
+      \begin{lstlisting}[style=RubyInputStyle, basicstyle=\tiny\ttfamily, caption=app/views/posts/\_form.html.erb]
+<div class="card">
+  <%= form_with scope: :post, url: posts_path, 
+    local: true do |form| %>
+    <div class="card-body">
+      <div class="form-group">
+        <%= form.label :title %><br>
+        <%= form.text_field :title, class: 'form-control' %>
+      </div>
+      
+      <div class="form-group">
+        <%= form.label :body %><br>
+        <%= form.text_area :body, class: 'form-control', rows: 5 %>
+      </div>
+      
+      <div class="form-group text-right">
+        <%= link_to 'Back', posts_path, class: 'btn btn-outline-secondary' %>
+        <%= form.submit "Save", class: 'btn btn-primary'%>
+      </div>
+    </div>
+  <% end %>	
+</div>
+    \end{lstlisting}
+  \end{itemize}
+\end{frame} 
