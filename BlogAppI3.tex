@@ -18,36 +18,36 @@
 			end
 		\end{lstlisting}
 		
-		\item Crie um novo \verb|post| e salve no banco de dados (\alert{Reinicie a console do Rails}):
-		\begin{lstlisting}[style=BashInputBasicStyle]
-			irb(main):005:0> p1 = Post.new
-			irb(main):006:0> p1.title="Associacao"
-			irb(main):007:0> p1.body="Eu tenho comentarios!"
-			irb(main):008:0> p1.save
-		\end{lstlisting}
+%		\item Crie um novo \verb|post| e salve no banco de dados (\alert{Reinicie a console do Rails}):
+%		\begin{lstlisting}[style=BashInputBasicStyle]
+%			irb(main):005:0> p1 = Post.new
+%			irb(main):006:0> p1.title="Associacao"
+%			irb(main):007:0> p1.body="Eu tenho comentarios!"
+%			irb(main):008:0> p1.save
+%		\end{lstlisting}
 		
-		\item Crie um novo \verb|comment| e o vincule a um \verb|post|:
-		\begin{lstlisting}[style=BashInputBasicStyle]
-			irb(main):005:0> c1 = Comment.new
-			irb(main):006:0> c1.body="Eu sou de um post!"
-			irb(main):007:0> c1.post = p1
-			irb(main):008:0> c1.save
-		\end{lstlisting}
+%		\item Crie um novo \verb|comment| e o vincule a um \verb|post|:
+%		\begin{lstlisting}[style=BashInputBasicStyle]
+%			irb(main):005:0> c1 = Comment.new
+%			irb(main):006:0> c1.body="Eu sou de um post!"
+%			irb(main):007:0> c1.post = p1
+%			irb(main):008:0> c1.save
+%		\end{lstlisting}
 		
-		\item Consulte os comentários do \verb|post| p1:
-		\begin{lstlisting}[style=BashInputBasicStyle]
-			irb(main):005:0> p1.comments.all
-		\end{lstlisting}
+%		\item Consulte os comentários do \verb|post| p1:
+%		\begin{lstlisting}[style=BashInputBasicStyle]
+%			irb(main):005:0> p1.comments.all
+%		\end{lstlisting}
 		
-		\item Consulte os comentários 2 do \verb|post| p1:
-		\begin{lstlisting}[style=BashInputBasicStyle]
-			irb(main):005:0> p1.comments.where(id: 2)
-		\end{lstlisting}
+%		\item Consulte os comentários 2 do \verb|post| p1:
+%		\begin{lstlisting}[style=BashInputBasicStyle]
+%			irb(main):005:0> p1.comments.where(id: 2)
+%		\end{lstlisting}
 		
-		\item Consulte o \verb|post| do comentário c1:
-		\begin{lstlisting}[style=BashInputBasicStyle]
-			irb(main):005:0> c1.post
-		\end{lstlisting}
+%		\item Consulte o \verb|post| do comentário c1:
+%		\begin{lstlisting}[style=BashInputBasicStyle]
+%			irb(main):005:0> c1.post
+%		\end{lstlisting}
 					
 	\end{itemize}
 \end{frame}

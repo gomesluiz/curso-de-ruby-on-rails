@@ -12,20 +12,20 @@
 		\item Modifique o arquivo \verb|app/models/comment.rb| para exigir 
 		que o usuário digite texto do comentário blog:
 		\begin{lstlisting}[style=RubyInputStyle]
-			class Post < ApplicationRecord
+			class Comment < ApplicationRecord
 		    validates_presence_of :body
 			end
 		\end{lstlisting}
 		
-		\item \alert{Reinicie} a console do Rails tente criar um Post e um Comment
-\begin{lstlisting}[style=BashInputBasicStyle]
-		irb(main):005:0> p1 = Post.new
-		irb(main):006:0> p1.body="Tem algo errado..."
-		irb(main):007:0> p1.save
-		irb(main):008:0> Post.all
-		irb(main):009:0> c1 = Comment.new
-		irb(main):010:0> c1.save
-		irb(main):011:0> Comment.all
-\end{lstlisting}	
+%		\item \alert{Reinicie} a console do Rails tente criar um Post e um Comment
+%\begin{lstlisting}[style=BashInputBasicStyle]
+%		irb(main):005:0> p1 = Post.new
+%		irb(main):006:0> p1.body="Tem algo errado..."
+%		irb(main):007:0> p1.save
+%		irb(main):008:0> Post.all
+%		irb(main):009:0> c1 = Comment.new
+%		irb(main):010:0> c1.save
+%		irb(main):011:0> Comment.all
+%end{lstlisting}	
 	\end{itemize}
 \end{frame}
