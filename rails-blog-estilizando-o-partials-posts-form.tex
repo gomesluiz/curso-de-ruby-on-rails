@@ -4,8 +4,7 @@
       \item Modifique as linhas do arquivo \verb|posts/_form.html.erb| conforme o código abaixo
       \begin{lstlisting}[style=RubyInputStyle, basicstyle=\tiny\ttfamily, caption=app/views/posts/\_form.html.erb]
 <div class="card">
-  <%= form_with scope: :post, url: posts_path, 
-    local: true do |form| %>
+  <%= form_with model: @post, local: true do |form| %>
     <div class="card-body">
       <div class="form-group">
         <%= form.label :title %><br>
