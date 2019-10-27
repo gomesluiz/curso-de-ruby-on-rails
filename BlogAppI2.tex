@@ -17,6 +17,24 @@
 			end
 		\end{lstlisting}
 		
+		\item Inclua as seguintes instruções no início do arquivo \verb|_form.html.rb| para
+		 mostrar as mensagens de validação:
+		\begin{lstlisting}[style=RubyInputStyle, caption=app/views/posts/\_form.html.erb]
+<% if @post.errors.any? %>
+  <div class="alert alert-danger" role="alert">
+    <h4 class="alert-heading">Request failed!</h4>
+    <ul>
+      <% @post.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+    <hr>
+    <p class="mb-0">Please, correct issues and try again.</p>
+  </div>
+<% end %>
+
+		\end{lstlisting}
+		
 %		\item \alert{Reinicie} a console do Rails tente criar um Post e um Comment
 %\begin{lstlisting}[style=BashInputBasicStyle]
 %		irb(main):005:0> p1 = Post.new

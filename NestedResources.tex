@@ -3,6 +3,7 @@
 		\item Modifique o arquivo de rotas para aninhar os comentários às postagens e reinicie o servidor:
 		\begin{lstlisting}[style=RubyInputStyle, caption=config/routes.rb]
 Rails.application.routes.draw do
+  ...
   resources :posts do 
     resources :comments
   end 
@@ -31,61 +32,75 @@ end
 %		\item Agora crie um novo blog e digite novamente \url{http://localhost:3000/posts/id/comments}. Onde 
 %		o \alert{id} do blog que acabou de ser criado.(\alert{Temos um problema})
 				
-		\item Modifique o código do template \alert{views/posts/show.html.erb}. Insira o código abaixo do parágrafo do body.
+		\item Modifique o código do template \alert{views/posts/show.html.erb}. Insira o código abaixo do parágrafo da div de fechamento da div panel-body.
 		\begin{lstlisting}[style=RubyInputStyle]
-<h2>Comments</h2>
+<h3>Comments</h3>
 <div id="comments">
-  <% @post.comments.each do |comment| %>
-	<p>
-  <strong>Posted <%= time_ago_in_words(comment.created_at) %></strong>
-  <%= h(comment.body) %>
-  </p>
-  <% end %>
-</div>
-		\end{lstlisting}
+    <% @post.comments.each do |comment| %>
+    <p>
+    <strong>
+      Posted <%= time_ago_in_words(comment.created_at) %>
+    </strong>
+    <%= h(comment.body) %>
+    </p>
+    <% end %>
+</div>		
+\end{lstlisting}
 
 	\item Agora no navegador visualize uma postagem que tenha comentários.
 	\item Acrescente o código a seguir logo abaixo do código anterior no arquivo \alert{views/posts/show.html.erb}:
 	\begin{lstlisting}[style=RubyInputStyle]
-<%= form_for([@post, Comment.new]) do |f| %>
-<p>
-<%= f.label :body, "New Comment" %><br>
-<%= f.text_area :body %>
-</p>
-<p>
-<%= f.submit "Add Comments" %>
-</p>
-<% end %>
-\end{lstlisting}
+<div class="card">
+    <%= form_for([@post, Comment.new]) do |f| %>
+      <div class="card-body">
+        <div class="form-group">
+          <%= f.label :body, "New Comment" %><br>
+          <%= f.text_area :body
+            , class: 'form-control', rows: 5 %>
+        </div>
+        <div class="form-group">
+          <%= f.submit "Add Comments"
+            , class: 'btn btn-primary' %>
+        </div>
+      </div>
+    <% end %>
+</div>
+<br/>
+...
+ \end{lstlisting}
 
 \item Gere o controlador para os comments:
 		\begin{lstlisting}[style=BashInputBasicStyle]
 			$ rails generate controller comments
 		\end{lstlisting}
 		
-\item Modifique a acão create do controlador \alert{controllers/comments\_controller.rb}:
-\begin{lstlisting}[style=RubyInputStyle]
-before_action :set_comment, only: [:show, :edit, :update, :destroy]
+\item Modifique a acão create do controlador \alert{comments\_controller.rb}:
+\begin{lstlisting}[style=RubyInputStyle, caption=controllers/comments\_controller.rb]
+class CommentsController < ApplicationController
+  before_action :set_comment
+    , only: [:show, :edit, :update, :destroy]
 
-def create
-  @post = Post.find(params[:post_id])
-  @comment = @post.comments.create(comment_params)
+  def create
+    @post = Post.find(params[:post_id])
+    @comment = @post.comments.create(comment_params)
 
-	if @comment.save
-  	redirect_to @post, notice: 'Comment foi criado com sucesso!' 
-  else
-    redirect_to @post
+    if @comment.save
+      redirect_to @post
+        , notice: 'Comment foi criado com sucesso!'
+    else
+      redirect_to @post
+    end
   end
-end 
 
 private
-	def set_comment
-  	@comment = Comment.find(params[:id])
-  end
+    def set_comment
+      @comment = Comment.find(params[:id])
+    end
 
-  def comment_params
-    params.require(:comment).permit(:body)
-  end
+    def comment_params
+      params.require(:comment).permit(:body)
+    end
+end
 \end{lstlisting}
 
 \item Escolha uma postagem qualquer e escreva alguns comentários.

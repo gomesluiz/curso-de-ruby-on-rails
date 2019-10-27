@@ -13,19 +13,56 @@
 		\item Dois atributos \alert{comuns} são \alert{:notice}(\textcolor{Green}{good}) e \alert{:alert}
 			(\alert{bad})
 		\item Estes dois atributos (:notice ou :alert) podem ser colocados no redirect\_to
-		\item \alert{show.html.erb}:
-		\begin{lstlisting}[style=RubyInputStyle, caption=views/posts/show.html.erb]
-			<p id="notice"><%= notice %></p>
-			<p>
-			<strong>Title:</strong>
-			<%= @post.title %>
-			</p>
-			<p>
-			<strong>Body:</strong>
-			<%= @post.body %>
-			</p>
-			<%= link_to 'Edit', edit_post_path(@post) %> |
-			<%= link_to 'Back', posts_path %>	
-		\end{lstlisting}		
+		\item Insira após a instrução \verb|<h2>Posts</h2>| \alert{index.html.erb}:
+		\begin{lstlisting}[style=RubyInputStyle, caption=views/posts/index.html.erb]
+<%if flash[:notice] %>
+  <div id="notice" class="alert alert-success" role="alert">
+    <%= flash[:notice] %>
+  </div>
+<% end %>
+<%if flash[:alert] %>
+  <div id="alert" class="alert alert-danger" role="alert">
+    <%= flash[:alert] %>
+  </div>
+<% end %>				
+		\end{lstlisting}
+		\item Modifique as seguintes ações do controlador \verb|posts_controller.rb| conforme abaixo:
+		\begin{lstlisting}[style=RubyInputStyle, caption=app/controllers/posts\_controller.rb]
+class PostsController < ApplicationController
+  ...
+  
+  def create
+    @post = Post.new(post_params)
+    if @post.save
+       redirect_to posts_path, 
+         notice: 'Post was sucessfully created!'
+    else
+      render :new 
+    end 
+  end
+
+  def update
+    @post = Post.find(params[:id])
+    if @post.update(post_params)
+       redirect_to posts_path, 
+         notice: 'Post was sucessfully update!'
+    else
+      render :edit 
+    end 
+  end
+
+  def destroy
+    @post = Post.find(params[:id])
+    if @post.destroy
+       redirect_to posts_path, 
+         notice: 'Post was sucessfully removed!'
+    else
+       redirect_to posts_path, 
+         alert: 'Fail to remove post!'
+    end 
+  end
+end		
+  \end{lstlisting}
+				
 	\end{itemize}	
 \end{frame}
