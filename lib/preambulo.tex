@@ -1,0 +1,96 @@
+\usetheme[pageofpages=de,			% String used between the current page and the
+                         			% total page count.
+          bullet=square,			% Use circles instead of squares for bullets.
+          titleline=true,			% Show a line below the frame title.
+          alternativetitlepage=true,% Use the fancy title page.
+          titlepagelogo=lib/imagens/logo-puc,	% Logo for the first page.
+          watermark=lib/imagens/watermark-puc,	% Watermark used in every page.
+          watermarkheight=70px,		% Height of the watermark.
+          watermarkheightmult=4,		% The watermark image is 4 times bigger
+                                		% than watermarkheight.
+          ]{Torino}
+
+\usepackage[brazil]{babel}
+\usepackage{enumerate}
+\usepackage[utf8]{inputenc}
+\usepackage[usenames]{xcolor}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{listings}
+
+
+\setbeamertemplate{sections/subsections in toc}[square]
+\setbeamertemplate{bibliography item}[book] 
+
+\lstdefinestyle{BashInputStyle}{
+  language=bash,
+  basicstyle=\scriptsize\ttfamily,
+  numbers=left,
+  numberstyle=\tiny,
+  numbersep=1pt,
+  frame=tb,
+  columns=fullflexible,
+  backgroundcolor=\color{yellow!20},
+  linewidth=0.9\linewidth,
+  tabsize=2,
+  showstringspaces=false
+ % xleftmargin=0.05\linewidth
+}
+
+\lstdefinestyle{RubyInputStyle}{
+  language=ruby,
+  basicstyle=\scriptsize\ttfamily,
+  keywordstyle=\color{OrangeRed},
+  identifierstyle=\color{Turquoise},
+  commentstyle=\color{gray},
+  stringstyle=\color{YellowOrange},
+  numbers=left,
+  numberstyle=\tiny,
+  numbersep=1pt,
+  frame=tb,
+  columns=fullflexible,
+  backgroundcolor=\color{white!80},
+  linewidth=0.9\linewidth,
+  tabsize=2,
+  showstringspaces=false
+  % xleftmargin=0.03\linewidth
+}
+
+\lstdefinestyle{HTMLInputStyle}{
+  language=HTML,
+  basicstyle=\scriptsize\ttfamily,
+  keywordstyle=\color{OrangeRed},
+  identifierstyle=\color{black},
+  commentstyle=\color{gray},
+  stringstyle=\color{YellowOrange},
+  numbers=left,
+  numberstyle=\tiny,
+  numbersep=1pt,
+  frame=tb,
+  columns=fullflexible,
+  backgroundcolor=\color{white!80},
+  linewidth=0.9\linewidth,
+  tabsize=2,
+  showstringspaces=false
+  % xleftmargin=0.03\linewidth
+}
+
+\lstdefinestyle{CSSInputStyle}{
+  language=html,
+  basicstyle=\scriptsize\ttfamily,
+  keywordstyle=\color{OrangeRed},
+  identifierstyle=\color{black},
+  commentstyle=\color{gray},
+  stringstyle=\color{YellowOrange},
+  numbers=left,
+  numberstyle=\tiny,
+  numbersep=1pt,
+  frame=tb,
+  columns=fullflexible,
+  backgroundcolor=\color{white!80},
+  linewidth=0.9\linewidth,
+  tabsize=2,
+  showstringspaces=false
+  % xleftmargin=0.03\linewidth
+}
+

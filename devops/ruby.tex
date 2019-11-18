@@ -1,0 +1,49 @@
+%%-------------------------------------------------------------------------------------- Início
+\section{Plataforma Ruby}
+\begin{frame}[allowframebreaks,fragile,t]{Instalação do Ruby}
+  \begin{enumerate}
+    \item Abra o terminal de linha de comando do Linux teclando \verb!CTRL+ALT+T! 
+    \item Instale algumas \alert{dependências} necessárias para que o interpretador da linguagem 
+      possa ser executado e também para que ferramentas de apoio possam ser instaladas.  
+    \begin{lstlisting}[style=BashInputStyle]
+       $ sudo apt-get update 
+       $ sudo apt-get install git-core curl zlib1g-dev 
+	    build-essential libssl-dev libreadline-dev libyaml-dev 
+	    libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev 
+	    libcurl4-openssl-dev python-software-properties
+    \end{lstlisting}
+    
+    \framebreak
+    \item Instale, agora, o interpretador e as bibliotecas usuais da linguagem Ruby:
+    \begin{lstlisting}[style=BashInputStyle]
+      $ sudo apt-get install libgdbm-dev 
+	     libncurses5-dev automake libtool 
+	     bison libffi-dev
+      $ curl -L https://get.rvm.io | bash -s stable
+      $ source ~/.rvm/scripts/rvm
+      $ echo "source ~/.rvm/scripts/rvm" >> ~/.bashrc
+      $ rvm install 2.1.2
+      $ rvm use 2.1.2 --default
+    \end{lstlisting}
+    
+    \item Teste se interpretador e as bibliotecas do Ruby foram instaladas corretamente, executando
+      o seguinte comando:
+    \begin{lstlisting}[style=BashInputStyle]
+      $ ruby -v
+    \end{lstlisting}
+    
+    \item A seguinte mensagem deverá ser apresentada se tudo foi instalado corretamente para
+      o Ruby.
+    \begin{lstlisting}[style=BashInputStyle]
+      ruby 2.1.2p95 (2014-05-08 revision 45877) [i686-linux]
+    \end{lstlisting}
+    
+    \item O último passo é configurar o gerenciador de pacotes do Ruby \verb!(Rubygens)! para
+      que ele não instale a documentação de cada \alert{gem} localmente.
+    \begin{lstlisting}[style=BashInputStyle]
+      $ echo "gem: --no-ri --no-rdoc" > ~/.gemrc
+    \end{lstlisting}
+    
+  \end{enumerate}
+ 
+\end{frame}

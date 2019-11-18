@@ -1,0 +1,49 @@
+\section{Introdução}
+%%-------------------------------------------------------------------------------------- Início
+\begin{frame}[allowframebreaks,fragile,t]{Rails Básico: do Zero ao CRUD}
+  \begin{enumerate}
+    \item Criar o esqueleto da aplicação.
+    \item Roteamento.
+    \item O banco de dados e migrations. 
+    \item Modelos.
+    \item Controladores, visões, formulários e CRUD.  
+  \end{enumerate}
+   
+\end{frame}
+%%-------------------------------------------------------------------------------------- Início
+\begin{frame}[allowframebreaks,fragile,t]{Esqueleto da Aplicação}
+  \begin{enumerate}
+    \item Instancie um terminal de linha de comandos do Linux teclando \verb!CTRL+ALT+T! 
+    \item Digite o comando \verb!rails new nome_da_aplicacao!
+    \begin{exampleblock}{Exemplo:}
+      \begin{lstlisting}[style=BashInputStyle]
+	    $$ rails new agenda
+      \end{lstlisting}
+    \end{exampleblock}
+  \end{enumerate}  
+  
+  \begin{itemize}
+    \item Após a execução do comando \verb!rails new! o esqueleto
+      da aplicação contendo as seguintes pastas e arquivos será criado
+  \end{itemize}
+
+  \begin{table}\centering\scriptsize
+    \begin{tabular}{@{}ll@{}}\toprule
+	  \textbf{Pastas e Arquivos} & \textbf{Descrição}	\\ \midrule
+	  Gemfile & 	\\
+	  Rakefile & 19 de janeiro de 2007	\\
+	  app & 07 de dezembro de 2007	\\
+	  app/models & 01 de junho de 2008	\\
+	  app/controllers & 21 de novembro de 2008	\\ 
+	  app/views & 16 de março de 2009	\\
+	  app/views/layout & 29 de agosto de 2010	\\
+	  app/helpers & 31 de agosto de 2011	\\
+	  app/assets & 20 de janeiro de 2012	\\
+	  config & 25 de junho de 2013	\\
+	  config/environments & 08 de abril de 2014	\\ \bottomrule
+    \end{tabular}
+      \caption{Evolução histórica do Ruby on Rails}
+    \end{table} 
+
+\end{frame}
+%%-------------------------------------------------------------------------------------- Início

@@ -1,0 +1,31 @@
+%%-------------------------------------------------------------------------------------- Início
+\section{Framework Rails}
+\begin{frame}[allowframebreaks,fragile,t]{Instalação do Framework Rails}
+  \begin{enumerate}
+    \item Instale o \verb!Node.js! que atender às várias dependências que 
+      o Rails tem em relação ao \verb!JavaScript!.
+    \begin{lstlisting}[style=BashInputStyle]      
+      $ sudo add-apt-repository ppa:chris-lea/node.js
+      $ sudo apt-get update
+      $ sudo apt-get install nodejs
+    \end{lstlisting}
+
+    \item Instale , agora, o framework Rails.
+    \begin{lstlisting}[style=BashInputStyle]      
+      $ gem install rails
+    \end{lstlisting}
+    
+     \item Teste se o framework Rails foi instalado corretamente, executando
+      o seguinte comando:
+    \begin{lstlisting}[style=BashInputStyle]
+      $ rails -v 
+    \end{lstlisting}
+    
+    \item A seguinte mensagem deverá ser apresentada se tudo foi instalado corretamente
+      para o Rails.
+    \begin{lstlisting}[style=BashInputStyle]
+      Rails 4.1.6
+    \end{lstlisting}
+  \end{enumerate}
+  
+\end{frame}
