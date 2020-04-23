@@ -1,0 +1,37 @@
+\begin{frame}[allowframebreaks, t, fragile]{Prática 2}
+	\begin{itemize}
+		\item Inicialize \alert{na pasta da aplicação} a console do banco de dados e
+		configure a sua exibição:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			$ rails db
+			sqlite> .headers on
+			sqlite> .mode columns
+		\end{lstlisting}
+		
+		\item Exiba os colunas da tabela \verb|posts|:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			sqlite> .schema posts
+		\end{lstlisting}
+		
+		\framebreak
+		\item Exiba todos os \verb|posts|:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			sqlite> SELECT * FROM posts;
+		\end{lstlisting}
+		
+		\item Exiba todos os \verb|posts| ordenados pelo título (title):
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			sqlite> SELECT * FROM posts ORDER BY title;
+		\end{lstlisting}
+		
+		\item Exiba um \verb|post|:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			sqlite> SELECT * FROM posts LIMIT 1
+		\end{lstlisting}
+		
+		\item Exiba o \verb|post| cujo \verb|id| é 2:
+		\begin{lstlisting}[style=BashInputBasicStyle]
+			sqlite> SELECT * FROM posts WHERE id=2;
+		\end{lstlisting}
+	\end{itemize}
+\end{frame}

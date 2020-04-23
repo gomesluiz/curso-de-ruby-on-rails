@@ -1,0 +1,48 @@
+\documentclass[t, 				             
+			   final,
+			   12pt, 				         
+			   xcolor={usenames,dvipsnames}, 
+			   table]{beamer}
+
+% pacotes utilizados.
+\usepackage[alf]{abntex2cite}
+\usepackage{amsmath}
+\usepackage[brazil]{babel}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{todo}
+
+
+% configuração do tema
+\usetheme[pageofpages=de,
+          bullet=square,			
+          titleline=true,				
+          alternativetitlepage=true,			
+          titlepagelogo=imagens/logo-puc,	
+          watermarkheight=70px,		
+          watermarkheightmult=4	
+          ]{Torino}
+
+\setbeamertemplate{sections/subsections in toc}[square]
+\setbeamertemplate{bibliography item}[default]
+
+\usecolortheme{freewilly}
+
+\input{setup-languages}
+
+\begin{document}
+	\include{Titulo}
+	\include{Capa}
+	\include{Agenda}  	
+    
+    \section{Versionando Uma Aplicação}
+    \include{git-introducao}
+    \include{git-comandos-basicos}    
+    
+    %\section{Para Saber Mais}
+	%\include{rails-saber-mais}
+\end{document}
