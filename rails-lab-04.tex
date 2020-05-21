@@ -1,0 +1,64 @@
+\documentclass[t, 				             
+			   final,
+			   12pt, 				         
+			   xcolor={usenames,dvipsnames}, 
+			   table]{beamer}
+
+% pacotes utilizados.
+\usepackage[alf]{abntex2cite}
+\usepackage{amsmath}
+\usepackage[brazil]{babel}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{todo}
+
+
+% configuração do tema
+\usetheme[pageofpages=de,
+          bullet=square,			
+          titleline=true,				
+          alternativetitlepage=true,			
+          titlepagelogo=imagens/logo-puc,	
+          watermarkheight=70px,		
+          watermarkheightmult=4	
+          ]{Torino}
+
+\setbeamertemplate{sections/subsections in toc}[square]
+\setbeamertemplate{bibliography item}[default]
+
+\usecolortheme{freewilly}
+
+\input{setup-languages}
+
+\begin{document}
+    \author{Luiz Alberto Ferreira Gomes}
+    \title{Ruby On Rails: Laboratório 04}
+    \subtitle{Laboratório Engenharia de Software}
+    \institute{Curso de Ciência da Computação}
+    \date{\today}
+
+	\include{Capa}
+	\include{Agenda}  	
+
+    \section{Ação Index}
+	\include{rails-blog-index}
+    \section{Ação Edit}
+	\include{rails-blog-action-edit}
+    \section{Ação Partials}
+	\include{rails-blog-partials}
+    \section{Visão Edit}
+	\include{rails-blog-view-edit}
+    \section{Visão Update}
+	\include{rails-blog-action-update}
+    \section{Visão Destroy}
+	\include{rails-blog-action-destroy}
+    \section{Controle de Versão}
+	\include{rails-cvs-blog-second}
+    
+    \section{Para Saber Mais}
+	\include{rails-saber-mais}
+\end{document}

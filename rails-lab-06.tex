@@ -1,0 +1,62 @@
+\documentclass[t, 				             
+			   final,
+			   12pt, 				         
+			   xcolor={usenames,dvipsnames}, 
+			   table]{beamer}
+
+% pacotes utilizados.
+\usepackage[alf]{abntex2cite}
+\usepackage{amsmath}
+\usepackage[brazil]{babel}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{todo}
+
+
+% configuração do tema
+\usetheme[pageofpages=de,
+          bullet=square,			
+          titleline=true,				
+          alternativetitlepage=true,			
+          titlepagelogo=imagens/logo-puc,	
+          watermarkheight=70px,		
+          watermarkheightmult=4	
+          ]{Torino}
+
+\setbeamertemplate{sections/subsections in toc}[square]
+\setbeamertemplate{bibliography item}[default]
+
+\usecolortheme{freewilly}
+
+\input{setup-languages}
+
+\begin{document}
+    \author{Luiz Alberto Ferreira Gomes}
+    \title{Ruby On Rails: Laboratório 06}
+    \subtitle{Laboratório Engenharia de Software}
+    \institute{Curso de Ciência da Computação}
+    \date{\today}
+    
+    \include{Capa}
+	\include{Agenda}  	
+
+  \section{Bootstrap}
+		\include{bootstrap-introducao}
+	
+	\section{Integrando o Bootstrap}
+		\include{rails-blog-integrando-com-bootstrap}
+
+	\section{Estilizando a Aplicação}
+		\include{rails-blog-estilizando-a-aplicacao}
+		\include{rails-blog-estilizando-a-visao-home-index}
+		\include{rails-blog-estilizando-a-visao-posts-index}
+		\include{rails-blog-estilizando-o-partials-posts-form}
+		\include{rails-blog-estilizando-a-visao-posts-show}
+
+  	\section{Para Saber Mais}
+		\include{rails-saber-mais}
+\end{document}

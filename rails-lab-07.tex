@@ -1,0 +1,88 @@
+\documentclass[t, 				             
+			   final,
+			   12pt, 				         
+			   xcolor={usenames,dvipsnames}, 
+			   table]{beamer}
+
+% pacotes utilizados.
+\usepackage[alf]{abntex2cite}
+\usepackage{amsmath}
+\usepackage[brazil]{babel}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{todo}
+
+
+% configuração do tema
+\usetheme[pageofpages=de,
+          bullet=square,			
+          titleline=true,				
+          alternativetitlepage=true,			
+          titlepagelogo=imagens/logo-puc,	
+          watermarkheight=70px,		
+          watermarkheightmult=4	
+          ]{Torino}
+
+\setbeamertemplate{sections/subsections in toc}[square]
+\setbeamertemplate{bibliography item}[default]
+
+\usecolortheme{freewilly}
+
+\input{setup-languages}
+
+\begin{document}
+	\include{Titulo}
+	\include{Capa}
+	\include{Agenda}  	
+	%\section{Ruby on Rails}
+	%\include{rails}	
+	%\include{rails-historico}
+	%\include{rails-pilares}
+	%\include{rails-mvc}
+	%\include{rails-primeira-aplicacao}
+
+	%\include{BlogApp}
+	%\include{rails-metodologia}
+	%\include{Esqueleto}	
+	%\include{Modelo}
+	\include{BancoDeDados}
+	\include{BlogAppI1}
+	%\include{SQLite}
+	%\include{Migrations}
+	%\include{ActiveRecord}
+	\include{Validacao}
+	\include{BlogAppI2}
+	\include{Associacao}
+	\include{BlogAppI3}
+	%\include{ActionController}
+	%\include{Rest}	
+	%\include{BlogAppI4}
+	%\include{Index}
+	%\include{BlogAppI5}
+  %	\include{Show}
+ 	% \include{BlogAppI6}
+	%\include{RespondTo}
+	%\include{RedirectTo}
+	%\include{Destroy}
+  %	\include{BlogAppI7}	
+	%\include{Partials}
+	%\include{BlogAppI8}
+	%\include{New}
+	%\include{BlogAppI9}	
+	%\include{Create}
+	%\include{BlogAppI10}	
+	\include{Flash}
+	%\include{Edit}
+	%\include{BlogAppI11}		
+	%\include{Update}
+	%\include{BlogAppI12}	
+	\include{NestedResources}
+	%\include{BlogAppI13}	
+	%\include{ActionView}
+	%\include{FormHelpers}
+	%\input{Sabermais}
+\end{document}
