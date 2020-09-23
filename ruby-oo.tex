@@ -72,28 +72,33 @@
 \end{frame}
 
 \begin{frame}[allowframebreaks, fragile,t]{Herança de Classes}    
-%  \begin{itemize}
-%    \item \alert{Existem} três maneiras para definir métodos de classe
-%    \item Variáveis de classe começam com \alert{@@}
-%  \end{itemize}  
   \lstinputlisting[style=RubyInputStyle, caption=inheritance.rb]{codigos/ruby/11-more-classes/inheritance.rb}
- 
- %TODO: controle de acesso privado, publico e protegido.
-\end{frame}
-
+ \end{frame}
 %-------------------------------------------------------------------------------------- Início
-\begin{frame}[allowframebreaks, fragile, t]{Exercícios}
-Elabore na linguagem JavRuby os códigos para os seguintes requisitos:
+\begin{frame}[fragile, t]{Visivilidade de Métodos em Ruby}
+  \begin{enumerate}
+    \item Todos os atributos são \alert{privado} por padrão e Todos os métodos
+    são públicos por padrão.
+    \item \alert{private} e \alert{protected} podem ser utilizados
+    para mudar a visibilidade padrão de \alert{métodos}
+  \end{enumerate}
+  %TODO: módulos e exemplos
+\end{frame}
+%-------------------------------------------------------------------------------------- Início
+\begin{frame}[allowframebreaks, fragile, t]{Hora de Colocar as Mãos na Massa}
+  \begin{enumerate}
+    \item Elabore na linguagem Ruby os códigos para os seguintes requisitos:
     \begin{enumerate}
           \item Escreva a classe \textbf{Sobremesa} com \textit{getters} e \textit{setters} para os atributos \texttt{nome} e \texttt{calorias}. O construtor dessa classe deverá receber como parâmetros \texttt{nome} e \texttt{calorias}.      
           \item Defina as operações de instância \texttt{ehSaudavel}, que retorna \texttt{true} se e somente se a sobremesa tem menos de 200 calorias, e \texttt{ehDeliciosa}, que retorna \texttt{true} para todas as sobremesas.
           \item Crie a classe \textbf{GeleiaEmCompota} que herdará da classe \textbf{Sobremesa}. O seu construtor deverá aceitar um único argumento denominado \texttt{sabor};  a sua quantidade padrão de \texttt{calorias} é 5 e seu \texttt{nome} deverá ser precedido de "Geléia em Compota de ", por exemplo, "Geléia em Compota de Morango".
           \item Inclua um \textit{getter} and \textit{setter} para o atributo \texttt{sabor}.   
           \item Modifique a operação \texttt{ehDeliciosa} para retornar \textbf{false} se o sabor é \texttt{alcaçuz} e true para todos os outros sabores. O comportamento dessa operação para sobremesas que não são geléias em compotas não devem ser alterados.
-       \end{enumerate}  
-    
+    \end{enumerate}  
+    \item Refatore o jogo de adivinhação para utilizar os mecanismos da orientação a 
+    objetos.  
+  \end{enumerate}
 \end{frame}
-
 
 \begin{frame}[fragile,t]{Recapitulando}
   \begin{itemize}
