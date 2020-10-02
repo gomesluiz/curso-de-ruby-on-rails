@@ -10,6 +10,7 @@
 \usepackage[brazil]{babel}
 \usepackage{booktabs}
 \usepackage{caption}
+\usepackage{ctable}
 \usepackage[utf8]{inputenc}
 \usepackage{listings}
 \usepackage{multicol}
@@ -35,35 +36,12 @@
 \input{setup-languages}
 
 \begin{document}
-	\include{Titulo}
+    \author{Luiz Alberto Ferreira Gomes}
+    \title{Linguagem Ruby: Testes com Minitest}
+    \institute{Curso de Ciência da Computação}
+    \date{\today}
 	\include{Capa}
-	\include{Agenda}  	
-    
-    \section{Ruby on Rails}
-	\include{rails-introducao}	
-	\include{rails-historico}
-	\include{rails-pilares}
-	\include{rails-mvc}
-    
-    \section{Metodologia de Trabalho}
-    \include{rails-metodologia}
-
-    \section{Esqueleto da Aplicação}
-    \include{rails-esqueleto}
-   
-    %\section{Primeira Aplicação}
-    %\include{rails-primeira-aplicacao}
-    %\include{rails-rest}
-    %\include{rails-new}
-    %\include{rails-create}
-    %\include{rails-show}
-    %\include{rails-database-console}
-    %\include{rails-rails-console}
-
-    %\section{Versionando a Primeira Aplicação}
-    %\include{git-introducao}
-    %\include{rails-cvs-blog-initial}    
-    
-    \section{Para Saber Mais}
-	\include{rails-saber-mais}
+	\include{ruby-agenda}  
+	\section{Teste de Unidade}	
+	\include{ruby-oo}
 \end{document}
