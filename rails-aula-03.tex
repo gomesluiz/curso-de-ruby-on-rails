@@ -20,7 +20,7 @@
 % configuração do tema
 \usetheme[pageofpages=de,
           bullet=square,			
-          titleline=true,				
+          titleline=false,				
           alternativetitlepage=true,			
           titlepagelogo=imagens/logo-puc,	
           watermarkheight=70px,		
@@ -39,11 +39,22 @@
 	\include{Capa}
 	\include{Agenda}  	
 
-  	\section{Páginas Estáticas}
-		\include{rails-blog-paginas-estaticas}
-		\include{rails-blog-pagina-home}
-		\include{rails-blog-estruturando-a-aplicacao}
-
-  	\section{Para Saber Mais}
-		\include{rails-saber-mais}
+    \section{Nova Postagem}
+        \include{rails-new}
+        \include{rails-create}
+    \section{Exibir Postagem}
+        \include{rails-show}
+    \section{Atualizar Postagem}
+        \include{rails-blog-action-edit}
+    \section{Reuso com Partials}
+        \include{rails-blog-partials}
+        \include{rails-blog-view-edit}
+        \include{rails-blog-action-update}
+    \section{Visão Destroy}
+        \include{rails-blog-action-destroy}
+    \section{Controle de Versão}
+        \include{rails-cvs-blog-second}
+    
+    \section{Para Saber Mais}
+        \include{rails-saber-mais}
 \end{document}

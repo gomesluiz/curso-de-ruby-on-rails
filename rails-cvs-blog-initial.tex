@@ -1,21 +1,23 @@
+
 %%-------------------------------------------------------------------------------------- Início
 \begin{frame}[allowframebreaks, fragile,t]{Hora de Colocar a Mão na Massa}
 	\begin{enumerate}
-		\item Implemente as visões e ações Index, Edit, Update, Partials e Destroy
-		
-		\item Registre as mudanças realizadas no repositório local:
+        \item Reinicie o repositório local 
 		\begin{lstlisting}[style=BashInputBasicStyle]
-			$ git add .
+			$ git init
 		\end{lstlisting}
 
         \item Efetive as mudanças realizadas no repositório local:  		
         \begin{lstlisting}[style=BashInputBasicStyle]
-			$ git commit -m "#2: manutencao de posts"
+			$ git add .
+			$ git commit -m "commit inicial"
 		\end{lstlisting}
 
 		\item Registre as alterações no repositório remoto:
-		\begin{lstlisting}[style=BashInputBasicStyle]
-			$ git push origin main
+        \begin{lstlisting}[style=BashInputBasicStyle]
+$ git branch -M main
+$ git remote add origin https://endereco/do/seu/repositorio.git
+$ git push -u origin main
 		\end{lstlisting}
 	\end{enumerate}
 \end{frame}

@@ -21,8 +21,7 @@
 		%\framebreak
 		\item \alert{\_form.html.erb}
 		\begin{lstlisting}[style=RubyInputStyle, caption=views/posts/\_form.html.erb]
-<%= form_with scope: :post, url: posts_path, 
-	local: true do |form| %>
+<%= form_with  model: @post, local: true do |form| %>
 	<p>
 		<%= form.label :title %><br>
 		<%= form.text_field :title %>

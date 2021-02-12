@@ -24,8 +24,7 @@ end
 		\item Implemente a visão \alert{new.html.erb}:
 		\begin{lstlisting}[style=RubyInputStyle, caption=views/posts/new.html.erb]
 <h1>Novo Post</h1>
-<%= form_with scope: :post, url: posts_path, 
-	local: true do |form| %>
+<%= form_with model: @post, local: true do |form| %>
 	<p>
 		<%= form.label :title %><br>
 		<%= form.text_field :title %>
